@@ -34,6 +34,7 @@ var pluginsBundle = [
   "showdown",
   "prism",
   "jquery",
+  "split.js",
   "css",
   "text",
   "json",
