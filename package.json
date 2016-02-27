@@ -1,0 +1,101 @@
+{
+  "name": "aurelia-materialize-demo",
+  "version": "1.0.0-beta.1.0.1",
+  "description": "A demo app for Aurelia-Materialize plugin.",
+  "keywords": [
+    "aurelia",
+    "Materialize",
+    "plugin"
+  ],
+  "homepage": "https://github.com/aurelia-ui-toolkits",
+  "bugs": {
+    "url": "https://github.com/aurelia-ui-toolkits/demo-materialize/issues"
+  },
+  "license": "CC0-1.0",
+  "author": "Aurelia-UI-Toolkits",
+  "main": "dist/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aurelia-ui-toolkits/demo-materialize"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "e2e": "gulp serve e2e"
+  },
+  "devDependencies": {
+    "aurelia-bundler": "^0.2.1",
+    "aurelia-tools": "^0.1.3",
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "browser-sync": "^1.8.1",
+    "conventional-changelog": "0.0.11",
+    "del": "^1.1.0",
+    "gulp": "^3.8.10",
+    "gulp-babel": "^5.1.0",
+    "gulp-bump": "^0.3.1",
+    "gulp-changed": "^1.1.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-protractor": "^0.0.12",
+    "gulp-sourcemaps": "^1.3.0",
+    "gulp-yuidoc": "^0.1.2",
+    "isparta": "^3.1.0",
+    "istanbul": "gotwarlost/istanbul#source-map",
+    "jasmine-core": "^2.1.3",
+    "jspm": "0.16.15",
+    "jspm-git": "^0.4.2",
+    "karma": "^0.13.15",
+    "karma-babel-preprocessor": "^5.2.1",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-coverage": "douglasduteil/karma-coverage#next",
+    "karma-jasmine": "^0.3.5",
+    "karma-jspm": "2.0.1-beta.2",
+    "object.assign": "^1.0.3",
+    "require-dir": "^0.1.0",
+    "run-sequence": "^1.0.2",
+    "vinyl-paths": "^1.0.0",
+    "yargs": "^2.1.1"
+  },
+  "jspm": {
+    "dependencies": {
+      "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.0.3",
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1",
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@^1.0.0-beta.1",
+      "aurelia-event-aggregator": "npm:aurelia-event-aggregator@^1.0.0-beta.1",
+      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.0.6",
+      "aurelia-http-client": "npm:aurelia-http-client@^1.0.0-beta.1",
+      "aurelia-loader": "npm:aurelia-loader@^1.0.0-beta.1",
+      "aurelia-logging": "npm:aurelia-logging@^1.0.0-beta.1",
+      "aurelia-materialize-bridge": "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master",
+      "aurelia-metadata": "npm:aurelia-metadata@^1.0.0-beta.1",
+      "aurelia-pal": "npm:aurelia-pal@^1.0.0-beta.1.0.2",
+      "aurelia-task-queue": "npm:aurelia-task-queue@^1.0.0-beta.1.1.1",
+      "aurelia-templating": "npm:aurelia-templating@^1.0.0-beta.1.0.2",
+      "css": "github:systemjs/plugin-css@0.1.20",
+      "font-awesome": "npm:font-awesome@^4.5.0",
+      "google/code-prettify": "github:google/code-prettify@master",
+      "jquery": "github:components/jquery@2.1.4",
+      "json": "github:systemjs/plugin-json@^0.1.0",
+      "materialize": "github:Dogfalo/materialize@^0.97.5",
+      "prettify": "npm:prettify@^0.1.7",
+      "prism": "github:PrismJS/prism@1.3.0",
+      "showdown": "github:showdownjs/showdown@1.3.0",
+      "showdown-prettify": "npm:showdown-prettify@^1.0.2",
+      "split.js": "npm:split.js@^1.0.6",
+      "text": "github:systemjs/plugin-text@^0.0.4"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.22",
+      "babel-runtime": "npm:babel-runtime@^5.8.20",
+      "clean-css": "npm:clean-css@^3.4.9",
+      "core-js": "npm:core-js@^2.0.3"
+    },
+    "overrides": {
+      "github:google/code-prettify@master": {
+        "main": "src/prettify"
+      }
+    }
+  }
+}
