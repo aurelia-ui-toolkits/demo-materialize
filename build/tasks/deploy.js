@@ -17,6 +17,7 @@ gulp.task('deploy-gh-pages', function() {
     './index.html',
     './favicon.ico',
     './config.js',
+    './vendor/**/*',
     './jspm_packages/github/Dogfalo/materialize*/font/**/*'
   ], { base: '.' })
     // .pipe(gulp.dest('./dist')) // for debugging
