@@ -457,7 +457,7 @@ System.config({
       "github:components/jquery@2.1.4",
       "github:components/jquery@2.1.4/jquery"
     ],
-    "app-build-b35f70a94a": [
+    "app-build-7226bb3264": [
       "about/about",
       "about/about.html!github:systemjs/plugin-text@0.0.4",
       "app",
@@ -1569,6 +1569,8 @@ System.config({
       "npm:showdown-prettify@1.3.0/dist/showdown-prettify",
       "npm:showdown@1.3.0",
       "npm:showdown@1.3.0/dist/showdown",
+      "npm:split.js@1.0.6",
+      "npm:split.js@1.0.6/split",
       "route-highlight",
       "settings",
       "shared/au-code",
