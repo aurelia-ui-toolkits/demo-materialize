@@ -457,7 +457,7 @@ System.config({
       "github:components/jquery@2.1.4",
       "github:components/jquery@2.1.4/jquery"
     ],
-    "app-build-bc462b92fb": [
+    "app-build-34ea8ead13": [
       "about/about",
       "about/about.html!github:systemjs/plugin-text@0.0.4",
       "app",
@@ -510,6 +510,8 @@ System.config({
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/pagination/pagination",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/pagination/pagination.html!github:systemjs/plugin-text@0.0.4",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/parallax/parallax",
+      "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/progress/progress",
+      "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/progress/progress.html!github:systemjs/plugin-text@0.0.4",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/pushpin/pushpin",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/radio/radio",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/radio/radio.html!github:systemjs/plugin-text@0.0.4",
