@@ -18,8 +18,8 @@
     "Collections": { },
     "Footer": { },
     "Navbar": { "status": "wip" },
-    "Pagination": { "status": "wip" },
-    "Preloader": { },
+    "Pagination": { "status": "done" },
+    "Preloader": { "moduleId": "progress", "status": "wip" },
   },
   "Javascript": {
     "Collapsible": { "status": "wip" },
@@ -39,9 +39,9 @@
   "Forms": {
     "Input fields": { "moduleId": "input", "status": "wip" },
     "Select": { "status": "wip" },
-    "Radio buttons": { "moduleId": "radio", "status": "wip" },
+    "Radio buttons": { "moduleId": "radio", "status": "done" },
     "Checkbox/Switch": { "moduleId": "checkbox", "status": "done" },
-    "File input button": { "moduleId": "file", "status": "wip" },
+    "File input button": { "moduleId": "file", "status": "done" },
     "Range": { "status": "wip" },
     "DatePicker": { "status": "wip" },
     "Character counter": { "moduleId": "input", "status": "wip" },
