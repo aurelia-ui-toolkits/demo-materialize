@@ -14,11 +14,11 @@
     "Button": { "status": "wip" },
     "Breadcrumbs": { },
     "Cards": { "moduleId": "card", "status": "done" },
-    "Chips": { },
+    "Chips": { "moduleId": "chip", "status": "done" },
     "Collections": { },
     "Footer": { },
     "Navbar": { "status": "wip" },
-    "Pagination": { },
+    "Pagination": { "status": "wip" },
     "Preloader": { },
   },
   "Javascript": {
