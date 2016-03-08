@@ -71,6 +71,7 @@
       "aurelia-materialize-bridge": "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master",
       "aurelia-metadata": "npm:aurelia-metadata@^1.0.0-beta.1",
       "aurelia-pal": "npm:aurelia-pal@^1.0.0-beta.1.0.2",
+      "aurelia-polyfills": "npm:aurelia-polyfills@^1.0.0-beta.1.0.1",
       "aurelia-task-queue": "npm:aurelia-task-queue@^1.0.0-beta.1.1.1",
       "aurelia-templating": "npm:aurelia-templating@^1.0.0-beta.1.0.2",
       "css": "github:systemjs/plugin-css@0.1.20",
@@ -83,14 +84,13 @@
       "prism": "github:PrismJS/prism@1.3.0",
       "showdown": "github:showdownjs/showdown@1.3.0",
       "showdown-prettify": "npm:showdown-prettify@^1.0.2",
-      "split.js": "npm:split.js@^1.0.6",
       "text": "github:systemjs/plugin-text@^0.0.4"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.8.22",
-      "babel-runtime": "npm:babel-runtime@^5.8.20",
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
       "clean-css": "npm:clean-css@^3.4.9",
-      "core-js": "npm:core-js@^2.0.3"
+      "core-js": "npm:core-js@^1.1.4"
     },
     "overrides": {
       "github:google/code-prettify@master": {
