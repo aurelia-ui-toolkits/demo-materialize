@@ -3,7 +3,6 @@ System.config({
   "transpiler": "babel",
   "babelOptions": {
     "optional": [
-      "runtime",
       "optimisation.modules.system",
       "es7.decorators",
       "es7.classProperties"
@@ -446,7 +445,7 @@ System.config({
       "github:components/jquery@2.1.4",
       "github:components/jquery@2.1.4/jquery"
     ],
-    "app-build-7f8144896d": [
+    "app-build-8f3f947196": [
       "about/about",
       "about/about.html!github:systemjs/plugin-text@0.0.4",
       "app",
