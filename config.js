@@ -27,7 +27,7 @@ System.config({
     "aurelia-http-client": "npm:aurelia-http-client@1.0.0-beta.1.1.2",
     "aurelia-loader": "npm:aurelia-loader@1.0.0-beta.1.1.1",
     "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.1.2",
-    "aurelia-materialize-bridge": "github:aurelia-ui-toolkits/aurelia-materialize-bridge@0.1.1",
+    "aurelia-materialize-bridge": "github:aurelia-ui-toolkits/aurelia-materialize-bridge@0.1.2",
     "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.1.6",
     "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.1.1",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.0.1",
@@ -52,7 +52,7 @@ System.config({
       "css": "github:systemjs/plugin-css@0.1.20",
       "jquery": "github:components/jquery@2.1.4"
     },
-    "github:aurelia-ui-toolkits/aurelia-materialize-bridge@0.1.1": {
+    "github:aurelia-ui-toolkits/aurelia-materialize-bridge@0.1.2": {
       "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.2.2",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.5",
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.1.2",
