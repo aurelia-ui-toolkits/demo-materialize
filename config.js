@@ -450,7 +450,7 @@ System.config({
       "github:components/jquery@2.1.4",
       "github:components/jquery@2.1.4/jquery"
     ],
-    "app-build-4242232bdd": [
+    "app-build-2c528e1047": [
       "about/about",
       "about/about.html!github:systemjs/plugin-text@0.0.4",
       "app",
@@ -546,6 +546,9 @@ System.config({
       "github:components/jquery@2.1.4/jquery",
       "github:jspm/nodelibs-process@0.1.2",
       "github:jspm/nodelibs-process@0.1.2/index",
+      "github:rstacruz/nprogress@0.2.0",
+      "github:rstacruz/nprogress@0.2.0/nprogress",
+      "github:rstacruz/nprogress@0.2.0/nprogress.css!github:systemjs/plugin-css@0.1.20",
       "github:showdownjs/showdown@1.3.0",
       "github:showdownjs/showdown@1.3.0/dist/showdown",
       "github:systemjs/plugin-css@0.1.20",
