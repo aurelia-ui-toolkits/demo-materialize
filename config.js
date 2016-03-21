@@ -27,7 +27,7 @@ System.config({
     "aurelia-http-client": "npm:aurelia-http-client@1.0.0-beta.1.1.2",
     "aurelia-loader": "npm:aurelia-loader@1.0.0-beta.1.1.1",
     "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.1.2",
-    "aurelia-materialize-bridge": "github:aurelia-ui-toolkits/aurelia-materialize-bridge@0.1.2",
+    "aurelia-materialize-bridge": "github:aurelia-ui-toolkits/aurelia-materialize-bridge@0.2.0",
     "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.1.6",
     "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.1.1",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.0.1",
@@ -43,6 +43,7 @@ System.config({
     "jquery": "github:components/jquery@2.1.4",
     "json": "github:systemjs/plugin-json@0.1.0",
     "materialize": "github:Dogfalo/materialize@0.97.5",
+    "nprogress": "github:rstacruz/nprogress@0.2.0",
     "prettify": "npm:prettify@0.1.7",
     "prism": "github:PrismJS/prism@1.3.0",
     "showdown": "github:showdownjs/showdown@1.3.0",
@@ -52,7 +53,7 @@ System.config({
       "css": "github:systemjs/plugin-css@0.1.20",
       "jquery": "github:components/jquery@2.1.4"
     },
-    "github:aurelia-ui-toolkits/aurelia-materialize-bridge@0.1.2": {
+    "github:aurelia-ui-toolkits/aurelia-materialize-bridge@0.2.0": {
       "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.2.2",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.5",
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.1.2",
@@ -102,6 +103,9 @@ System.config({
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
+    },
+    "github:rstacruz/nprogress@0.2.0": {
+      "css": "github:systemjs/plugin-css@0.1.20"
     },
     "npm:abbrev@1.0.7": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",

@@ -34,6 +34,7 @@ var pluginsBundle = [
   "showdown",
   "prism",
   "jquery",
+  "nprogress",
   "css",
   "text",
   "json",
