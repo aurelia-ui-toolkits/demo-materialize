@@ -42,14 +42,14 @@ System.config({
     "google/code-prettify": "github:google/code-prettify@master",
     "jquery": "github:components/jquery@2.1.4",
     "json": "github:systemjs/plugin-json@0.1.0",
-    "materialize": "github:Dogfalo/materialize@0.97.5",
+    "materialize": "github:Dogfalo/materialize@0.97.6",
     "nprogress": "github:rstacruz/nprogress@0.2.0",
     "prettify": "npm:prettify@0.1.7",
     "prism": "github:PrismJS/prism@1.3.0",
     "showdown": "github:showdownjs/showdown@1.3.0",
     "showdown-prettify": "npm:showdown-prettify@1.3.0",
     "text": "github:systemjs/plugin-text@0.0.4",
-    "github:Dogfalo/materialize@0.97.5": {
+    "github:Dogfalo/materialize@0.97.6": {
       "css": "github:systemjs/plugin-css@0.1.20",
       "jquery": "github:components/jquery@2.1.4"
     },
@@ -61,7 +61,7 @@ System.config({
       "aurelia-router": "npm:aurelia-router@1.0.0-beta.1.2.0",
       "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0-beta.1.2.0",
       "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.2.1",
-      "materialize": "github:Dogfalo/materialize@0.97.5"
+      "materialize": "github:Dogfalo/materialize@0.97.6"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -444,14 +444,14 @@ System.config({
     }
   },
   "bundles": {
-    "materialize-b6ca09cb00": [
-      "github:Dogfalo/materialize@0.97.5",
-      "github:Dogfalo/materialize@0.97.5/css/materialize.css!github:systemjs/plugin-css@0.1.20",
-      "github:Dogfalo/materialize@0.97.5/js/materialize",
+    "materialize-9c00d48a1a": [
+      "github:Dogfalo/materialize@0.97.6",
+      "github:Dogfalo/materialize@0.97.6/css/materialize.css!github:systemjs/plugin-css@0.1.20",
+      "github:Dogfalo/materialize@0.97.6/js/materialize",
       "github:components/jquery@2.1.4",
       "github:components/jquery@2.1.4/jquery"
     ],
-    "app-build-85a65180ae": [
+    "app-build-0b93f3b244": [
       "about/about",
       "about/about.html!github:systemjs/plugin-text@0.0.4",
       "app",
@@ -505,6 +505,7 @@ System.config({
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/footer/footer",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/index",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/input/input",
+      "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/input/input-prefix",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/input/input-update-service",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/input/input.css!github:systemjs/plugin-text@0.0.4",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/input/input.html!github:systemjs/plugin-text@0.0.4",
