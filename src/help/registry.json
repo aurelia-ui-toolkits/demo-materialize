@@ -80,45 +80,12 @@
         "path": "help/docs/app-developers-tutorials/collapsible.md"
       },
       {
-        "name": "7. Next actions",
+        "name": "7. What you need to know",
         "path": "help/docs/app-developers-tutorials/next-actions.md"
       },
     ],
 
-    "Bridge developers tutorials":
-    [
-      {
-        "name": "1. Introduction",
-        "path": "help/docs/bridge-developers-tutorials/introduction.md"
-      },
-      {
-        "name": "2. Setup",
-        "path": "help/docs/bridge-developers-tutorials/setup.md"
-      },
-      {
-        "name": "3. Select component",
-        "path": "help/docs/bridge-developers-tutorials/select.md"
-      },
-      {
-        "name": "4. Button component",
-        "path": "help/docs/bridge-developers-tutorials/button.md"
-      },
-      {
-        "name": "5. Slider component",
-        "path": "help/docs/bridge-developers-tutorials/slider.md"
-      },
-      {
-        "name": "6. Collapsible component",
-        "path": "help/docs/bridge-developers-tutorials/collapsible.md"
-      },
-      {
-        "name": "7. Next actions",
-        "path": "help/docs/bridge-developers-tutorials/next-actions.md"
-      },
-
-    ],
-
-    "Bridge developers notes":
+    "App developers notes":
     [
       {
         "name": "1. Introduction",
