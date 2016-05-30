@@ -51,7 +51,7 @@ System.config({
     "text": "github:systemjs/plugin-text@0.0.4",
     "github:Dogfalo/materialize@0.97.6": {
       "css": "github:systemjs/plugin-css@0.1.20",
-      "jquery": "npm:jquery@2.2.4"
+      "jquery": "github:components/jquery@2.1.4"
     },
     "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master": {
       "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.6",
@@ -287,8 +287,15 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:config-chain@1.1.10": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "events": "github:jspm/nodelibs-events@0.1.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "http": "github:jspm/nodelibs-http@1.7.1",
       "ini": "npm:ini@1.3.4",
-      "proto-list": "npm:proto-list@1.2.4"
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "proto-list": "npm:proto-list@1.2.4",
+      "url": "github:jspm/nodelibs-url@0.1.0"
     },
     "npm:core-js@1.2.6": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -430,22 +437,26 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:yargs@3.32.0": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0",
       "camelcase": "npm:camelcase@2.1.1",
       "cliui": "npm:cliui@3.2.0",
       "decamelize": "npm:decamelize@1.2.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
       "os-locale": "npm:os-locale@1.4.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
       "string-width": "npm:string-width@1.0.1",
       "window-size": "npm:window-size@0.1.4",
       "y18n": "npm:y18n@3.2.1"
     }
   },
   "bundles": {
-    "materialize-b8d6787800": [
+    "materialize-9c00d48a1a": [
       "github:Dogfalo/materialize@0.97.6",
       "github:Dogfalo/materialize@0.97.6/css/materialize.css!github:systemjs/plugin-css@0.1.20",
       "github:Dogfalo/materialize@0.97.6/js/materialize",
-      "npm:jquery@2.2.4",
-      "npm:jquery@2.2.4/dist/jquery"
+      "github:components/jquery@2.1.4",
+      "github:components/jquery@2.1.4/jquery"
     ],
     "app-build-63e1a2ffe0": [
       "about/about",
