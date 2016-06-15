@@ -15,11 +15,11 @@
     "Preloader": { "moduleId": "progress", "status": "done" }
   },
   "Javascript": {
-    "Collapsible": { "status": "wip" },
+    "Collapsible": { "status": "done" },
     "Dialogs (toast/tooltip)": { "moduleId": "dialogs", "status": "done" },
     "Dropdown": { "status": "done" },
     "Media (Box/Slider/Carousel)": { "moduleId": "media", "status": "done" },
-    "Modals": { "status": "wip" },
+    "Modals": { "status": "done" },
     "Parallax": { "status": "done" },
     "Pushpin": { "status": "done" },
     "Scrollfire": { "status": "done" },
