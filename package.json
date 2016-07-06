@@ -77,7 +77,7 @@
       "aurelia-http-client": "npm:aurelia-http-client@^1.0.0-beta.1",
       "aurelia-loader": "npm:aurelia-loader@^1.0.0-beta.1",
       "aurelia-logging": "npm:aurelia-logging@^1.0.0-beta.1",
-      "aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@^0.9.0",
+      "aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@^0.10.0",
       "aurelia-metadata": "npm:aurelia-metadata@^1.0.0-beta.1",
       "aurelia-pal": "npm:aurelia-pal@^1.0.0-beta.1.0.2",
       "aurelia-polyfills": "npm:aurelia-polyfills@^1.0.0-beta.1.0.1",
