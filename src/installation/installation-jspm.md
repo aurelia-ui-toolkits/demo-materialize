@@ -9,11 +9,18 @@ In your project install the plugin via jspm with the following command:
 ```
 
 Make sure you also install Materialize. There are several options available. Not concerning forks, these are available:
-(<span style="color: red;">github</span>) 
-```$ jspm install materialize=github:Dogfalo/materialize```
 
-(<span style="color: red;">npm</span>)
-```$ jspm install materialize-css```
+<span style="color: red;">github</span> 
+
+```
+$ jspm install materialize=github:Dogfalo/materialize
+```
+
+<span style="color: red;">npm</span>
+
+```
+$ jspm install materialize-css
+```
 
 #### Configure your app
 
