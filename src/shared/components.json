@@ -31,11 +31,12 @@
   },
   "Forms": {
     "Input fields": { "moduleId": "input", "status": "done" },
-    "Select": { "status": "wip" },
+    "Select": { "status": "done" },
     "Radio buttons": { "moduleId": "radio", "status": "done" },
     "Checkbox/Switch": { "moduleId": "checkbox", "status": "done" },
     "File input button": { "moduleId": "file", "status": "done" },
     "Range": { "status": "done" },
-    "DatePicker": { "status": "done" }
+    "DatePicker": { "status": "done" },
+    "AutoComplete": { "status": "wip" }
   }
 }
