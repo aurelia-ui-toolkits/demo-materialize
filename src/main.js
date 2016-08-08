@@ -1,11 +1,16 @@
 import 'materialize';
 
 //Configure Bluebird Promises.
-Promise.config({
-  warnings: {
-    wForgottenReturn: false
-  }
-});
+if (Promise.config) {
+    Promise.config({
+      warnings: {
+        wForgottenReturn: false
+      }
+    });
+} else {
+    console.warn('Promise.config not found. Is bluebird loaded?')
+}
+
 
 export function configure(aurelia) {
   aurelia.use
