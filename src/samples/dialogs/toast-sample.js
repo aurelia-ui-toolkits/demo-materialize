@@ -11,6 +11,10 @@ export class Toasts {
     this.toast.show('I am a toast!', 4000);
   }
 
+  showStyledToast(){
+    this.toast.show("I've got style!", 4000, 'round blue')
+  }
+
   showToastWithPromise() {
     this.toast.show('When finished, I trigger another toast.', 4000).then(() => {
       this.toast.show('I am a toast called by a callback of another toast!', 4000);
