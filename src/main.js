@@ -51,7 +51,8 @@ export function configure(aurelia) {
         .useTransitions()
         .useWaves()
         .useWell();
-    });
+    })
+    .plugin('aurelia-validation');
 
   aurelia.use.globalResources('shared/collapse-panel');
   aurelia.use.globalResources('shared/markdown');
