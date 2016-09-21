@@ -468,7 +468,7 @@ System.config({
       "npm:jquery@2.2.4",
       "npm:jquery@2.2.4/dist/jquery"
     ],
-    "app-build-2fcac13078": [
+    "app-build-3c2c45fe81": [
       "about/about",
       "about/about.html!github:systemjs/plugin-text@0.0.4",
       "app",
@@ -528,6 +528,7 @@ System.config({
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/dropdown/dropdown",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/dropdown/dropdown-element",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/dropdown/dropdown-element.html!github:systemjs/plugin-text@0.0.4",
+      "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/dropdown/dropdown-fix",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/fab/fab",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/fab/fab.html!github:systemjs/plugin-text@0.0.4",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/file/file",
