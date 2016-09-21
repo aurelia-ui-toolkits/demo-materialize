@@ -19,11 +19,19 @@ Add the following files to your project root directory:
 <a target="_blank" href="https://github.com/aurelia-ui-toolkits/aurelia-materialize-bridge/blob/master/build/tools/rbuild.js">rbuild.js</a>
 and <a target="_blank" href="https://github.com/aurelia-ui-toolkits/aurelia-materialize-bridge/blob/master/build/tools/materialize-css.js">materialize-css.js</a>
 
-Run this command to create an amd compatible version of Materialize:
+Run the following command to create an amd compatible version of Materialize.
+**Note**: run this in a bash-compatible shell like "gitbash" which comes with Git for Windows.
 
 ```
   $ ./node_modules/.bin/r.js -o rbuild.js
 ```
+
+If this fails on Windows or if you don't want to use a bash-compatible shell, try this:
+
+```
+  $ ./node_modules/.bin/r.js -o rbuild.js
+```
+
 
 Install the bridge:
 
@@ -61,7 +69,7 @@ Apply the following changes to `aurelia_project/aurelia.json`:
   },
   ```
 
-* add this to bundles.dependencies:
+* add this to bundles.dependencies in your `aurelia_project/aurelia.json`:
 
   ```json
   {
@@ -76,6 +84,7 @@ Apply the following changes to `aurelia_project/aurelia.json`:
     "deps": [
       "jquery"
     ],
+    "exports": "Materialize",
     "resources": [
       "css/materialize.css"
     ]
@@ -162,6 +171,12 @@ Apply the following changes to `aurelia_project/aurelia.json`:
   ```
 
   At the end of this page is a full list of currently available options.
+
+3. Add this to `app.html` in your `src` folder:
+
+  ```html
+  <require from="materialize-css/css/materialize.css"></require>
+  ```
 
 #### You are done!
 It is now possible to drop some custom-elements into your DOM. See the other pages on this website for detailed information on how to do this.

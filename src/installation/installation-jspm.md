@@ -39,21 +39,32 @@ $ jspm install materialize-css
 2. Update  `main.js` in your `src` folder with following content:
 
   ```javascript
-  import 'materialize'; // ONLY when using the "github" option above
-  import 'materialize-css'; // ONLY when using the "npm" option above
-
   export function configure(aurelia) {
-    aurelia.use
-      .standardConfiguration()
-      .developmentLogging()
-      // Install and configure the plugin
-      .plugin('aurelia-materialize-bridge', bridge => bridge.useAll() );
+    // These variables are only here to be able to distinguish between the two
+    // installation options presented above.
+    // Of course you can use the correct name directly in the import below.
 
-  aurelia.start().then(a => a.setRoot());
+    let materialize = 'materialize'; // ONLY when using the "github" option above
+    let materialize = 'materialize-css'; // ONLY when using the "npm" option above
+
+    return System.import(materialize).then(() => {
+      aurelia.use
+        .standardConfiguration()
+        .developmentLogging()
+        // Install and configure the plugin
+        .plugin('aurelia-materialize-bridge', bridge => bridge.useAll() );
+
+      return aurelia.start().then(a => a.setRoot());
+    }
   }
   ```
 
   Please make sure that you use **only one** of the imports shown above.
+
+  **Note:** You could just `import 'materialize'` into your app but since
+  Materialize is not a direct dependency of this bridge anymore, it may get loaded
+  asynchronously. This may lead to Materialize being initialized *after* components
+  are `attached()` which essentally applies Materialize twice.
 
   **Note:** The above shows how to use all available controls at once. If you choose to pick which you'd like to use, you can ```use``` single components like this:
 
