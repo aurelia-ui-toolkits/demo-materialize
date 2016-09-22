@@ -13,7 +13,12 @@ In your project install the plugin via npm with the following command:
   ```html
   <body aurelia-app="main">
   ...
-```
+  ```
+
+  For Material Design icons include this in your `index.html` head section:
+  ```html
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  ```
 
 2. Update  `main.js` in your `src` folder with following content:
 
@@ -43,11 +48,32 @@ In your project install the plugin via npm with the following command:
   });
   ```
 
-  Here is a full list of currently available options:
+  At the end of this page is a full list of currently available options.
 
-  ```javascript
-  .plugin('aurelia-materialize-bridge', bridge => {
-    bridge
+3. Import css:
+
+  ```html
+  <require from="materialize-css/bin/materialize.css"></require>
+  ```
+
+**<span style="color: red;">Important</span> (uglify-js users)**:
+
+When using aurelia-materialize-bridge (and thus materialize) via webpack with the UglifyJS-plugin (standard in aurelia webpack skeleton production build) you have to make sure to except the materialize module (via exclude: ['materialize'] if your module is named materialize) from the UglifyJS plugin. Otherwise the names will be mangled and the materialize module won't load correctly (missing dropdown). Another option would be to disable mangle as a global setting on the UglifyJS settings object.
+
+- Thanks to @JoschaMetze for mentioning this  
+
+#### You are done!
+It is now possible to drop some custom-elements into your DOM. See the other pages on this website for detailed information on how to do this.
+
+**Now you might want to do our <a href="https://aurelia-ui-toolkits.gitbooks.io/materialize-bridge-docs/content/app_developers_tutorial/introduction.html" target="_blank">app developers tutorial</a>, based on Aurelia Skeleton navigation.**
+
+
+  As described above, here is a full list of currently available options:
+
+```javascript
+aurelia.use.plugin('aurelia-materialize-bridge', bridge => {
+  bridge
+    .useAutoComplete()
     .useBadge()
     .useBreadcrumbs()
     .useBox()
@@ -85,22 +111,5 @@ In your project install the plugin via npm with the following command:
     .useTransitions()
     .useWaves()
     .useWell();
-  });
-  ```
-
-3. Import css:
-
-  ```html
-  <require from="materialize-css/bin/materialize.css"></require>
-  ```
-
-**<span style="color: red;">Important</span> (uglify-js users)**:
-
-When using aurelia-materialize-bridge (and thus materialize) via webpack with the UglifyJS-plugin (standard in aurelia webpack skeleton production build) you have to make sure to except the materialize module (via exclude: ['materialize'] if your module is named materialize) from the UglifyJS plugin. Otherwise the names will be mangled and the materialize module won't load correctly (missing dropdown). Another option would be to disable mangle as a global setting on the UglifyJS settings object.
-
-- Thanks to @JoschaMetze for mentioning this  
-
-#### You are done!
-It is now possible to drop some custom-elements into your DOM. See the other pages on this website for detailed information on how to do this.
-
-**Now you might want to do our <a href="https://aurelia-ui-toolkits.gitbooks.io/materialize-bridge-docs/content/app_developers_tutorial/introduction.html" target="_blank">app developers tutorial</a>.**
+});
+```
