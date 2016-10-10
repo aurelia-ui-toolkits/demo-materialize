@@ -7,7 +7,6 @@
   }
 });
 
-
 export function configure(aurelia) {
   return System.import('materialize').then(() => {
     aurelia.use
