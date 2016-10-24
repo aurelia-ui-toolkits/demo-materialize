@@ -29,7 +29,7 @@ var aureliaBundle = [
 
 var pluginsBundle = [
   "[aurelia-materialize-bridge]",
-  "[aurelia-materialize-bridge/**/*]",
+  "[aurelia-materialize-bridge/**/*.js]",
   "aurelia-materialize-bridge/**/*.css!text",
   "aurelia-materialize-bridge/**/*.html!text",
   "showdown",
