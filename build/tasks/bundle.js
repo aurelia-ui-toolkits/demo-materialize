@@ -8,7 +8,7 @@ var config = {
   bundles: bundles.bundles
 };
 
-gulp.task('bundle', function() {
+gulp.task('bundle', ['unbundle', 'clean'], function() {
   return bundler.bundle(config);
 });
 
