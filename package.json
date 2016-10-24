@@ -20,7 +20,8 @@
   },
   "scripts": {
     "test": "gulp test",
-    "e2e": "gulp serve e2e"
+    "e2e": "gulp serve e2e",
+    "start": "gulp watch"
   },
   "devDependencies": {
     "aurelia-bundler": "^0.2.1",
