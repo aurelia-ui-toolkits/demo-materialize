@@ -39,18 +39,18 @@ System.config({
     "clean-css": "npm:clean-css@3.4.20",
     "core-js": "npm:core-js@1.2.7",
     "css": "github:systemjs/plugin-css@0.1.20",
-    "font-awesome": "npm:font-awesome@4.6.3",
+    "font-awesome": "npm:font-awesome@4.7.0",
     "google/code-prettify": "github:google/code-prettify@master",
     "jquery": "npm:jquery@2.2.4",
     "json": "github:systemjs/plugin-json@0.1.2",
-    "materialize": "github:Dogfalo/materialize@0.97.7",
+    "materialize": "github:Dogfalo/materialize@0.97.8",
     "nprogress": "github:rstacruz/nprogress@0.2.0",
     "prettify": "npm:prettify@0.1.7",
     "prism": "github:PrismJS/prism@1.3.0",
     "showdown": "github:showdownjs/showdown@1.3.0",
     "showdown-prettify": "npm:showdown-prettify@1.3.0",
     "text": "github:systemjs/plugin-text@0.0.4",
-    "github:Dogfalo/materialize@0.97.7": {
+    "github:Dogfalo/materialize@0.97.8": {
       "css": "github:systemjs/plugin-css@0.1.20",
       "jquery": "npm:jquery@2.2.4"
     },
@@ -64,7 +64,7 @@ System.config({
       "aurelia-task-queue": "npm:aurelia-task-queue@1.1.0",
       "aurelia-templating": "npm:aurelia-templating@1.1.2",
       "jquery": "npm:jquery@2.2.4",
-      "materialize": "github:Dogfalo/materialize@0.97.7"
+      "materialize": "github:Dogfalo/materialize@0.97.8"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -113,7 +113,7 @@ System.config({
     "github:rstacruz/nprogress@0.2.0": {
       "css": "github:systemjs/plugin-css@0.1.20"
     },
-    "npm:amdefine@1.0.0": {
+    "npm:amdefine@1.0.1": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "module": "github:jspm/nodelibs-module@0.1.0",
       "path": "github:jspm/nodelibs-path@0.1.0",
@@ -280,9 +280,6 @@ System.config({
       "strip-ansi": "npm:strip-ansi@3.0.1",
       "wrap-ansi": "npm:wrap-ansi@2.0.0"
     },
-    "npm:code-point-at@1.0.1": {
-      "number-is-nan": "npm:number-is-nan@1.0.1"
-    },
     "npm:commander@2.8.1": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
       "events": "github:jspm/nodelibs-events@0.1.1",
@@ -311,7 +308,7 @@ System.config({
     "npm:core-util-is@1.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
-    "npm:font-awesome@4.6.3": {
+    "npm:font-awesome@4.7.0": {
       "css": "github:systemjs/plugin-css@0.1.20"
     },
     "npm:graceful-readlink@1.0.1": {
@@ -393,16 +390,16 @@ System.config({
       "string_decoder": "npm:string_decoder@0.10.31"
     },
     "npm:showdown-prettify@1.3.0": {
-      "showdown": "npm:showdown@1.4.3"
+      "showdown": "npm:showdown@1.4.4"
     },
-    "npm:showdown@1.4.3": {
+    "npm:showdown@1.4.4": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2",
       "yargs": "npm:yargs@3.32.0"
     },
     "npm:source-map@0.4.4": {
-      "amdefine": "npm:amdefine@1.0.0",
+      "amdefine": "npm:amdefine@1.0.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:stream-browserify@1.0.0": {
@@ -411,7 +408,7 @@ System.config({
       "readable-stream": "npm:readable-stream@1.1.14"
     },
     "npm:string-width@1.0.2": {
-      "code-point-at": "npm:code-point-at@1.0.1",
+      "code-point-at": "npm:code-point-at@1.1.0",
       "is-fullwidth-code-point": "npm:is-fullwidth-code-point@1.0.0",
       "strip-ansi": "npm:strip-ansi@3.0.1"
     },
@@ -461,14 +458,14 @@ System.config({
     }
   },
   bundles: {
-    "materialize-45b78601da.js": [
-      "github:Dogfalo/materialize@0.97.7.js",
-      "github:Dogfalo/materialize@0.97.7/css/materialize.css!github:systemjs/plugin-css@0.1.20.js",
-      "github:Dogfalo/materialize@0.97.7/js/materialize.js",
+    "materialize-1fc02f35a3.js": [
+      "github:Dogfalo/materialize@0.97.8.js",
+      "github:Dogfalo/materialize@0.97.8/css/materialize.css!github:systemjs/plugin-css@0.1.20.js",
+      "github:Dogfalo/materialize@0.97.8/js/materialize.js",
       "npm:jquery@2.2.4.js",
       "npm:jquery@2.2.4/dist/jquery.js"
     ],
-    "app-build-de482fd38f.js": [
+    "app-build-5137bfb0c8.js": [
       "about/about.html!github:systemjs/plugin-text@0.0.4.js",
       "about/about.js",
       "app-colors.html!github:systemjs/plugin-text@0.0.4.js",
@@ -543,6 +540,7 @@ System.config({
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/input/input.html!github:systemjs/plugin-text@0.0.4.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/input/input.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/modal/modal-trigger.js",
+      "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/modal/modal.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/navbar/navbar.css!github:systemjs/plugin-text@0.0.4.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/navbar/navbar.html!github:systemjs/plugin-text@0.0.4.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/navbar/navbar.js",
@@ -1132,8 +1130,8 @@ System.config({
       "npm:process@0.11.9/browser.js",
       "npm:showdown-prettify@1.3.0.js",
       "npm:showdown-prettify@1.3.0/dist/showdown-prettify.js",
-      "npm:showdown@1.4.3.js",
-      "npm:showdown@1.4.3/dist/showdown.js",
+      "npm:showdown@1.4.4.js",
+      "npm:showdown@1.4.4/dist/showdown.js",
       "route-highlight.js",
       "settings.js",
       "shared/au-code.js",
