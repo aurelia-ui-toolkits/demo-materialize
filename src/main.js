@@ -1,11 +1,11 @@
 // import 'materialize';
 
 //Configure Bluebird Promises.
-(Promise.config || P.config)({
-  warnings: {
-    wForgottenReturn: false
-  }
-});
+// (Promise.config || P.config)({
+//   warnings: {
+//     wForgottenReturn: false
+//   }
+// });
 
 export function configure(aurelia) {
   return System.import('materialize').then(() => {
@@ -29,7 +29,7 @@ export function configure(aurelia) {
           .useColors()
           .useDatePicker()
           .useDropdown()
-          .useDropdownFix()
+          // .useDropdownFix()
           .useFab()
           .useFile()
           .useFooter()
