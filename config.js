@@ -465,7 +465,7 @@ System.config({
       "npm:jquery@2.2.4.js",
       "npm:jquery@2.2.4/dist/jquery.js"
     ],
-    "app-build-6aad7f2f65.js": [
+    "app-build-e3bdcb0c66.js": [
       "about/about.html!github:systemjs/plugin-text@0.0.4.js",
       "about/about.js",
       "app-colors.html!github:systemjs/plugin-text@0.0.4.js",
@@ -521,7 +521,7 @@ System.config({
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/common/events.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/common/polyfills.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/config-builder.js",
-      "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/datepicker/datepicker.default-parser.js",
+      "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/datepicker/datepicker-default-parser.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/datepicker/datepicker.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/dropdown/dropdown-element.html!github:systemjs/plugin-text@0.0.4.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/dropdown/dropdown-element.js",
