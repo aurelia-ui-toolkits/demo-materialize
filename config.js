@@ -24,9 +24,9 @@ System.config({
     "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.2.0",
     "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0",
     "aurelia-framework": "npm:aurelia-framework@1.0.7",
-    "aurelia-http-client": "npm:aurelia-http-client@1.0.2",
+    "aurelia-http-client": "npm:aurelia-http-client@1.0.3",
     "aurelia-loader": "npm:aurelia-loader@1.0.0",
-    "aurelia-logging": "npm:aurelia-logging@1.1.0",
+    "aurelia-logging": "npm:aurelia-logging@1.1.1",
     "aurelia-materialize-bridge": "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master",
     "aurelia-metadata": "npm:aurelia-metadata@1.0.2",
     "aurelia-pal": "npm:aurelia-pal@1.0.0",
@@ -57,7 +57,7 @@ System.config({
     "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master": {
       "aurelia-binding": "npm:aurelia-binding@1.0.9",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.2.0",
-      "aurelia-logging": "npm:aurelia-logging@1.1.0",
+      "aurelia-logging": "npm:aurelia-logging@1.1.1",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.2",
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
       "aurelia-router": "npm:aurelia-router@1.0.7",
@@ -126,7 +126,7 @@ System.config({
       "util": "npm:util@0.10.3"
     },
     "npm:aurelia-binding@1.0.9": {
-      "aurelia-logging": "npm:aurelia-logging@1.1.0",
+      "aurelia-logging": "npm:aurelia-logging@1.1.1",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.2",
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
       "aurelia-task-queue": "npm:aurelia-task-queue@1.1.0"
@@ -152,13 +152,13 @@ System.config({
       "aurelia-pal": "npm:aurelia-pal@1.0.0"
     },
     "npm:aurelia-event-aggregator@1.0.0": {
-      "aurelia-logging": "npm:aurelia-logging@1.1.0"
+      "aurelia-logging": "npm:aurelia-logging@1.1.1"
     },
     "npm:aurelia-framework@1.0.7": {
       "aurelia-binding": "npm:aurelia-binding@1.0.9",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.2.0",
       "aurelia-loader": "npm:aurelia-loader@1.0.0",
-      "aurelia-logging": "npm:aurelia-logging@1.1.0",
+      "aurelia-logging": "npm:aurelia-logging@1.1.1",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.2",
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
       "aurelia-path": "npm:aurelia-path@1.1.1",
@@ -169,7 +169,7 @@ System.config({
       "aurelia-history": "npm:aurelia-history@1.0.0",
       "aurelia-pal": "npm:aurelia-pal@1.0.0"
     },
-    "npm:aurelia-http-client@1.0.2": {
+    "npm:aurelia-http-client@1.0.3": {
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
       "aurelia-path": "npm:aurelia-path@1.1.1"
     },
@@ -183,7 +183,7 @@ System.config({
       "aurelia-path": "npm:aurelia-path@1.1.1"
     },
     "npm:aurelia-logging-console@1.0.0": {
-      "aurelia-logging": "npm:aurelia-logging@1.1.0"
+      "aurelia-logging": "npm:aurelia-logging@1.1.1"
     },
     "npm:aurelia-metadata@1.0.2": {
       "aurelia-pal": "npm:aurelia-pal@1.0.0"
@@ -201,7 +201,7 @@ System.config({
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.2.0",
       "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0",
       "aurelia-history": "npm:aurelia-history@1.0.0",
-      "aurelia-logging": "npm:aurelia-logging@1.1.0",
+      "aurelia-logging": "npm:aurelia-logging@1.1.1",
       "aurelia-path": "npm:aurelia-path@1.1.1",
       "aurelia-route-recognizer": "npm:aurelia-route-recognizer@1.1.0"
     },
@@ -210,14 +210,14 @@ System.config({
     },
     "npm:aurelia-templating-binding@1.0.0": {
       "aurelia-binding": "npm:aurelia-binding@1.0.9",
-      "aurelia-logging": "npm:aurelia-logging@1.1.0",
+      "aurelia-logging": "npm:aurelia-logging@1.1.1",
       "aurelia-templating": "npm:aurelia-templating@1.1.2"
     },
     "npm:aurelia-templating-resources@1.1.1": {
       "aurelia-binding": "npm:aurelia-binding@1.0.9",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.2.0",
       "aurelia-loader": "npm:aurelia-loader@1.0.0",
-      "aurelia-logging": "npm:aurelia-logging@1.1.0",
+      "aurelia-logging": "npm:aurelia-logging@1.1.1",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.2",
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
       "aurelia-path": "npm:aurelia-path@1.1.1",
@@ -226,7 +226,7 @@ System.config({
     },
     "npm:aurelia-templating-router@1.0.0": {
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.2.0",
-      "aurelia-logging": "npm:aurelia-logging@1.1.0",
+      "aurelia-logging": "npm:aurelia-logging@1.1.1",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.2",
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
       "aurelia-path": "npm:aurelia-path@1.1.1",
@@ -237,7 +237,7 @@ System.config({
       "aurelia-binding": "npm:aurelia-binding@1.0.9",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.2.0",
       "aurelia-loader": "npm:aurelia-loader@1.0.0",
-      "aurelia-logging": "npm:aurelia-logging@1.1.0",
+      "aurelia-logging": "npm:aurelia-logging@1.1.1",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.2",
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
       "aurelia-path": "npm:aurelia-path@1.1.1",
@@ -246,7 +246,7 @@ System.config({
     "npm:aurelia-validation@0.12.5": {
       "aurelia-binding": "npm:aurelia-binding@1.0.9",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.2.0",
-      "aurelia-logging": "npm:aurelia-logging@1.1.0",
+      "aurelia-logging": "npm:aurelia-logging@1.1.1",
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
       "aurelia-task-queue": "npm:aurelia-task-queue@1.1.0",
       "aurelia-templating": "npm:aurelia-templating@1.1.2"
@@ -390,9 +390,9 @@ System.config({
       "string_decoder": "npm:string_decoder@0.10.31"
     },
     "npm:showdown-prettify@1.3.0": {
-      "showdown": "npm:showdown@1.4.4"
+      "showdown": "npm:showdown@1.5.0"
     },
-    "npm:showdown@1.4.4": {
+    "npm:showdown@1.5.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2",
