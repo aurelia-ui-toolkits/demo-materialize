@@ -1,14 +1,17 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Aurelia Materialize Catalog</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+<head>
+  <title>Aurelia Materialize Catalog</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
 
-  <body aurelia-app="main">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="hiddendiv"></div>
+  <div aurelia-app="main">
     <div class="splash">
       <div class="message">Aurelia Materialize</div>
       <!-- <i class="fa fa-spinner fa-spin"></i> -->
@@ -64,13 +67,15 @@
       </div>
 
     </div>
+  </div>
 
-    <script src="vendor/bluebird.js"></script>
-    <script src="jspm_packages/system.js"></script>
-    <script src="config.js"></script>
-    <script>
+  <script src="vendor/bluebird.js"></script>
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script>
       System.import('materialize/css/materialize.css!');
       System.import('aurelia-bootstrapper');
     </script>
-  </body>
+</body>
+
 </html>

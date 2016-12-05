@@ -2,9 +2,9 @@
 
 //Configure Bluebird Promises.
 // (Promise.config || P.config)({
-  // warnings: {
-    // wForgottenReturn: false
-  // }
+//   warnings: {
+//     wForgottenReturn: false
+//   }
 // });
 
 export function configure(aurelia) {
