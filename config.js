@@ -1,24 +1,24 @@
 System.config({
-  defaultJSExtensions: true,
-  transpiler: "babel",
-  babelOptions: {
+  "defaultJSExtensions": true,
+  "transpiler": "babel",
+  "babelOptions": {
     "optional": [
       "optimisation.modules.system",
       "es7.decorators",
       "es7.classProperties"
     ]
   },
-  paths: {
+  "paths": {
     "*": "src/*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-  meta: {
+  "meta": {
     "showdown/dist/showdown": {
       "format": "global"
     }
   },
-  map: {
+  "map": {
     "aurelia-binding": "npm:aurelia-binding@1.0.9",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.1",
     "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.2.0",
@@ -444,17 +444,13 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:yargs@3.32.0": {
-      "assert": "github:jspm/nodelibs-assert@0.1.0",
       "camelcase": "npm:camelcase@2.1.1",
       "cliui": "npm:cliui@3.2.0",
       "decamelize": "npm:decamelize@1.2.0",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
       "os-locale": "npm:os-locale@1.4.0",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2",
       "string-width": "npm:string-width@1.0.2",
       "window-size": "npm:window-size@0.1.4",
       "y18n": "npm:y18n@3.2.1"
     }
   }
-});
+})
