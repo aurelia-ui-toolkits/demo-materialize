@@ -463,7 +463,7 @@ System.config({
       "npm:jquery@2.2.4",
       "npm:jquery@2.2.4/dist/jquery"
     ],
-    "app-build-7e0b5b81ac": [
+    "app-build-1355b1aad2": [
       "about/about",
       "about/about.html!github:systemjs/plugin-text@0.0.4",
       "app",
