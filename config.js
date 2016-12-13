@@ -467,7 +467,7 @@ System.config({
       "npm:jquery@2.2.4.js",
       "npm:jquery@2.2.4/dist/jquery.js"
     ],
-    "app-build-efd41d4f17.js": [
+    "app-build-83a8c6eb9a.js": [
       "about/about.html!github:systemjs/plugin-text@0.0.4.js",
       "about/about.js",
       "app-colors.html!github:systemjs/plugin-text@0.0.4.js",
@@ -612,6 +612,8 @@ System.config({
       "npm:aurelia-history-browser@1.0.0/aurelia-history-browser.js",
       "npm:aurelia-history@1.0.0.js",
       "npm:aurelia-history@1.0.0/aurelia-history.js",
+      "npm:aurelia-http-client@1.0.3.js",
+      "npm:aurelia-http-client@1.0.3/aurelia-http-client.js",
       "npm:aurelia-loader-default@1.0.0.js",
       "npm:aurelia-loader-default@1.0.0/aurelia-loader-default.js",
       "npm:aurelia-loader@1.0.0.js",
