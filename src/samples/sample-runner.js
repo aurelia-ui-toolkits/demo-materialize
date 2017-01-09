@@ -60,7 +60,6 @@ export class SampleRunner {
       // }
 
       // resolve();
-      
       window.setTimeout(() => {
         this.loading = false;
         resolve();
