@@ -1,11 +1,11 @@
 // import 'materialize';
 
 //Configure Bluebird Promises.
-(Promise.config || P.config)({
-  warnings: {
-    wForgottenReturn: false
-  }
-});
+// (Promise.config || P.config)({
+  // warnings: {
+    // wForgottenReturn: false
+  // }
+// });
 
 export function configure(aurelia) {
   return aurelia.loader.loadModule('materialize').then(() => {
