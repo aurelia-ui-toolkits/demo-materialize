@@ -36,14 +36,14 @@ System.config({
     "aurelia-validation": "npm:aurelia-validation@1.0.0-beta.1.0.1",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
-    "clean-css": "npm:clean-css@3.4.23",
+    "clean-css": "npm:clean-css@3.4.24",
     "core-js": "npm:core-js@1.2.7",
     "css": "github:systemjs/plugin-css@0.1.20",
     "font-awesome": "npm:font-awesome@4.7.0",
     "google/code-prettify": "github:google/code-prettify@master",
     "jquery": "npm:jquery@2.2.4",
     "json": "github:systemjs/plugin-json@0.1.2",
-    "materialize": "github:Dogfalo/materialize@0.97.8",
+    "materialize": "github:Dogfalo/materialize@0.98.0",
     "nprogress": "github:rstacruz/nprogress@0.2.0",
     "prettify": "npm:prettify@0.1.7",
     "prism": "github:PrismJS/prism@1.3.0",
@@ -51,6 +51,10 @@ System.config({
     "showdown-prettify": "npm:showdown-prettify@1.3.0",
     "text": "github:systemjs/plugin-text@0.0.4",
     "github:Dogfalo/materialize@0.97.8": {
+      "css": "github:systemjs/plugin-css@0.1.20",
+      "jquery": "npm:jquery@2.2.4"
+    },
+    "github:Dogfalo/materialize@0.98.0": {
       "css": "github:systemjs/plugin-css@0.1.20",
       "jquery": "npm:jquery@2.2.4"
     },
@@ -64,7 +68,7 @@ System.config({
       "aurelia-task-queue": "npm:aurelia-task-queue@1.1.0",
       "aurelia-templating": "npm:aurelia-templating@1.2.0",
       "jquery": "npm:jquery@2.2.4",
-      "materialize": "github:Dogfalo/materialize@0.97.8"
+      "materialize": "github:Dogfalo/materialize@0.98.0"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -267,7 +271,7 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
-    "npm:clean-css@3.4.23": {
+    "npm:clean-css@3.4.24": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "commander": "npm:commander@2.8.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -480,9 +484,9 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:showdown-prettify@1.3.0": {
-      "showdown": "npm:showdown@1.6.0"
+      "showdown": "npm:showdown@1.6.2"
     },
-    "npm:showdown@1.6.0": {
+    "npm:showdown@1.6.2": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2",
@@ -517,7 +521,7 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
     "npm:strip-ansi@3.0.1": {
-      "ansi-regex": "npm:ansi-regex@2.0.0"
+      "ansi-regex": "npm:ansi-regex@2.1.1"
     },
     "npm:strip-bom@2.0.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -576,14 +580,14 @@ System.config({
     }
   },
   bundles: {
-    "materialize-ca612d5fa4.js": [
-      "github:Dogfalo/materialize@0.97.8.js",
-      "github:Dogfalo/materialize@0.97.8/css/materialize.css!github:systemjs/plugin-css@0.1.20.js",
-      "github:Dogfalo/materialize@0.97.8/js/materialize.js",
+    "materialize-30189672e8.js": [
+      "github:Dogfalo/materialize@0.98.0.js",
+      "github:Dogfalo/materialize@0.98.0/css/materialize.css!github:systemjs/plugin-css@0.1.20.js",
+      "github:Dogfalo/materialize@0.98.0/js/materialize.js",
       "npm:jquery@2.2.4.js",
       "npm:jquery@2.2.4/dist/jquery.js"
     ],
-    "app-build-ef1475567d.js": [
+    "app-build-64d80c0a42.js": [
       "about/about.html!github:systemjs/plugin-text@0.0.4.js",
       "about/about.js",
       "app-colors.html!github:systemjs/plugin-text@0.0.4.js",
@@ -1251,8 +1255,8 @@ System.config({
       "npm:process@0.11.9/browser.js",
       "npm:showdown-prettify@1.3.0.js",
       "npm:showdown-prettify@1.3.0/dist/showdown-prettify.js",
-      "npm:showdown@1.6.0.js",
-      "npm:showdown@1.6.0/dist/showdown.js",
+      "npm:showdown@1.6.2.js",
+      "npm:showdown@1.6.2/dist/showdown.js",
       "route-highlight.js",
       "settings.js",
       "shared/au-code.js",

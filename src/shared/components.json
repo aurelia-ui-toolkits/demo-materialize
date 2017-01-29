@@ -19,7 +19,8 @@
           "default": true,
           "gist": "1de36c8c3739a233656def9fb66b3ab0"
         },
-        "badges-in-dropdown": "3199e3e3cf436ccadca30fcc4f0b45a2"
+        "badges-in-dropdown": "3199e3e3cf436ccadca30fcc4f0b45a2",
+        "badge-with-custom-caption": "7d087a011cf7a0c3341eae48eb1f4ed6"
       }
     },
     "Button": {
@@ -59,7 +60,9 @@
           "default": true,
           "gist": "7f8c36b1151d5d43cad0d93ce4389e2f"
         },
-        "editor": "3fc5244efdde52fa68d25220a443359c"
+        "editor": "3fc5244efdde52fa68d25220a443359c",
+        "events": "16f6f22924c8405f1c54bd8d4b9a2b59",
+        "autocomplete": "01dc072eba5c62144284eb14c9ff2265"
       }
     },
     "Collections": {
@@ -271,7 +274,8 @@
         "events": "932f9f95c0c198f91bf91c45a0561a0f",
         "api": "6a238e618806289a3800dd4560cf1959",
         "tabs-in-navbar": "e0038b59a779f57f9079058c5910ce77",
-        "dynamic": "d0e8387e57ddd52e203bfe37a2bf03dd"
+        "dynamic": "d0e8387e57ddd52e203bfe37a2bf03dd",
+        "swipeable": "28e13d1424552d4b5787c0c70141f9fc"
       }
     },
     "Transitions": {
@@ -409,7 +413,8 @@
           "gist": "84902f36468f914041ef1b2244ed6804"
         },
         "wait-cursor": "94945f3ead604a6b86ac2c318b51c4e9",
-        "datepicker-label": "975bb3889aaf8ba0622f5cd5affd61c6"
+        "datepicker-label": "975bb3889aaf8ba0622f5cd5affd61c6",
+        "prevent-collapsible-event": "dae9e6f50033374381b9d991f921b42c"
       }
     }
   }
