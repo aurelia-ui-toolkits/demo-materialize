@@ -587,7 +587,7 @@ System.config({
       "npm:jquery@2.2.4.js",
       "npm:jquery@2.2.4/dist/jquery.js"
     ],
-    "app-build-64d80c0a42.js": [
+    "app-build-a2caae9776.js": [
       "about/about.html!github:systemjs/plugin-text@0.0.4.js",
       "about/about.js",
       "app-colors.html!github:systemjs/plugin-text@0.0.4.js",
@@ -699,6 +699,8 @@ System.config({
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/validation/validationRenderer.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/waves/waves.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/well/md-well.html!github:systemjs/plugin-text@0.0.4.js",
+      "github:google/code-prettify@master.js",
+      "github:google/code-prettify@master/prettify.js",
       "github:jspm/nodelibs-process@0.1.2.js",
       "github:jspm/nodelibs-process@0.1.2/index.js",
       "github:rstacruz/nprogress@0.2.0.js",
