@@ -587,7 +587,7 @@ System.config({
       "npm:jquery@2.2.4.js",
       "npm:jquery@2.2.4/dist/jquery.js"
     ],
-    "app-build-2c6a4d03aa.js": [
+    "app-build-a2483b8ead.js": [
       "about/about.html!github:systemjs/plugin-text@0.0.4.js",
       "about/about.js",
       "app-colors.html!github:systemjs/plugin-text@0.0.4.js",
@@ -731,6 +731,7 @@ System.config({
       "github:google/code-prettify@master/lang-wiki.js",
       "github:google/code-prettify@master/lang-xq.js",
       "github:google/code-prettify@master/lang-yaml.js",
+      "github:google/code-prettify@master/prettify.css!github:systemjs/plugin-text@0.0.4.js",
       "github:google/code-prettify@master/prettify.js",
       "github:google/code-prettify@master/run_prettify.js",
       "github:jspm/nodelibs-process@0.1.2.js",
