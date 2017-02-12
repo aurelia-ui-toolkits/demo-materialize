@@ -343,7 +343,7 @@ System.config({
     "npm:graceful-readlink@1.0.1": {
       "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
-    "npm:hosted-git-info@2.1.5": {
+    "npm:hosted-git-info@2.2.0": {
       "url": "github:jspm/nodelibs-url@0.1.0"
     },
     "npm:https-browserify@0.0.0": {
@@ -401,7 +401,7 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:normalize-package-data@2.3.5": {
-      "hosted-git-info": "npm:hosted-git-info@2.1.5",
+      "hosted-git-info": "npm:hosted-git-info@2.2.0",
       "is-builtin-module": "npm:is-builtin-module@1.0.0",
       "semver": "npm:semver@5.3.0",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2",
@@ -484,9 +484,9 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:showdown-prettify@1.3.0": {
-      "showdown": "npm:showdown@1.6.2"
+      "showdown": "npm:showdown@1.6.4"
     },
-    "npm:showdown@1.6.2": {
+    "npm:showdown@1.6.4": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2",
@@ -587,7 +587,7 @@ System.config({
       "npm:jquery@2.2.4.js",
       "npm:jquery@2.2.4/dist/jquery.js"
     ],
-    "app-build-112d4959e3.js": [
+    "app-build-2c6a4d03aa.js": [
       "about/about.html!github:systemjs/plugin-text@0.0.4.js",
       "about/about.js",
       "app-colors.html!github:systemjs/plugin-text@0.0.4.js",
@@ -1289,8 +1289,8 @@ System.config({
       "npm:process@0.11.9/browser.js",
       "npm:showdown-prettify@1.3.0.js",
       "npm:showdown-prettify@1.3.0/dist/showdown-prettify.js",
-      "npm:showdown@1.6.2.js",
-      "npm:showdown@1.6.2/dist/showdown.js",
+      "npm:showdown@1.6.4.js",
+      "npm:showdown@1.6.4/dist/showdown.js",
       "route-highlight.js",
       "settings.js",
       "shared/au-code.js",
