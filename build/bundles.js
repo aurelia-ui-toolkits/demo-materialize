@@ -17,6 +17,7 @@ var nonSampleBundle = [
 var aureliaBundle = [
   "aurelia-framework",
   "aurelia-bootstrapper",
+  "aurelia-http-client",
   "aurelia-router",
   "aurelia-templating-binding",
   "aurelia-templating-resources",
@@ -41,7 +42,9 @@ var pluginsBundle = [
   "json",
   "core-js/library/**/*",
   "babel",
-  'showdown-prettify'
+  'showdown-prettify',
+  "google/code-prettify/*.js",
+  "google/code-prettify/*.css!text"
 ];
 
 // concatenate all bundle definitions
