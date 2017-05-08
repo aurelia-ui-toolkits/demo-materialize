@@ -12,7 +12,8 @@ gulp.task('deploy-gh-pages', function() {
     './vendor/bluebird.min.js',
     './jspm_packages/*.js', // include system.js
     './jspm_packages/github/PrismJS/prism*/themes/*.css',
-    './jspm_packages/github/google/code-prettify/**/*',
+    './jspm_packages/github/google/*',
+    './jspm_packages/github/google/**/*',
     './jspm_packages/npm/babel-runtime*/**/*',
     './index.html',
     './favicon.ico',
