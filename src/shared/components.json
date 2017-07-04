@@ -60,8 +60,8 @@
           "default": true,
           "gist": "7f8c36b1151d5d43cad0d93ce4389e2f"
         },
-        "editor": "3fc5244efdde52fa68d25220a443359c",
-        "events": "16f6f22924c8405f1c54bd8d4b9a2b59",
+        "editor": "88627b078c726f0918fd43571185d52e",
+        "events": "3e32f3ffbb10755250790636f569619e",
         "autocomplete": "01dc072eba5c62144284eb14c9ff2265"
       }
     },
@@ -261,7 +261,8 @@
         },
         "options": "d394011184cbd5d1df1edbfb3a1fa009",
         "fixed-sidenav": "38098f4618ca84d3cc2710648afc7053",
-        "controller": "cfed100e08d04de0f4e480cee98bfac0"
+        "controller": "cfed100e08d04de0f4e480cee98bfac0",
+        "events": "c9cc3a3cbd22e47ab9ab9add89888fb6"
       }
     },
     "Tabs": {
@@ -337,7 +338,8 @@
         "binding-to-objects": "ab6f81744f4b0fa8a93e509ad95604ff",
         "refresh": "ac63c711d88089b5e98aa0dee6ed2c62",
         "validation": "f3fe5a7dd8042ff110473ab8e3d4594e",
-        "filtered-repeat": "767feb33eeee670625180aaeac414c98"
+        "filtered-repeat": "767feb33eeee670625180aaeac414c98",
+        "open-trigger": "84aa19b62f83ad66132e2eb84baecc10"
       }
     },
     "Radio buttons": {
@@ -410,6 +412,15 @@
         "basic-use": {
           "default": true,
           "gist": "f0d0d2059b5c5f01970cd494260099fc"
+        }
+      }
+    },
+    "TimePicker": {
+      "status": "wip",
+      "samples":{
+        "basic-use":{
+          "default": true,
+          "gist": "dbc68795d93a7b32e90c898a068a1b67"
         }
       }
     }
