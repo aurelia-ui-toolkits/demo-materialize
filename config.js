@@ -43,7 +43,8 @@ System.config({
     "google/code-prettify": "github:google/code-prettify@master",
     "jquery": "npm:jquery@3.2.1",
     "json": "github:systemjs/plugin-json@0.1.2",
-    "materialize": "npm:materialize-css@0.99.0",
+    "materialize": "npm:materialize-css@0.100.1",
+    "materialize-css": "npm:materialize-css@0.100.1",
     "nprogress": "github:rstacruz/nprogress@0.2.0",
     "prettify": "npm:prettify@0.1.7",
     "prism": "github:PrismJS/prism@1.3.0",
@@ -64,7 +65,7 @@ System.config({
       "assert": "npm:assert@1.4.1"
     },
     "github:jspm/nodelibs-buffer@0.1.1": {
-      "buffer": "npm:buffer@5.0.6"
+      "buffer": "npm:buffer@5.0.7"
     },
     "github:jspm/nodelibs-constants@0.1.0": {
       "constants-browserify": "npm:constants-browserify@0.0.1"
@@ -249,7 +250,7 @@ System.config({
     "npm:babel-runtime@5.8.38": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:buffer@5.0.6": {
+    "npm:buffer@5.0.7": {
       "base64-js": "npm:base64-js@1.2.1",
       "ieee754": "npm:ieee754@1.1.8"
     },
@@ -412,9 +413,14 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0",
       "yallist": "npm:yallist@2.1.2"
     },
-    "npm:materialize-css@0.99.0": {
+    "npm:materialize-css@0.100.1": {
       "hammerjs": "npm:hammerjs@2.0.8",
       "jquery": "npm:jquery@3.2.1"
+    },
+    "npm:materialize-css@0.99.0": {
+      "hammerjs": "npm:hammerjs@2.0.8",
+      "jquery": "npm:jquery@3.2.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:mem@1.1.0": {
       "mimic-fn": "npm:mimic-fn@1.1.0"
@@ -631,14 +637,14 @@ System.config({
     }
   },
   bundles: {
-    "materialize-878621e08b.js": [
+    "materialize-5f989f4158.js": [
       "npm:jquery@3.2.1.js",
       "npm:jquery@3.2.1/dist/jquery.js",
-      "npm:materialize-css@0.99.0.js",
-      "npm:materialize-css@0.99.0/dist/css/materialize.css!github:systemjs/plugin-css@0.1.20.js",
-      "npm:materialize-css@0.99.0/dist/js/materialize.js"
+      "npm:materialize-css@0.100.1.js",
+      "npm:materialize-css@0.100.1/dist/css/materialize.css!github:systemjs/plugin-css@0.1.20.js",
+      "npm:materialize-css@0.100.1/dist/js/materialize.js"
     ],
-    "app-build-c17e77b066.js": [
+    "app-build-dcbc2c352c.js": [
       "about/about.html!github:systemjs/plugin-text@0.0.4.js",
       "about/about.js",
       "app-colors.html!github:systemjs/plugin-text@0.0.4.js",
@@ -698,7 +704,6 @@ System.config({
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/datepicker/datepicker.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/dropdown/dropdown-element.html!github:systemjs/plugin-text@0.0.4.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/dropdown/dropdown-element.js",
-      "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/dropdown/dropdown-fix.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/dropdown/dropdown.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/exports.js",
       "github:aurelia-ui-toolkits/aurelia-materialize-bridge@master/fab/fab.html!github:systemjs/plugin-text@0.0.4.js",
@@ -763,6 +768,7 @@ System.config({
       "github:google/code-prettify@master/lang-ex.js",
       "github:google/code-prettify@master/lang-go.js",
       "github:google/code-prettify@master/lang-hs.js",
+      "github:google/code-prettify@master/lang-kotlin.js",
       "github:google/code-prettify@master/lang-lasso.js",
       "github:google/code-prettify@master/lang-lisp.js",
       "github:google/code-prettify@master/lang-llvm.js",
