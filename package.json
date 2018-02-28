@@ -2,7 +2,7 @@
 	"name": "aurelia-materialize-bridge-sample",
 	"scripts": {
 		"build": "webpack --env.prod && npm run build:jspm",
-		"bundle:jspm": "jspm bundle aurelia-bootstrapper + aurelia-framework + aurelia-pal-browser + aurelia-materialize-bridge + aurelia-loader + aurelia-logging-console + plugin-typescript + materialize-css + aurelia-loader-default + aurelia-templating-binding + aurelia-templating-resources + aurelia-history-browser + aurelia-templating-router + aurelia-materialize-bridge/**/*.html!text + aurelia-materialize-bridge/**/*.css!text + text + aurelia-validation  dist/jspm.bundle.js --inject --skip-source-maps",
+		"bundle:jspm": "jspm bundle aurelia-bootstrapper + aurelia-framework + aurelia-pal-browser + aurelia-materialize-bridge + aurelia-loader + aurelia-logging-console + plugin-typescript + materialize-css + aurelia-loader-default + aurelia-templating-binding + aurelia-templating-resources + aurelia-history-browser + aurelia-templating-router + aurelia-materialize-bridge/**/*.html!text + aurelia-materialize-bridge/**/*.css!text + text + aurelia-validation + src/shared/logger.ts + src/shared/logger.html!text dist/jspm.bundle.js --inject --skip-source-maps",
 		"uglify:jspm": "uglifyjs dist/jspm.bundle.js -o dist/jspm.bundle.js",
 		"build:jspm": "npm run bundle:jspm && npm run uglify:jspm",
 		"start:dev": "webpack-dev-server"

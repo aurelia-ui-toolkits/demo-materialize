@@ -461,6 +461,30 @@ SystemJS.config({
 				"github:aurelia-ui-toolkits/aurelia-materialize-bridge@typescript/breadcrumbs/breadcrumbs.css!github:systemjs/plugin-text@0.0.4/text.js"
 			],
 			"dist/jspm.bundle.js": [
+				"src/shared/logger.ts",
+				"npm:aurelia-framework@1.1.5/aurelia-framework.js",
+				"npm:aurelia-framework@1.1.5.json",
+				"npm:aurelia-logging@1.4.0/aurelia-logging.js",
+				"npm:aurelia-logging@1.4.0.json",
+				"npm:aurelia-pal@1.5.0/aurelia-pal.js",
+				"npm:aurelia-pal@1.5.0.json",
+				"npm:aurelia-path@1.1.1/aurelia-path.js",
+				"npm:aurelia-path@1.1.1.json",
+				"npm:aurelia-task-queue@1.2.1/aurelia-task-queue.js",
+				"npm:aurelia-task-queue@1.2.1.json",
+				"npm:aurelia-loader@1.0.0/aurelia-loader.js",
+				"npm:aurelia-loader@1.0.0.json",
+				"npm:aurelia-metadata@1.0.3/aurelia-metadata.js",
+				"npm:aurelia-metadata@1.0.3.json",
+				"npm:aurelia-templating@1.7.0/aurelia-templating.js",
+				"npm:aurelia-templating@1.7.0.json",
+				"npm:aurelia-binding@1.6.0/aurelia-binding.js",
+				"npm:aurelia-binding@1.6.0.json",
+				"npm:aurelia-dependency-injection@1.3.2/aurelia-dependency-injection.js",
+				"npm:aurelia-dependency-injection@1.3.2.json",
+				"github:frankwallis/plugin-typescript@9.0.0.json",
+				"src/shared/logger.html!github:systemjs/plugin-text@0.0.4/text.js",
+				"github:systemjs/plugin-text@0.0.4.json",
 				"npm:materialize-css@0.100.2/dist/js/materialize.js",
 				"npm:materialize-css@0.100.2.json",
 				"npm:materialize-css@0.100.2/dist/css/materialize.css!github:systemjs/plugin-css@0.1.36/css.js",
@@ -469,29 +493,11 @@ SystemJS.config({
 				"npm:jquery@2.2.4.json",
 				"npm:aurelia-validation@1.1.2/aurelia-validation.js",
 				"npm:aurelia-validation@1.1.2.json",
-				"npm:aurelia-pal@1.5.0/aurelia-pal.js",
-				"npm:aurelia-pal@1.5.0.json",
 				"npm:aurelia-validation@1.1.2/implementation/validation-rules.js",
 				"npm:aurelia-validation@1.1.2/util.js",
 				"npm:aurelia-validation@1.1.2/implementation/validation-messages.js",
 				"npm:aurelia-validation@1.1.2/implementation/validation-message-parser.js",
 				"npm:aurelia-validation@1.1.2/implementation/expression-visitor.js",
-				"npm:aurelia-logging@1.4.0/aurelia-logging.js",
-				"npm:aurelia-logging@1.4.0.json",
-				"npm:aurelia-templating@1.7.0/aurelia-templating.js",
-				"npm:aurelia-templating@1.7.0.json",
-				"npm:aurelia-task-queue@1.2.1/aurelia-task-queue.js",
-				"npm:aurelia-task-queue@1.2.1.json",
-				"npm:aurelia-binding@1.6.0/aurelia-binding.js",
-				"npm:aurelia-binding@1.6.0.json",
-				"npm:aurelia-metadata@1.0.3/aurelia-metadata.js",
-				"npm:aurelia-metadata@1.0.3.json",
-				"npm:aurelia-dependency-injection@1.3.2/aurelia-dependency-injection.js",
-				"npm:aurelia-dependency-injection@1.3.2.json",
-				"npm:aurelia-loader@1.0.0/aurelia-loader.js",
-				"npm:aurelia-loader@1.0.0.json",
-				"npm:aurelia-path@1.1.1/aurelia-path.js",
-				"npm:aurelia-path@1.1.1.json",
 				"npm:aurelia-validation@1.1.2/implementation/rules.js",
 				"npm:aurelia-validation@1.1.2/implementation/standard-validator.js",
 				"npm:aurelia-validation@1.1.2/validate-result.js",
@@ -570,9 +576,7 @@ SystemJS.config({
 				"npm:aurelia-polyfills@1.3.0/aurelia-polyfills.js",
 				"npm:aurelia-polyfills@1.3.0.json",
 				"github:systemjs/plugin-text@0.0.4/text.js",
-				"github:systemjs/plugin-text@0.0.4.json",
 				"github:frankwallis/plugin-typescript@9.0.0/plugin.js",
-				"github:frankwallis/plugin-typescript@9.0.0.json",
 				"npm:typescript@2.7.2/lib/typescript.js",
 				"npm:typescript@2.7.2.json",
 				"npm:source-map-support@0.5.3/source-map-support.js",
@@ -829,8 +833,6 @@ SystemJS.config({
 				"github:aurelia-ui-toolkits/aurelia-materialize-bridge@typescript/config-builder.js",
 				"github:aurelia-ui-toolkits/aurelia-materialize-bridge@typescript/common/attributes.js",
 				"github:aurelia-ui-toolkits/aurelia-materialize-bridge@typescript/common/attributeManager.js",
-				"npm:aurelia-framework@1.1.5/aurelia-framework.js",
-				"npm:aurelia-framework@1.1.5.json",
 				"github:aurelia-ui-toolkits/aurelia-materialize-bridge@typescript/validation/validationRenderer.js",
 				"github:aurelia-ui-toolkits/aurelia-materialize-bridge@typescript/transitions/staggered-list.js",
 				"github:aurelia-ui-toolkits/aurelia-materialize-bridge@typescript/transitions/fadein-image.js",
@@ -919,7 +921,6 @@ SystemJS.config({
 		"map": {
 			"plugin-typescript": "github:frankwallis/plugin-typescript@9.0.0",
 			"typescript": "npm:typescript@2.7.2",
-			"process": "npm:jspm-nodelibs-process@0.2.1",
 			"path": "npm:jspm-nodelibs-path@0.2.3",
 			"module": "npm:jspm-nodelibs-module@0.2.1",
 			"buffer": "npm:jspm-nodelibs-buffer@0.2.3",
@@ -933,7 +934,8 @@ SystemJS.config({
 			"string_decoder": "npm:jspm-nodelibs-string_decoder@0.2.2",
 			"stream": "npm:jspm-nodelibs-stream@0.2.1",
 			"events": "npm:jspm-nodelibs-events@0.2.2",
-			"net": "npm:jspm-nodelibs-net@0.2.1"
+			"net": "npm:jspm-nodelibs-net@0.2.1",
+			"process": "npm:jspm-nodelibs-process@0.2.1"
 		},
 		"packages": {
 			"npm:typescript@2.7.2": {
@@ -1223,7 +1225,23 @@ SystemJS.config({
 					"loader": "plugin-typescript"
 				}
 			}
+		},
+		"npm:clipboard@1.7.1": {
+			"map": {
+				"select": "npm:select@1.1.2",
+				"good-listener": "npm:good-listener@1.2.2",
+				"tiny-emitter": "npm:tiny-emitter@2.0.2"
+			}
+		},
+		"npm:good-listener@1.2.2": {
+			"map": {
+				"delegate": "npm:delegate@3.2.0"
+			}
 		}
+	},
+	map: {
+		"clipboard": "npm:clipboard@1.7.1",
+		"prismjs": "npm:prismjs@1.11.0"
 	}
 });
 
