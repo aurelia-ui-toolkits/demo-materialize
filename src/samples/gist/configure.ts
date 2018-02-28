@@ -5,7 +5,7 @@ export async function configure(aurelia) {
 		.developmentLogging()
 		.plugin("aurelia-materialize-bridge", bridge => bridge.useAll())
 		.plugin("aurelia-validation")
-		.globalResources("shared/logger");
+		.globalResources("src/shared/logger");
 
 	await aurelia.start();
 	aurelia.setRoot("src/app");
