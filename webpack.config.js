@@ -7,6 +7,7 @@ const nodeModules = path.join(process.cwd(), "node_modules");
 const realNodeModules = fs.realpathSync(nodeModules);
 const WebpackDeletePlugin = require("webpack-delete-plugin");
 const UglifyEsPlugin = require("uglify-es-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 function copyToRawRecursive(dir) {
 	fs.readdirSync(dir).forEach(it => {
@@ -38,8 +39,8 @@ module.exports = (env) => {
 		output: {
 			path: path.resolve(bundleOutputDir),
 			publicPath: "dist/",
-			filename: "[name].js",
-			chunkFilename: "[name].js"
+			filename: "[name].[chunkhash].js",
+			chunkFilename: "[name].[chunkhash].js"
 		},
 		module: {
 			rules: [
@@ -63,6 +64,13 @@ module.exports = (env) => {
 					return module.resource && (module.resource.startsWith(nodeModules) || module.resource.startsWith(realNodeModules));
 				},
 				"chunks": ["app"]
+			}),
+			new HtmlWebpackPlugin({
+				template: 'index.ejs',
+				filename: "../index.html",
+				metadata: {
+					// available in index.ejs //
+				}
 			}),
 			new WebpackDeletePlugin(["./src/**/*.raw"])
 		].concat(isDevBuild ? [

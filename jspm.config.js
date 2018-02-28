@@ -1241,7 +1241,7 @@ SystemJS.config({
 	},
 	map: {
 		"clipboard": "npm:clipboard@1.7.1",
-		"prismjs": "npm:prismjs@1.11.0"
+		"aurelia-ui-toolkits/aurelia-materialize-bridge": "github:aurelia-ui-toolkits/aurelia-materialize-bridge@typescript"
 	}
 });
 
@@ -1276,7 +1276,6 @@ SystemJS.config({
 		"aurelia-templating-binding": "npm:aurelia-templating-binding@1.4.1",
 		"aurelia-templating-resources": "npm:aurelia-templating-resources@1.5.4",
 		"aurelia-templating-router": "npm:aurelia-templating-router@1.3.1",
-		"aurelia-ui-toolkits/aurelia-materialize-bridge": "github:aurelia-ui-toolkits/aurelia-materialize-bridge@typescript",
 		"aurelia-validation": "npm:aurelia-validation@1.1.2",
 		"css": "github:systemjs/plugin-css@0.1.36",
 		"materialize-css": "npm:materialize-css@0.100.2",
@@ -1298,7 +1297,10 @@ SystemJS.config({
 				"aurelia-metadata": "npm:aurelia-metadata@1.0.3",
 				"aurelia-templating": "npm:aurelia-templating@1.7.0",
 				"aurelia-router": "npm:aurelia-router@1.5.0",
-				"aurelia-task-queue": "npm:aurelia-task-queue@1.2.1"
+				"aurelia-task-queue": "npm:aurelia-task-queue@1.2.1",
+				"aurelia-framework": "npm:aurelia-framework@1.1.5",
+				"aurelia-validation": "npm:aurelia-validation@1.1.2",
+				"aurelia-fetch-client": "npm:aurelia-fetch-client@1.3.1"
 			}
 		}
 	}
