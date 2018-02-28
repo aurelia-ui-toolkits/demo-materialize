@@ -1,9 +1,4 @@
 node_modules
-jspm_packages
-bower_components
-.idea
-.DS_STORE
-/dist
-build/reports
-coverage
-.publish
+
+jspm_packages/*
+!jspm_packages/system.js
