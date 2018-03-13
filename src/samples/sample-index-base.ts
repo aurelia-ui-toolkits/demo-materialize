@@ -59,10 +59,10 @@ export class SampleIndexBase {
 			fileName = fileName === "index.html" ? fileName : `src\\${fileName}`;
 			this.tabs.push({ title: fileName, language, filename: fileName, content: await this.loader.loadText(m) });
 		}
-		this.taskQueue.queueTask(() => {
+		setTimeout(() => {
 			this.mdTabs.detached();
 			this.mdTabs.attached();
-		});
+		}, 100);
 	}
 
 	detached() {
