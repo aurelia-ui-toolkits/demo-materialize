@@ -2,22 +2,23 @@
 	"name": "aurelia-materialize-bridge-sample",
 	"scripts": {
 		"prebuild": "rimraf dist",
-		"build": "webpack --env.prod && npm run build:jspm",
+		"build": "webpack --mode production && npm run build:jspm",
 		"bundle:jspm": "jspm bundle aurelia-bootstrapper + aurelia-framework + aurelia-pal-browser + aurelia-materialize-bridge + aurelia-loader + aurelia-logging-console + plugin-typescript + materialize-css + aurelia-loader-default + aurelia-templating-binding + aurelia-templating-resources + aurelia-history-browser + aurelia-templating-router + aurelia-materialize-bridge/**/*.html!text + aurelia-materialize-bridge/**/*.css!text + text + aurelia-validation + src/shared/logger.ts + src/shared/logger.html!text dist/jspm.bundle.js --inject --skip-source-maps",
 		"uglify:jspm": "uglifyjs dist/jspm.bundle.js -o dist/jspm.bundle.js",
 		"build:jspm": "npm run bundle:jspm && npm run uglify:jspm",
-		"start:dev": "webpack-dev-server"
+		"start:dev": "webpack-dev-server -d --inline --hot"
 	},
 	"devDependencies": {
 		"@types/jquery": "^3.3.1",
 		"@types/nprogress": "0.0.29",
 		"@types/prismjs": "^1.9.0",
 		"@types/showdown": "^1.7.3",
-		"aurelia-webpack-plugin": "2.0.0-rc.5",
-		"awesome-typescript-loader": "^4.0.1",
+		"aurelia-webpack-plugin": "^3.0.0-rc.1",
+		"awesome-typescript-loader": "^5.0.0-1",
 		"css-loader": "^0.28.10",
 		"file-loader": "^1.1.11",
 		"html-loader": "^0.5.5",
+		"html-webpack-harddisk-plugin": "^0.2.0",
 		"html-webpack-plugin": "^3.0.6",
 		"json-loader": "^0.5.7",
 		"jspm": "^0.17.0-beta.47",
@@ -28,9 +29,10 @@
 		"uglify-es": "^3.3.9",
 		"uglify-es-webpack-plugin": "^0.10.0",
 		"url-loader": "^1.0.1",
-		"webpack": "3.11.0",
+		"webpack": "^4.1.1",
+		"webpack-cli": "^2.0.12",
 		"webpack-delete-plugin": "^0.1.1",
-		"webpack-dev-server": "2.11.1"
+		"webpack-dev-server": "^3.1.1"
 	},
 	"dependencies": {
 		"aurelia-binding": "^1.6.0",

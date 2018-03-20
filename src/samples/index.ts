@@ -58,8 +58,4 @@ export class Index {
 		let title = name.replace(/-/g, " ");
 		return { route: name, name, moduleId: `./${name}/index`, nav: true, title: title.charAt(0).toUpperCase() + title.slice(1).toLowerCase().replace("-", " "), category, status: wip ? "wip" : "done" };
 	}
-
-	attached() {
-		console.log(this.router);
-	}
 }
