@@ -6,9 +6,9 @@
 		"sourceMap": true,
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,
-		"skipDefaultLibCheck": true,
+		"skipDefaultLibCheck": false,
 		"strict": false,
-		"skipLibCheck": true,
+		"skipLibCheck": false,
 		"lib": [ "es2017", "dom" ]
 	},
 	"exclude": [ "bin", "node_modules" ],

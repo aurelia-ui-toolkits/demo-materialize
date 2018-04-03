@@ -9,7 +9,6 @@
 		"start:dev": "webpack-dev-server -d --inline --hot"
 	},
 	"devDependencies": {
-		"@types/jquery": "^3.3.1",
 		"@types/nprogress": "0.0.29",
 		"@types/prismjs": "^1.9.0",
 		"@types/showdown": "^1.7.3",
@@ -41,7 +40,7 @@
 		"aurelia-framework": "^1.1.5",
 		"aurelia-http-client": "^1.2.1",
 		"aurelia-loader-webpack": "^2.1.0",
-		"aurelia-materialize-bridge": "^0.33.0",
+		"aurelia-materialize-bridge": "^0.33.2",
 		"aurelia-validation": "^1.1.2",
 		"code-prettify": "^0.1.0",
 		"es6-promise": "^4.2.4",
@@ -57,7 +56,7 @@
 		"main": "app.js",
 		"dependencies": {
 			"aurelia-bootstrapper": "npm:aurelia-bootstrapper@^2.2.0",
-			"aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@^0.33.0",
+			"aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@^0.33.2",
 			"aurelia-validation": "npm:aurelia-validation@^1.1.2",
 			"css": "github:systemjs/plugin-css@^0.1.36",
 			"materialize-css": "npm:materialize-css@0.100.2",
