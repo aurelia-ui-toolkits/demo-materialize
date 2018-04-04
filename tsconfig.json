@@ -9,7 +9,9 @@
 		"skipDefaultLibCheck": false,
 		"strict": false,
 		"skipLibCheck": false,
-		"lib": [ "es2017", "dom" ]
+		"lib": [ "es2017", "dom" ],
+		"importHelpers": true,
+		"downlevelIteration": true
 	},
 	"exclude": [ "bin", "node_modules" ],
 	"atom": { "rewriteTsconfig": false }

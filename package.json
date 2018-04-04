@@ -40,7 +40,7 @@
 		"aurelia-framework": "^1.1.5",
 		"aurelia-http-client": "^1.2.1",
 		"aurelia-loader-webpack": "^2.1.0",
-		"aurelia-materialize-bridge": "^0.33.2",
+		"aurelia-materialize-bridge": "^0.34.0",
 		"aurelia-validation": "^1.1.2",
 		"code-prettify": "^0.1.0",
 		"es6-promise": "^4.2.4",
@@ -49,14 +49,15 @@
 		"nprogress": "^0.2.0",
 		"prismjs": "^1.12.2",
 		"showdown": "^1.8.6",
-		"showdown-prettify": "^1.3.0"
+		"showdown-prettify": "^1.3.0",
+		"tslib": "^1.9.0"
 	},
 	"jspm": {
 		"name": "app",
 		"main": "app.js",
 		"dependencies": {
 			"aurelia-bootstrapper": "npm:aurelia-bootstrapper@^2.2.0",
-			"aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@^0.33.2",
+			"aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@^0.34.0",
 			"aurelia-validation": "npm:aurelia-validation@^1.1.2",
 			"css": "github:systemjs/plugin-css@^0.1.36",
 			"materialize-css": "npm:materialize-css@0.100.2",
@@ -132,6 +133,14 @@
 			},
 			"npm:safe-buffer@5.1.1": {
 				"browser": "index.js"
+			},
+			"npm:tslib@1.9.0": {
+				"format": "cjs",
+				"meta": {
+					"tslib.js": {
+						"esModule": true
+					}
+				}
 			},
 			"npm:typescript@2.7.2": {
 				"browser": {},
