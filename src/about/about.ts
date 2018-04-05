@@ -1,5 +1,7 @@
 import { MdCollection } from "aurelia-materialize-bridge";
 import { Logger } from "../shared/logger";
+import { Redirect, RedirectToRoute } from "aurelia-router";
+import { parseQueryString } from "aurelia-path";
 
 export class About {
 	actors = [
@@ -27,9 +29,13 @@ export class About {
 	list: MdCollection;
 	logger: Logger;
 
+	canActivate() {
+		if (window.location.search.startsWith("?component=")) {
+			return new RedirectToRoute("run-gist", parseQueryString(window.location.search));
+		}
+	}
+
 	attached() {
-		// let bridge = System.get(System.normalizeSync('aurelia-materialize-bridge'));
-		// this.version = bridge.version;
 		this.version = "0.34.0";
 	}
 
@@ -37,6 +43,5 @@ export class About {
 		let selected = this.list.getSelected();
 		let names = selected.map(i => i.name);
 		this.logger.log("selection changed: " + names.join(", "));
-		// this.logger.log(`selection changed ${e.detail.item.name}`);
 	}
 }

@@ -5,13 +5,16 @@ import { Loader, useView, TaskQueue } from "aurelia-framework";
 import { MdTabs } from "aurelia-materialize-bridge";
 import { RouterView } from "aurelia-templating-router";
 import { HttpClient } from "aurelia-fetch-client";
+import { Settings } from "../settings";
+import { GistService } from "../services/gist-service";
 
 declare var __webpack_require__: { m: any };
 
 @useView("../sample-template.html")
 @autoinject
 export class SampleIndexBase {
-	constructor(private eventAggregator: EventAggregator, private loader: Loader, private taskQueue: TaskQueue, private http: HttpClient) {
+	constructor(private eventAggregator: EventAggregator, private gistService: GistService, private taskQueue: TaskQueue, private http: HttpClient,
+		private settings: Settings) {
 	}
 
 	subscription: Subscription;
@@ -20,45 +23,19 @@ export class SampleIndexBase {
 	mdTabs: MdTabs;
 	childRouterView: any;
 	title: string;
+	fragment: string;
 
 	attached() {
 		this.subscription = this.eventAggregator.subscribe("router:navigation:complete", e => this.navigationComplete(e));
 	}
 
 	async navigationComplete(e: PipelineResult) {
-		let fragment = e.instruction.router.currentInstruction.fragment;
-		let fragmentParts = fragment.split("/");
+		this.fragment = e.instruction.router.currentInstruction.fragment;
+		let files = await this.gistService.getGistFiles(this.fragment);
+		let fragmentParts = this.fragment.split("/");
 		this.title = fragmentParts[fragmentParts.length - 2].replace("-", " ");
 		this.tabs = [];
-		let modules: string[] = Object.keys(__webpack_require__.m).filter(x => x.startsWith(fragment.substring(1)) && x.endsWith(".raw"));
-		modules.push("samples/gist/index.html.raw");
-		modules.push("samples/gist/configure.ts.raw");
-		for (let m of modules) {
-			let pathParts = m.split("/");
-			let fileName = pathParts[pathParts.length - 1].replace(".raw", "");
-			let fileNameParts = fileName.split(".");
-			let language: string;
-			switch (fileNameParts[1]) {
-				default:
-				case "html":
-					language = "html";
-					break;
-				case "js":
-					language = "javascript";
-					break;
-				case "ts":
-					language = "typescript";
-					break;
-				case "css":
-					language = "css";
-					break;
-				case "md":
-					language = "markdown";
-					break;
-			}
-			fileName = fileName === "index.html" ? fileName : `src\\${fileName}`;
-			this.tabs.push({ title: fileName, language, filename: fileName, content: await this.loader.loadText(m) });
-		}
+		this.tabs.push(...files.map(x => ({ title: x.fileName, language: x.language, filename: x.fileName, content: x.content })));
 		setTimeout(() => {
 			this.mdTabs.detached();
 			this.mdTabs.attached();
@@ -78,15 +55,7 @@ export class SampleIndexBase {
 	}
 
 	async runGist() {
-		let gist = {
-			public: true,
-			files: {}
-		};
-		this.tabs.forEach(x => {
-			gist.files[x.title] = { content: x.content };
-		});
-		let response = await this.http.fetch("https://api.github.com/gists", { method: "post", body: JSON.stringify(gist), headers: { "Content-Type": "application/json" } });
-		let j = await response.json();
-		window.open(`https://gist.run/?id=${j.id}`);
+		let redirectUri = window.location.origin + "/?component=" + this.fragment;
+		window.open(`https://github.com/login/oauth/authorize?client_id=${this.settings.githubClientId}&scope=gist&redirect_uri=${redirectUri}`);
 	}
 }
