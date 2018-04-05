@@ -55,7 +55,8 @@ export class SampleIndexBase {
 	}
 
 	async runGist() {
-		let redirectUri = window.location.origin + "/?component=" + this.fragment;
+		let redirectUri = window.location.origin + window.location.pathname + "/?component=" + this.fragment;
+		console.log(redirectUri);
 		window.open(`https://github.com/login/oauth/authorize?client_id=${this.settings.githubClientId}&scope=gist&redirect_uri=${redirectUri}`);
 	}
 }
