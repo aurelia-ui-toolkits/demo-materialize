@@ -1,9 +1,9 @@
-import { MdSidenavCollapse } from "aurelia-materialize-bridge";
+import { MdSidenav } from "aurelia-materialize-bridge";
 
 export class App {
-	sidenavController: MdSidenavCollapse;
+	sideNav: MdSidenav;
 
 	openSideNav() {
-		this.sidenavController.show();
+		this.sideNav.open();
 	}
 }
