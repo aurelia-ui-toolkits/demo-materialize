@@ -20,21 +20,7 @@ export class App {
 		this.tabs.push({
 			id, title: `tab ${id + 1}`, content: `content for tab ${id + 1}`
 		});
-		this.tabsVM.refresh();
-	}
-
-	refresh() {
-		$("li", this.tabControl).each(function(i, tab) {
-			$(tab).addClass("tab");
-		});
-		$(".tab-content", this.tabContents).each((i, tab) => {
-			if (this.tabsVM.selectedTab.index !== i) {
-				$(tab).hide();
-			}
-		});
-		this.tq.queueTask(() => {
-			// window resize adjusts Materialize tab indicator
-			$(window).trigger("resize");
-		});
+		this.tabsVM.detached();
+		this.tabsVM.attached();
 	}
 }

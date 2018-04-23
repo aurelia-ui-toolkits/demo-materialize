@@ -4,7 +4,7 @@ export class App {
 	demotabs: MdTabs;
 
 	selectTab2() {
-		this.demotabs.selectTab("tab_2");
+		this.demotabs.select("tab_2");
 	}
 }
 

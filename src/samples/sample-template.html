@@ -16,12 +16,12 @@
 						<router-view></router-view>
 					</div>
 				</md-card>
-				<ul show.bind="tabs.length" md-tabs class="z-depth-1" md-tabs.ref="mdTabs">
+				<ul if.bind="tabs.length" md-tabs class="z-depth-1" md-tabs.ref="mdTabs">
 					<li repeat.for="tab of tabs">
-						<a href.bind="'#tab' + $index">${tab.title}</a>
+						<a href.bind="'#tab-gist-' + $index">${tab.title}</a>
 					</li>
 				</ul>
-				<div repeat.for="tab of tabs" class="z-depth-1" id.bind="'tab' + $index">
+				<div repeat.for="tab of tabs" class="z-depth-1" id.bind="'tab-gist-' + $index">
 					<au-code show.bind="tab.language != 'markdown'" language.bind="tab.language" text.bind="tab.content"></au-code>
 					<au-markdown show.bind="tab.language == 'markdown'" text.bind="tab.content"></au-markdown>
 				</div>

@@ -1,4 +1,5 @@
 import { Logger } from "../../../shared/logger";
+import { MdTabs } from "aurelia-materialize-bridge";
 
 export class App {
 	logger: Logger;

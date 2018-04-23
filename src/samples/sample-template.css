@@ -12,3 +12,7 @@
 .sample-template md-card .md-catalog__play-button i {
   color: black;
 }
+
+au-code pre {
+	overflow: auto;
+}
