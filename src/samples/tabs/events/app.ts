@@ -8,7 +8,7 @@ export class App {
 		this.logger.log(`tab selected ${e.detail}`);
 	}
 
-	onShow(element) {
-		this.logger.log(`onShow on element: ${element.attr("id")}`);
+	onShow(newContent: Element) {
+		this.logger.log(`onShow on element: ${newContent.getAttribute("id")}`);
 	}
 }

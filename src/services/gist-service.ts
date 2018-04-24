@@ -9,7 +9,7 @@ export class GistService {
 
 	async getGistFiles(fragment: string): Promise<IFile[]> {
 		let fragmentParts = fragment.split("/");
-		let modules: string[] = Object.keys(__webpack_require__.m).filter(x => x.startsWith(fragment.substring(1)) && x.endsWith(".raw"));
+		let modules: string[] = Object.keys(__webpack_require__.m).filter(x => x.startsWith(fragment.substring(1) + "/") && x.endsWith(".raw"));
 		modules.push("samples/gist/index.html.raw");
 		modules.push("samples/gist/configure.ts.raw");
 		let files: IFile[] = [];
@@ -37,7 +37,7 @@ export class GistService {
 					break;
 			}
 			fileName = fileName === "index.html" ? fileName : `src\\${fileName}`;
-			files.push({fileName, language, content: await this.loader.loadText(m)});
+			files.push({ fileName, language, content: await this.loader.loadText(m) });
 		}
 		return files;
 	}

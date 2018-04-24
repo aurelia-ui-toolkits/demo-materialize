@@ -34,20 +34,10 @@ export class SampleIndexBase {
 		let files = await this.gistService.getGistFiles(this.fragment);
 		let fragmentParts = this.fragment.split("/");
 		this.title = fragmentParts[fragmentParts.length - 2].replace("-", " ");
-		// this.taskQueue.queueTask(() => {
-		// 	this.mdTabs.detached();
-		// });
-		// this.taskQueue.queueTask(() => {
-		 	this.tabs = [];
-		 	this.tabs.push(...files.map(x => ({ title: x.fileName, language: x.language, filename: x.fileName, content: x.content })));
-		// });
-		// this.taskQueue.queueTask(() => {
-		// 	this.mdTabs.attached();
-		// });
-		// setTimeout(() => {
-		// 	this.mdTabs.detached();
-		// 	this.mdTabs.attached();
-		// }, 500);
+		this.tabs = files.map(x => ({ title: x.fileName, language: x.language, filename: x.fileName, content: x.content }));
+		this.taskQueue.queueTask(() => {
+			this.mdTabs.refresh();
+		});
 	}
 
 	detached() {

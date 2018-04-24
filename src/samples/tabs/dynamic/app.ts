@@ -20,7 +20,6 @@ export class App {
 		this.tabs.push({
 			id, title: `tab ${id + 1}`, content: `content for tab ${id + 1}`
 		});
-		this.tabsVM.detached();
-		this.tabsVM.attached();
+		this.tabsVM.refresh();
 	}
 }
