@@ -28,6 +28,7 @@ copyToRawRecursive("src/samples");
 module.exports = (env, argv) => {
     const isDevBuild = argv.mode !== "production";
     console.log(isDevBuild);
+	const cssLoader = { loader: isDevBuild ? "css-loader" : "css-loader?minimize" };
     return [{
         entry: { "app": ["es6-promise/auto", "aurelia-bootstrapper"] },
         resolve: {
@@ -49,8 +50,10 @@ module.exports = (env, argv) => {
                 },
                 { test: /\.json$/i, use: "json-loader" },
                 { test: /\.md$/i, use: "null-loader" },
-                { test: /\.raw$/i, use: "raw-loader" },
-                { test: /\.css$/i, use: isDevBuild ? "css-loader" : "css-loader?minimize" }
+				{ test: /\.raw$/i, use: "raw-loader" },
+				// { test: /\.css$/i, use: cssLoader },
+				{ test: /\.css$/i, issuer: /\.html|empty-entry\.js$/i, use: cssLoader },
+				{ test: /\.css$/i, issuer: [{ not: [{ test: /\.html$/i }] }], use: ["style-loader", cssLoader] }
             ]
         },
         optimization: {
@@ -68,7 +71,8 @@ module.exports = (env, argv) => {
         plugins: [
             new webpack.DefinePlugin({ IS_DEV_BUILD: JSON.stringify(isDevBuild) }),
             new webpack.ProvidePlugin({ $: "jquery", jQuery: "jquery", "window.jQuery": "jquery" }),
-            new AureliaPlugin({ aureliaApp: "main", includeAll: "src" }),
+			new AureliaPlugin({ aureliaApp: "main" }),
+			new GlobDependenciesPlugin({ "app": ["src/**/*.{ts,html,raw}"] }),
             new ModuleDependenciesPlugin({ "aurelia-materialize-bridge": ["./click-counter"] }),
 			new HtmlWebpackPlugin({ template: 'index.ejs', filename: "../index.html", metadata: {}, alwaysWriteToDisk: true }),
 			new HtmlWebpackHarddiskPlugin(),
