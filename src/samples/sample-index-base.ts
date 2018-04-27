@@ -35,9 +35,15 @@ export class SampleIndexBase {
 		let fragmentParts = this.fragment.split("/");
 		this.title = fragmentParts[fragmentParts.length - 2].replace("-", " ");
 		this.tabs = files.map(x => ({ title: x.fileName, language: x.language, filename: x.fileName, content: x.content }));
-		this.taskQueue.queueTask(() => {
-			this.mdTabs.refresh();
-		});
+		this.refreshTabs();
+	}
+
+	refreshTabs() {
+		if (!this.mdTabs) {
+			this.taskQueue.queueTask(() => this.refreshTabs());
+			return;
+		}
+		this.mdTabs.refresh();
 	}
 
 	detached() {

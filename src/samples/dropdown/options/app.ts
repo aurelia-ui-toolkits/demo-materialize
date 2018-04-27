@@ -10,4 +10,6 @@ export class App {
 	showToast(e) {
 		this.toast.show(`You clicked ${e.target.innerText}`, 4000);
 	}
+
+	body = document.body;
 }
