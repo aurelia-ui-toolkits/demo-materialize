@@ -11,7 +11,7 @@ export async function configure(aurelia: Aurelia) {
 		.plugin(PLATFORM.moduleName("aurelia-materialize-bridge"), plugin => {
 			plugin.useClickCounter().useAutoComplete().useBadge().useBreadcrumbs().useBox().useButton().useCard().useCarousel().useCharacterCounter().useCheckbox()
 				.useChip().useCollapsible().useCollection().useColors().useDatePicker().useDropdown().useFab().useFile().useFooter().useInput().useModal().useNavbar()
-				.usePagination().useParallax().useProgress().usePushpin().useRadio().useRange().useScrollfire().useScrollSpy().useSelect().useSidenav().useSlider()
+				.usePagination().useParallax().useProgress().usePushpin().useRadio().useRange().useScrollSpy().useSelect().useSidenav().useSlider()
 				.useSwitch().useTabs().useTapTarget().useTimePicker().useTooltip().useTransitions().useWaves().useWell();
 		})
 		.plugin(PLATFORM.moduleName("aurelia-validation"));

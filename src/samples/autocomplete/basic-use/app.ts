@@ -1,4 +1,8 @@
+import { Logger } from "../../../shared/logger";
+
 export class App {
+	logger: Logger;
+
 	textValue = "";
 	values: any = {
 		Apple: null,
@@ -13,6 +17,15 @@ export class App {
 			Ember: null
 		};
 	}
+
+	autocomplete(detail) {
+		this.logger.log("autocomplete " + JSON.stringify(detail));
+	}
+
+	change(detail) {
+		this.logger.log("change " + JSON.stringify(detail));
+	}
+
 }
 
 // tslint:disable-next-line:max-classes-per-file

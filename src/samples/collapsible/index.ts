@@ -20,7 +20,7 @@ export class Index extends SampleIndexBase {
 		const routes: RouteConfig[] = [
 			{ route: "", redirect: "basic-use" },
 			super.getRouteConfig("basic-use"),
-			super.getRouteConfig("accordion"),
+			super.getRouteConfig("expandable"),
 			super.getRouteConfig("popout"),
 			super.getRouteConfig("open-close-callbacks"),
 		];

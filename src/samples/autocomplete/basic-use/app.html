@@ -1,6 +1,7 @@
 <template>
 	<div>
-		<md-input md-autocomplete="values.bind: values;" md-label="put some text here" md-value.bind="textValue" md-disabled.bind="disabledValue"></md-input>
+		<md-input md-autocomplete="values.bind: values;" md-label="put some text here" md-value.bind="textValue" md-disabled.bind="disabledValue" 
+			md-on-autocomplete.delegate="autocomplete($event.detail)" change.delegate="change($event.detail)"></md-input>
 		<br /> You entered: ${textValue}
 		<br />
 	</div>
@@ -12,5 +13,8 @@
 	</div>
 	<div>
 		<button md-button click.delegate="setOtherValues()">set other values</button>
+	</div>
+	<div>
+			<logger class="z-depth-1" view-model.ref="logger"></logger>
 	</div>
 </template>

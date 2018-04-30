@@ -32,7 +32,6 @@ export class Index {
 			this.getRouteConfig("modals", js),
 			this.getRouteConfig("parallax", js),
 			this.getRouteConfig("pushpin", js),
-			this.getRouteConfig("scrollfire", js),
 			this.getRouteConfig("scrollspy", js),
 			this.getRouteConfig("sidenav", js),
 			this.getRouteConfig("tabs", js),

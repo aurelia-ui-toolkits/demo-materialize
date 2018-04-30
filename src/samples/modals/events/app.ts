@@ -17,12 +17,20 @@ export class Events {
 		this.toast.show("You disagreed!", 4000);
 	}
 
-	onComplete(e) {
-		this.logger.log("modal complete");
+	onOpenStart(e) {
+		this.logger.log("open start");
 	}
 
-	onReady(e) {
-		this.logger.log("modal ready");
+	onOpenEnd(e) {
+		this.logger.log("open end");
+	}
+
+	onCloseStart(e) {
+		this.logger.log("close start");
+	}
+
+	onCloseEnd(e) {
+		this.logger.log("close end");
 	}
 
 	openModal() {

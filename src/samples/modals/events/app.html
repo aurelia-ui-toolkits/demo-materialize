@@ -6,7 +6,8 @@
 					<button md-button click.delegate="openModal()">show modal</button>
 				</p>
 			</div>
-			<div id="modal1" md-modal md-modal.ref="modal" md-on-modal-complete.delegate="onComplete($event)" md-on-modal-ready.delegate="onReady($event)">
+			<div id="modal1" md-modal md-modal.ref="modal" md-on-open-start.delegate="onOpenStart($event)" md-on-open-end.delegate="onOpenEnd($event)"
+				md-on-close-start.delegate="onCloseStart($event)" md-on-close-end.delegate="onCloseEnd($event)">
 				<div class="modal-content">
 					<h4>Modal Header</h4>
 					<p>A bunch of text</p>
