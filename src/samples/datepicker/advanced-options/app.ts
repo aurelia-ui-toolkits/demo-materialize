@@ -1,7 +1,6 @@
-import { DatePickerDefaultParser } from "aurelia-materialize-bridge";
 import { inject } from "aurelia-framework";
 
-@inject(DatePickerDefaultParser)
+// @inject(DatePickerDefaultParser)
 export class App {
 	selectedDate = null;
 
