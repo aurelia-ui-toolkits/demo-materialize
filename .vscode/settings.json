@@ -1,0 +1,4 @@
+{
+	"html.format.enable": true,
+	"html.format.contentUnformatted": "pre,code,textarea,li"
+}

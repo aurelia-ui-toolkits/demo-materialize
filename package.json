@@ -7,7 +7,7 @@
 		"bundle:jspm": "jspm bundle aurelia-bootstrapper + aurelia-framework + aurelia-pal-browser + aurelia-materialize-bridge + aurelia-loader + aurelia-logging-console + plugin-typescript + materialize-css + aurelia-loader-default + aurelia-templating-binding + aurelia-templating-resources + aurelia-history-browser + aurelia-templating-router + aurelia-materialize-bridge/**/*.html!text + aurelia-materialize-bridge/**/*.css!text + text + aurelia-validation + aurelia-typed-observable-plugin + src/shared/logger.ts + src/shared/logger.html!text dist/jspm.bundle.js --inject --skip-source-maps",
 		"uglify:jspm": "uglifyjs dist/jspm.bundle.js -o dist/jspm.bundle.js",
 		"build:jspm": "npm run bundle:jspm && npm run uglify:jspm",
-		"start:dev": "webpack-dev-server -d --inline --hot"
+		"start": "webpack-dev-server -d --inline --hot"
 	},
 	"devDependencies": {
 		"@types/materialize-css": "^1.0.1",
