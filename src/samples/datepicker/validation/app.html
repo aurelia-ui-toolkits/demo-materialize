@@ -1,7 +1,8 @@
 <template>
 	<md-card md-title="Basic">
 		<div>
-			<md-datepicker container.bind="document.body" value.bind="date & validate:rules" show-clear-btn="true" placeholder="pick a date" view-model.ref="datePicker"></md-datepicker>
+			<md-datepicker container="body" value.bind="date & validate:rules" show-clear-btn="true" placeholder="pick a date"
+			 view-model.ref="datePicker"></md-datepicker>
 		</div>
 		<div style="margin-top: 15px;">
 			<button md-waves md-button click.delegate="validateModel()">validate</button>
@@ -9,17 +10,17 @@
 		</div>
 	</md-card>
 
-	<!-- <md-card md-title="Show or hide error text">
+	<md-card md-title="Show or hide error text">
 		<div>
-				<md-datepicker container.bind="document.body" value.bind="date & validate:rules" show-clear-btn="true" placeholder="pick a date" view-model.ref="datePicker"></md-datepicker>
-				<input md-datepicker="show-errortext.bind: showErrortext; container: body; value.two-way: date2 & validate:rules;" md-datepicker.ref="date2Picker" type="date" placeholder="pick a date">
+			<md-datepicker container.bind="document.body" value.bind="date2 & validate:rules" show-clear-btn="true" placeholder="pick a date"
+			 view-model.ref="date2Picker" show-errortext.bind="showErrortext"></md-datepicker>
 		</div>
 		<div style="margin-top: 15px;">
 			<button md-waves md-button click.delegate="validateModel2()">validate</button>
 			<button md-waves md-button click.delegate="reset2()">reset</button>
 		</div>
 		<md-switch style="margin-top: 15px;" md-label-on="show" md-label-off="hide" md-checked.bind="showErrortext"></md-switch>
-	</md-card> -->
+	</md-card>
 
 	<md-card if.bind="controller.errors.length">
 		<h5 class="error-text">You have errors!</h5>

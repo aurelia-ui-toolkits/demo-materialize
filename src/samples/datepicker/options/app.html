@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<input md-datepicker="select-months: false; select-years: 5; container: body; value.two-way: selectedDate;" type="date" placeholder="pick a date" />
+		<md-datepicker container="body" value.bind="selectedDate" label="Birthday" placeholder="pick a date" year-range.bind="[2000,2005]" first-day="1"></md-datepicker>
 	</div>
 	<div>
 		<button md-button click.delegate="setDate()">set date</button>
@@ -9,6 +9,8 @@
 		<span if.bind="selectedDate">You selected (UTC time): ${selectedDate | stringify}</span>
 	</div>
 	<div style="margin-top: 15px;">
-		The datepicker is initialized with selectMonths: false and selectYears: 5. These properties are one-time bound.
+		The datepicker is initialized with 2000 - 2005 year range and Monday as the first day.
+		<br/> For full options list see
+		<a href="http://materializecss.com/pickers.html" target="_blank">Materialize documentation</a>. <b>Bear in mind Aurelia binding conventions, e.g. isRTL becomes is-rtl.</b>
 	</div>
 </template>

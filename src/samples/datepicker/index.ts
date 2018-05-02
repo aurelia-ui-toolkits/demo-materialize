@@ -21,7 +21,6 @@ export class Index extends SampleIndexBase {
 			{ route: "", redirect: "basic-use" },
 			super.getRouteConfig("basic-use"),
 			super.getRouteConfig("options"),
-			super.getRouteConfig("advanced-options"),
 			super.getRouteConfig("validation"),
 			super.getRouteConfig("in-modal"),
 		];

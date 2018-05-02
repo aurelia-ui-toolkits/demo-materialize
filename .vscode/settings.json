@@ -1,4 +1,6 @@
 {
 	"html.format.enable": true,
-	"html.format.contentUnformatted": "pre,code,textarea,li"
+	"html.format.contentUnformatted": "pre,code,textarea,li",
+	"html.format.wrapLineLength": 0,
+	"html.format.preserveNewLines": true
 }
