@@ -112,6 +112,18 @@
 			"aurelia-templating-router": "npm:aurelia-templating-router@^1.0.0"
 		},
 		"overrides": {
+			"npm:materialize-css@next": {
+				"main": "dist/js/materialize",
+				"format": "global",
+				"meta": {
+					"dist/js/materialize.js": {
+						"deps": [
+							"../css/materialize.css!"
+						],
+						"format": "global"
+					}
+				}
+			},
 			"npm:inherits@2.0.3": {
 				"ignore": [
 					"test.js"
