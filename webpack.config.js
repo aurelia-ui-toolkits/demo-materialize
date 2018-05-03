@@ -73,7 +73,6 @@ module.exports = (env, argv) => {
             new webpack.ProvidePlugin({ $: "jquery", jQuery: "jquery", "window.jQuery": "jquery" }),
 			new AureliaPlugin({ aureliaApp: "main" }),
 			new GlobDependenciesPlugin({ "app": ["src/**/*.{ts,html,raw}"] }),
-            new ModuleDependenciesPlugin({ "aurelia-materialize-bridge": ["./click-counter"] }),
 			new HtmlWebpackPlugin({ template: 'index.ejs', filename: "../index.html", metadata: {}, alwaysWriteToDisk: true }),
 			new HtmlWebpackHarddiskPlugin(),
             new WebpackDeletePlugin(["./src/**/*.raw"])
