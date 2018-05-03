@@ -28,7 +28,7 @@ export class MdWaitCursorCustomAttribute {
 		}
 
 		let progress: Element = document.createElement("div");
-		progress.innerHTML = "<md-progress md-type='circular' md-size='small' show.bind='value' style='position: absolute; left: 100%; transform: translateX(-100%);'></md-progress>";
+		progress.innerHTML = "<md-progress type='circular' size='small' show.bind='value' style='position: absolute; left: 100%; transform: translateX(-100%);'></md-progress>";
 		progress = progress.children[0];
 
 		inputField[0].insertAdjacentElement("afterbegin", progress);
@@ -39,7 +39,7 @@ export class MdWaitCursorCustomAttribute {
 
 	attachedButton() {
 		let progress = document.createElement("div");
-		progress.innerHTML = "<div show.bind='value' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.7; background: white; z-index: 998;'></div><md-progress md-type='circular' md-size='small' show.bind='value' style='position: absolute; left: 50%; transform: translateX(-50%); z-index: 999;'></md-progress>";
+		progress.innerHTML = "<div show.bind='value' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.7; background: white; z-index: 998;'></div><md-progress type='circular' size='small' show.bind='value' style='position: absolute; left: 50%; transform: translateX(-50%); z-index: 999;'></md-progress>";
 		progress.style.position = "relative";
 		progress.style.display = "inline-block";
 		progress.classList.add("button-wait-cursor-wrapper");
@@ -56,7 +56,7 @@ export class MdWaitCursorCustomAttribute {
 		let progress = $(
 			"<div show.bind='value'>" +
 			"<div style='opacity: 0.7; background: white; width: 100%; height: 100%;'></div>" +
-			"<md-progress md-type='circular' md-size='small' style='position: absolute; left: 50%; top: 50%; height: 36px; transform: translateX(-50%) translateY(-50%);'></md-progress>" +
+			"<md-progress type='circular' size='small' style='position: absolute; left: 50%; top: 50%; height: 36px; transform: translateX(-50%) translateY(-50%);'></md-progress>" +
 			"</div>");
 		this.trResizeDelegate = () => {
 			if (!this.value) {

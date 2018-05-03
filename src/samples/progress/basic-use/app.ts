@@ -6,6 +6,6 @@ export class App {
 	value = 15;
 
 	setNull() {
-		this.inputValue.mdValue = null;
+		this.inputValue.value = null;
 	}
 }

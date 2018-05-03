@@ -4,7 +4,7 @@
 		Thanks to @eikaramba
 	</div>
 	<div>
-		<md-checkbox md-checked.bind="shouldFilter">filter pizza (changes the array for select)</md-checkbox>
+		<md-checkbox checked.bind="shouldFilter">filter pizza (changes the array for select)</md-checkbox>
 		<select md-select="value.bind: selectedMeal" multiple md-select.ref="select">
 			<option value="" disabled>Select your meal</option>
 			<option repeat.for="meal of food | filterPizza:shouldFilter" model.bind="meal" value.bind="meal.id">${meal.name}</option>

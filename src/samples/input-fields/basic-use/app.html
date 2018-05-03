@@ -1,14 +1,14 @@
 <template>
 	<div>
-		<md-input md-label="put some text here" md-value.bind="textValue" md-disabled.bind="disabledValue"></md-input>
+		<md-input label="put some text here" value.bind="textValue" disabled.bind="disabledValue"></md-input>
 		<br /> You entered: ${textValue}
 		<br />
 		<button md-button="flat: true;" md-waves class="accent-text" click.delegate="setText()">set text to something</button>
 		<button md-button="flat: true;" md-waves class="accent-text" click.delegate="setDisabled()">Toggle Input Disabling</button>
 
-		<md-input md-label="readonly - bound to the field above" md-value.bind="textValue" md-readonly.bind="true"></md-input>
+		<md-input label="readonly - bound to the field above" value.bind="textValue" readonly.bind="true"></md-input>
 		<br />
 		This is an inline input field:
-		<md-input md-label="put some text here" md-value.bind="textValue" md-disabled.bind="disabledValue" md-inline="true"></md-input>
+		<md-input label="put some text here" value.bind="textValue" disabled.bind="disabledValue" inline="true"></md-input>
 	</div>
 </template>

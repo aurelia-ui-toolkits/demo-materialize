@@ -2,19 +2,19 @@
 	<require from="./blur-on-enter"></require>
 	<md-colors></md-colors>
 	<div>
-		<md-input md-blur-on-enter="true" md-label="First Name" md-value.bind="firstName & validate:rules">
+		<md-input blur-on-enter="true" label="First Name" value.bind="firstName & validate:rules">
 		</md-input>
 
-		<md-input md-blur-on-enter="true" md-label="Last Name" md-placeholder="Last Name" md-validate="true" md-validate-success="good" md-value.bind="lastName & validate:rules">
+		<md-input blur-on-enter="true" label="Last Name" placeholder="Last Name" validate="true" validate-success="good" value.bind="lastName & validate:rules">
 		</md-input>
 
-		<md-input md-blur-on-enter="true" md-label="Email" md-validate="true" md-validate-success="yes!!" md-value.bind="email & validate:rules">
+		<md-input blur-on-enter="true" label="Email" validate="true" validate-success="yes!!" value.bind="email & validate:rules">
 		</md-input>
 
-		<md-input md-blur-on-enter="true" md-label="Required without error text" md-show-errortext="false" md-value.bind="noErrorText & validate:rules">
+		<md-input blur-on-enter="true" label="Required without error text" show-errortext="false" value.bind="noErrorText & validate:rules">
 		</md-input>
 
-		<md-input md-blur-on-enter="true" md-label="put some text here" md-value.bind="textareaValue & validate:rules" md-text-area="true">
+		<md-input blur-on-enter="true" label="put some text here" value.bind="textareaValue & validate:rules" text-area="true">
 		</md-input>
 	</div>
 

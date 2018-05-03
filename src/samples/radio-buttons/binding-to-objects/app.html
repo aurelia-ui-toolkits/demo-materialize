@@ -1,4 +1,4 @@
 <template>
-	<md-radio repeat.for="color of colors" md-name="color" md-model.bind="color" md-checked.bind="selectedColor">${color.name}</md-radio>
+	<md-radio repeat.for="color of colors" name="color" model.bind="color" checked.bind="selectedColor">${color.name}</md-radio>
 	<p>Your choice: ${selectedColor | stringify}</p>
 </template>

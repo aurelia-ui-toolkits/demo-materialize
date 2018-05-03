@@ -1,5 +1,5 @@
 <template>
-	<md-card md-title="Basic">
+	<md-card title="Basic">
 		<select md-select="label.bind: 'Don\'t select anything and click validate'; value.bind: selectedValue & validate:rules">
 			<option value="" disabled selected>select an item</option>
 			<option value="item1">item 1</option>
@@ -14,7 +14,7 @@
 		</div>
 	</md-card>
 
-	<md-card md-title="Show or hide error text">
+	<md-card title="Show or hide error text">
 		<select md-select="show-errortext.bind: showErrortext; label: Don't select anything and click validate" value.two-way="selectedValue2 & validate:rules">
 			<option value="" disabled selected>select an item</option>
 			<option value="item1">item 1</option>
@@ -26,7 +26,7 @@
 			<button md-waves md-button click.delegate="validateModel2()">validate</button>
 			<button md-waves md-button click.delegate="reset2()">reset</button>
 		</div>
-		<md-switch style="margin-top: 15px;" md-label-on="show" md-label-off="hide" md-checked.bind="showErrortext"></md-switch>
+		<md-switch style="margin-top: 15px;" label-on="show" label-off="hide" checked.bind="showErrortext"></md-switch>
 	</md-card>
 
 	<md-card if.bind="controller.errors.length">

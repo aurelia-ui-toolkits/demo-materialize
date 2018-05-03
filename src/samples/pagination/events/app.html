@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col s12 m8">
 			<div>
-				<md-pagination md-on-page-changed.delegate="onPageChanged($event)" md-pages="4" md-active-page.bind="activePage"></md-pagination>
+				<md-pagination md-on-page-changed.delegate="onPageChanged($event)" pages="4" active-page.bind="activePage"></md-pagination>
 			</div>
 			<div>
 				active page: ${activePage}
@@ -11,7 +11,7 @@
 	</div>
 	<div class="row">
 		<div class="col s12 m8">
-			<md-card md-title="Console log">
+			<md-card title="Console log">
 				<logger class="z-depth-1" view-model.ref="logger"></logger>
 			</md-card>
 		</div>

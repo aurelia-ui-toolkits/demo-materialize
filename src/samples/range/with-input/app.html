@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<md-range md-value.bind="rangeValue" md-min="0" md-max="300000.0" md-step="0.1" change.delegate="onRangeChange($event)"></md-range>
+		<md-range value.bind="rangeValue" min="0" max="300000.0" step="0.1" change.delegate="onRangeChange($event)"></md-range>
 		<input type="text" value.bind="loanAmount" />
 	</div>
 	<div>

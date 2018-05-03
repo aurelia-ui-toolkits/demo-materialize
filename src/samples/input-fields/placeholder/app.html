@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<md-input md-placeholder="placeholder text" md-label="put some text here" md-value.bind="textValue"></md-input>
+		<md-input placeholder="placeholder text" label="put some text here" value.bind="textValue"></md-input>
 		<br /> You entered: ${textValue}
 		<br />
 		<button md-button="flat: true;" md-waves class="accent-text" click.delegate="setText()">set text to something</button>
@@ -8,7 +8,7 @@
 	<hr style="margin: 15px 0;" />
 	<div>
 		<h6>Text area placeholder</h6>
-		<md-input md-label="put some text here" md-value.bind="textAreaValue" md-placeholder="placeholder" md-text-area="true" md-disabled.bind="disabledValue"></md-input>
+		<md-input label="put some text here" value.bind="textAreaValue" placeholder="placeholder" text-area="true" disabled.bind="disabledValue"></md-input>
 		<br /> You entered: ${textAreaValue}
 		<br />
 		<button md-button="flat: true;" md-waves class="accent-text" click.delegate="setTextArea()">set text to something</button>

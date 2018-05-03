@@ -1,11 +1,10 @@
 <template>
-	<require from="./md-datepicker-label"></require>
 	<require from="./stringify-value-converter"></require>
 	<div>
 		Thanks to @MaximBalaganskiy!
 	</div>
 	<div>
-		<input md-datepicker-label="next appointment" md-datepicker="container: body; value.two-way: selectedDate;" type="date" />
+		<md-datepicker label="next appointment" container="body" value.two-way="selectedDate"></md-datepicker>
 	</div>
 	<div>
 		<button md-button click.delegate="setDate()">set date</button>

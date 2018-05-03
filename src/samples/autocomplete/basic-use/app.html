@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<md-input md-autocomplete="values.bind: values;" md-label="put some text here" md-value.bind="textValue" md-disabled.bind="disabledValue" 
+		<md-input md-autocomplete="values.bind: values;" label="put some text here" value.bind="textValue" disabled.bind="disabledValue" 
 			md-on-autocomplete.delegate="autocomplete($event.detail)" change.delegate="change($event.detail)"></md-input>
 		<br /> You entered: ${textValue}
 		<br />

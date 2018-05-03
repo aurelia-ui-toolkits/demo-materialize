@@ -1,9 +1,9 @@
 <template>
 	<div>
-		<md-input md-label="put some text here" md-value.bind="textValue" md-text-area="true" md-disabled.bind="disabledValue"></md-input>
+		<md-input label="put some text here" value.bind="textValue" text-area="true" disabled.bind="disabledValue"></md-input>
 		<br /> You entered: ${textValue}
 		<br />
-		<md-input md-label="put some text here" md-value.bind="textValue" md-text-area="true" md-disabled.bind="disabledValue"></md-input>
+		<md-input label="put some text here" value.bind="textValue" text-area="true" disabled.bind="disabledValue"></md-input>
 		<button md-button="flat: true;" md-waves class="accent-text" click.delegate="setText()">set text to something</button>
 		<button md-button="flat: true;" md-waves class="accent-text" click.delegate="setDisabled()">Toggle Input Disabling</button>
 	</div>

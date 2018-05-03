@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<md-progress md-type="circular" md-pixel-size.bind="pixelSize" md-size.bind="size" md-color.bind="color"></md-progress>
+		<md-progress type="circular" pixel-size.bind="pixelSize" size.bind="size" color.bind="color"></md-progress>
 	</div>
 	<div>
 		<select md-select="label: color;" value.two-way="color">
@@ -18,6 +18,6 @@
 		</select>
 	</div>
 	<div>
-		<md-input md-label="custom size in pixels" md-value.bind="pixelSize"></md-input>
+		<md-input label="custom size in pixels" value.bind="pixelSize"></md-input>
 	</div>
 </template>

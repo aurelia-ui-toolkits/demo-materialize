@@ -1,5 +1,5 @@
 <template>
-	<md-card md-title="Basic">
+	<md-card title="Basic">
 		<div>
 			<md-datepicker container="body" value.bind="date & validate:rules" show-clear-btn="true" placeholder="pick a date"
 			 view-model.ref="datePicker"></md-datepicker>
@@ -10,7 +10,7 @@
 		</div>
 	</md-card>
 
-	<md-card md-title="Show or hide error text">
+	<md-card title="Show or hide error text">
 		<div>
 			<md-datepicker container.bind="document.body" value.bind="date2 & validate:rules" show-clear-btn="true" placeholder="pick a date"
 			 view-model.ref="date2Picker" show-errortext.bind="showErrortext"></md-datepicker>
@@ -19,7 +19,7 @@
 			<button md-waves md-button click.delegate="validateModel2()">validate</button>
 			<button md-waves md-button click.delegate="reset2()">reset</button>
 		</div>
-		<md-switch style="margin-top: 15px;" md-label-on="show" md-label-off="hide" md-checked.bind="showErrortext"></md-switch>
+		<md-switch style="margin-top: 15px;" label-on="show" label-off="hide" checked.bind="showErrortext"></md-switch>
 	</md-card>
 
 	<md-card if.bind="controller.errors.length">

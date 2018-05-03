@@ -1,5 +1,5 @@
 <template>
-	<md-file disabled.bind="true" md-caption="upload file" view-model.ref="fileInput" md-label-value.bind="labelValue"></md-file>
+	<md-file disabled.bind="true" caption="upload file" view-model.ref="fileInput" label-value.bind="labelValue"></md-file>
 	<div if.bind="selectedFile">
 		selected file: ${selectedFile.name} (${selectedFile.size} bytes)
 	</div>

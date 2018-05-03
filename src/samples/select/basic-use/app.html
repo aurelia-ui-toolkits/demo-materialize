@@ -1,5 +1,5 @@
 <template>
-  <md-card md-title="Basic use">
+  <md-card title="Basic use">
     <select md-select="label: select a value; value.two-way: selectedValue">
       <option value="" disabled selected>select an item</option>
       <option value="item1">item 1</option>
@@ -14,7 +14,7 @@
     </div>
   </md-card>
 
-  <md-card md-title="Disabled Functionality">
+  <md-card title="Disabled Functionality">
     <select md-select="disabled.bind: disabled; value.bind: selectedValue2">
       <option value="" disabled selected>select an item</option>
       <option value="item1">item 1</option>
@@ -33,7 +33,7 @@
     </div>
 	</md-card>
 	
-  <md-card md-title="Readonly Functionality">
+  <md-card title="Readonly Functionality">
     <select md-select="readonly.bind: readonly; value.bind: selectedValue3">
       <option value="" disabled selected>select an item</option>
       <option value="item1">item 1</option>
@@ -47,7 +47,7 @@
       You selected: ${selectedValue3}
     </div>
     <div>
-			<md-switch style="margin-top: 15px;" md-label-on="readonly" md-label-off="" md-checked.bind="readonly"></md-switch>
+			<md-switch style="margin-top: 15px;" label-on="readonly" label-off="" checked.bind="readonly"></md-switch>
     </div>
   </md-card>
 	
