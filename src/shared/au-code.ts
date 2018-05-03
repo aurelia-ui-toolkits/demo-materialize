@@ -56,8 +56,11 @@ export class AuCode {
 	}
 
 	render() {
-		jQuery("pre", this.element).remove();
-		let pre = document.createElement("pre");
+		let pre = this.element.querySelector("pre");
+		if (pre) {
+			pre.remove();
+		}
+		pre = document.createElement("pre");
 		this.element.appendChild(pre);
 		this.html = prism.plugins.NormalizeWhitespace.normalize(this.html);
 		pre.innerHTML = prism.highlight(this.html, prism.languages[this.language]);
@@ -80,7 +83,7 @@ function dedent(str: string) {
 		return str;
 	}
 
-	let indent = Math.min.apply(Math, match.map(function(el) {
+	let indent = Math.min.apply(Math, match.map(function (el) {
 		return el.length;
 	}));
 

@@ -26,6 +26,8 @@ export async function configure(aurelia: Aurelia) {
 	aurelia.use.globalResources("shared/au-code");
 
 	await aurelia.start();
-	await new Promise(resolve => $(document).ready(() => resolve()));
+	// if (document.readyState !== "complete") {
+	// 	await new Promise(resolve => document.addEventListener("DOMContentLoaded", () => resolve()));
+	// }
 	aurelia.setRoot(PLATFORM.moduleName("app"));
 }

@@ -49,7 +49,6 @@
 		"code-prettify": "^0.1.0",
 		"es6-promise": "^4.2.4",
 		"isomorphic-fetch": "^2.2.1",
-		"jquery": "^3.3.1",
 		"materialize-css": "^1.0.0-beta",
 		"nprogress": "^0.2.0",
 		"prismjs": "^1.14.0",
@@ -62,11 +61,11 @@
 		"main": "app.js",
 		"dependencies": {
 			"aurelia-bootstrapper": "npm:aurelia-bootstrapper@^2.2.0",
-			"aurelia-materialize-bridge": "github:aurelia-ui-toolkits/aurelia-materialize-bridge@v1",
+			"aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@next",
 			"aurelia-typed-observable-plugin": "npm:aurelia-typed-observable-plugin@^0.3.4",
 			"aurelia-validation": "npm:aurelia-validation@^1.1.2",
 			"css": "github:systemjs/plugin-css@^0.1.36",
-			"materialize-css": "npm:materialize-css@0.100.2",
+			"materialize-css": "npm:materialize-css@next",
 			"text": "github:systemjs/plugin-text@0.0.4"
 		},
 		"devDependencies": {
@@ -106,33 +105,17 @@
 			"aurelia-polyfills": "npm:aurelia-polyfills@^1.0.0",
 			"aurelia-route-recognizer": "npm:aurelia-route-recognizer@^1.0.0",
 			"aurelia-router": "npm:aurelia-router@^1.5.0",
-			"aurelia-task-queue": "npm:aurelia-task-queue@^1.0.0",
+			"aurelia-task-queue": "npm:aurelia-task-queue@^1.1.0",
 			"aurelia-templating": "npm:aurelia-templating@^1.5.0",
 			"aurelia-templating-binding": "npm:aurelia-templating-binding@^1.0.0",
 			"aurelia-templating-resources": "npm:aurelia-templating-resources@^1.0.0",
 			"aurelia-templating-router": "npm:aurelia-templating-router@^1.0.0"
 		},
 		"overrides": {
-			"npm:materialize-css@0.100.2": {
-				"main": "dist/js/materialize",
-				"format": "global",
-				"meta": {
-					"dist/js/materialize.js": {
-						"deps": [
-							"jquery",
-							"../css/materialize.css!"
-						],
-						"format": "global"
-					}
-				}
-			},
 			"npm:inherits@2.0.3": {
 				"ignore": [
 					"test.js"
 				]
-			},
-			"npm:jquery@2.2.4": {
-				"format": "amd"
 			},
 			"npm:pbkdf2@3.0.14": {
 				"main": "browser.js"
