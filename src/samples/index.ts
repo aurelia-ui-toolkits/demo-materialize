@@ -36,7 +36,6 @@ export class Index {
 			this.getRouteConfig("sidenav", js),
 			this.getRouteConfig("tabs", js),
 			this.getRouteConfig("tap-target", js),
-			this.getRouteConfig("transitions", js),
 			this.getRouteConfig("waves", js),
 			this.getRouteConfig("input-fields", forms),
 			this.getRouteConfig("select", forms),
@@ -45,8 +44,8 @@ export class Index {
 			this.getRouteConfig("file-input-button", forms),
 			this.getRouteConfig("range", forms),
 			this.getRouteConfig("datepicker", forms),
-			this.getRouteConfig("autocomplete", forms, true),
-			this.getRouteConfig("timepicker", forms, true),
+			this.getRouteConfig("timepicker", forms),
+			this.getRouteConfig("autocomplete", forms),
 			this.getRouteConfig("recepies", contrib),
 		];
 		config.map(routes);

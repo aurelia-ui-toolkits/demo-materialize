@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<input md-timepicker="value.bind: time;" placeholder="pick a date" />
+		<md-timepicker value.bind="time" twelve-hour="false" label="time" placeholder="pick a date"></md-timepicker>
 	</div>
 	<div>
 		<button md-button click.delegate="setTime()">set time</button>
 	</div>
 	<div>
-		<span if.bind="time">You selected: ${time | stringify}</span>
+		<span if.bind="time">You selected: ${time}</span>
 	</div>
 </template>
