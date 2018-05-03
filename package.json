@@ -49,7 +49,7 @@
 		"code-prettify": "^0.1.0",
 		"es6-promise": "^4.2.4",
 		"isomorphic-fetch": "^2.2.1",
-		"materialize-css": "^1.0.0-beta",
+		"materialize-css": "^1.0.0-rc.1",
 		"nprogress": "^0.2.0",
 		"prismjs": "^1.14.0",
 		"showdown": "^1.8.6",
