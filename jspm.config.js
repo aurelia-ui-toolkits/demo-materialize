@@ -762,7 +762,9 @@ SystemJS.config({
 	},
 	transpiler: "plugin-typescript",
 	typescriptOptions: {
-		"target": "es5"
+		"target": "es5",
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true
 	},
 	packages: {
 		"src": {
