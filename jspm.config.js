@@ -3,7 +3,7 @@ SystemJS.config({
 		"github:": "jspm_packages/github/",
 		"npm:": "jspm_packages/npm/",
 		"src/": "src/",
-		"bundle.js": "https://rawgit.com/aurelia-ui-toolkits/demo-materialize/gh-pages/dist/jspm.bundle.js"
+		"dist/jspm.bundle.js": "https://rawgit.com/aurelia-ui-toolkits/demo-materialize/gh-pages/dist/jspm.bundle.js"
 	},
 	browserConfig: {
 		"bundles": {
