@@ -1,9 +1,11 @@
-import { customAttribute, autoinject, TemplatingEngine } from "aurelia-framework";
+import { customAttribute, inject, TemplatingEngine } from "aurelia-framework";
 
 @customAttribute("md-wait-cursor")
-@autoinject
+@inject(Element, TemplatingEngine)
 export class MdWaitCursorCustomAttribute {
-	constructor(private element: Element, private templatingEngine: TemplatingEngine) { }
+	constructor(private element: Element, private templatingEngine: TemplatingEngine) {
+	  console.log("created");
+	  }
 
 	value = false;
 	valueChanged(newVal: boolean) {
@@ -14,6 +16,7 @@ export class MdWaitCursorCustomAttribute {
 	trResizeDelegate: () => any;
 
 	attached() {
+	  console.log("attached", this.element.tagName);
 		switch (this.element.tagName) {
 			case "MD-INPUT": this.attachedMdInput(); break;
 			case "BUTTON": this.attachedButton(); break;
@@ -51,39 +54,37 @@ export class MdWaitCursorCustomAttribute {
 	}
 
 	attachedTr() {
-		let tr = this.element;
+		let tr = this.element as HTMLTableRowElement;
 		let firstTd = this.element.firstElementChild;
-		let progress = $(
+		let progress = document.createElement("div");
+		progress.innerHTML =
 			"<div show.bind='value'>" +
 			"<div style='opacity: 0.7; background: white; width: 100%; height: 100%;'></div>" +
 			"<md-progress type='circular' size='small' style='position: absolute; left: 50%; top: 50%; height: 36px; transform: translateX(-50%) translateY(-50%);'></md-progress>" +
-			"</div>");
+			"</div>";
+		progress = progress.firstChild as HTMLDivElement;
 		this.trResizeDelegate = () => {
 			if (!this.value) {
 				return;
 			}
-			let pos = $(tr).position();
-			$(progress).css({
-				position: "absolute",
-				top: pos.top,
-				left: pos.left,
-				width: $(tr).css("width"),
-				height: $(tr).css("height")
-			});
+			progress.style.position = "absolute";
+			progress.style.top = `${tr.offsetTop}px`;
+			progress.style.left = `${tr.offsetLeft + tr.parentElement.scrollLeft}px`;
+			progress.style.width = `${tr.offsetWidth}px`;
+			progress.style.height = `${tr.offsetHeight}px`;
 		};
-		this.trResizeDelegate();
-		let view = this.templatingEngine.enhance(progress[0]);
+		let view = this.templatingEngine.enhance(progress);
 		view.bind(this);
 		view.attached();
-		$(window).resize(this.trResizeDelegate);
-		progress[0].onclick = (ev) => { ev.cancelBubble = true; };
-		firstTd.appendChild(progress[0]);
-
+		this.trResizeDelegate();
+		window.addEventListener("resize", this.trResizeDelegate);
+		progress.onclick = (ev) => { ev.cancelBubble = true; };
+		firstTd.appendChild(progress);
 	}
 
 	detached() {
 		if (this.trResizeDelegate) {
-			$(window).off("resize", this.trResizeDelegate);
+			window.removeEventListener("resize", this.trResizeDelegate);
 			this.trResizeDelegate = null;
 		}
 	}
