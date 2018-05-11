@@ -8,10 +8,12 @@ export class App {
 		this.primaryColor = settings.primaryColor;
 		this.accentColor = settings.accentColor;
 		this.errorColor = settings.errorColor;
+		this.successColor = settings.successColor;
 	}
 
 	primaryColor: string;
 	accentColor: string;
+	successColor: string;
 	errorColor: string;
 	router: Router;
 
