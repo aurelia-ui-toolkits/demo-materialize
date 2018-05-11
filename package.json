@@ -61,7 +61,7 @@
 		"main": "app.js",
 		"dependencies": {
 			"aurelia-bootstrapper": "npm:aurelia-bootstrapper@^2.2.0",
-			"aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@1.0.0-alpha.2",
+			"aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@next",
 			"aurelia-typed-observable-plugin": "npm:aurelia-typed-observable-plugin@^0.3.5",
 			"aurelia-validation": "npm:aurelia-validation@^1.1.2",
 			"css": "github:systemjs/plugin-css@^0.1.36",
