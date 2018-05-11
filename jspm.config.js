@@ -173,6 +173,7 @@ SystemJS.config({
 				"npm:aurelia-materialize-bridge@next/datepicker/datepicker.js",
 				"npm:aurelia-materialize-bridge@next/common/attributes.js",
 				"npm:aurelia-materialize-bridge@next/colors/md-colors.js",
+				"npm:aurelia-materialize-bridge@next/colors/shade-blend-convert.js",
 				"npm:aurelia-materialize-bridge@next/colors/color-value-converters.js",
 				"npm:aurelia-materialize-bridge@next/collection/md-collection-selector.js",
 				"npm:aurelia-materialize-bridge@next/collection/collection.js",
