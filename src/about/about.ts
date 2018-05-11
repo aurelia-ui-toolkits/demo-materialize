@@ -36,7 +36,7 @@ export class About {
 	}
 
 	attached() {
-		this.version = "1.0.0-alpha.2";
+		this.version = "1.0.0-alpha.3";
 	}
 
 	onSelectionChanged(e) {
