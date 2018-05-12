@@ -24,6 +24,12 @@
 				<br />
 			</div>
 		</md-card>
+		<md-card title="Number input (with min and max)">
+			<div>
+				<md-input type="number" min="0" max="20" step="1" label="number text field (with min and max)" validate="true" validate-error="invalid number" value.bind="minMaxNumber"></md-input>
+				<br />
+			</div>
+		</md-card>
 		<md-card title="Time input">
 			<div>
 				<md-input type="time" label="time text field" validate="true" validate-error="invalid time" value.bind="time"></md-input>
