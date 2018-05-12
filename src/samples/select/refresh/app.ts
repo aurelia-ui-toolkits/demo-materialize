@@ -16,7 +16,6 @@ export class App {
 		["Water", "Apples", "Oranges", "Fish"].forEach(f => {
 			this.food.push({ id: this.food.length, name: f });
 		});
-		this.select.refresh();
 	}
 }
 

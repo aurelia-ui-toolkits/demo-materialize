@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<select md-select="enable-option-observer: true; value.bind: selectedMeal">
+		<select md-select="enable-option-observer: true" value.bind="selectedMeal">
 			<option model.bind="null">Select your meal</option>
 			<option repeat.for="meal of food" model.bind="meal">${meal.name} - ${meal.count}</option>
 		</select>

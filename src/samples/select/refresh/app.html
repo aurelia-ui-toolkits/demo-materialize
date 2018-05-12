@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<select md-select="value.bind: selectedMeal" md-select.ref="select">
+		<select md-select value.two-way="selectedValue" md-select.ref="select">
 			<option disabled>Select your meal</option>
 			<option repeat.for="meal of food" model.bind="meal">${meal.name}</option>
 		</select>
