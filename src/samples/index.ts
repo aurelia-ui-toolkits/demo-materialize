@@ -46,6 +46,7 @@ export class Index {
 			this.getRouteConfig("datepicker", forms),
 			this.getRouteConfig("timepicker", forms),
 			this.getRouteConfig("autocomplete", forms),
+			this.getRouteConfig("lookup", forms, true),
 			this.getRouteConfig("recepies", contrib),
 		];
 		config.map(routes);

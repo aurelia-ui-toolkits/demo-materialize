@@ -1,0 +1,43 @@
+<template>
+	<div>
+		<md-card title="Filter Set">
+			<lookup filter.bind="filter1 & debounce: 500" value.bind="value1" options.bind="options1" display-field-name="name" label="pick an option">
+				<template replace-part="option-template">
+					<span style="color: blue">${option.id}</span> -
+					<span>${option.name}</span>
+				</template>
+				<template replace-part="searching-template">
+					Wait for 1 sec...
+				</template>
+				<template replace-part="no-matches-template">
+					Didn't find anything
+				</template>
+			</lookup>
+			<button md-button click.delegate="setValue()">Set Value</button>
+			<br> You picked: ${value1 | stringify}
+			<div>
+				Try "ng" to generate an error in the async method.
+			</div>
+		</md-card>
+
+		<md-card title="Value Set">
+			<lookup filter.bind="filter2 & debounce: 500" value.bind="value2" options.bind="options2" display-field-name="name" label="pick an option">
+				<template replace-part="option-template">
+					<span style="color: blue">${option.id}</span> -
+					<span>${option.name}</span>
+				</template>
+				<template replace-part="searching-template">
+					Wait for 1 sec...
+				</template>
+				<template replace-part="no-matches-template">
+					Didn't find anything
+				</template>
+			</lookup>
+			You picked: ${value2 | stringify}
+			<div>
+				Try "ng" to generate an error in the async method.
+			</div>
+		</md-card>
+
+	</div>
+</template>

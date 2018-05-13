@@ -24,6 +24,7 @@ export async function configure(aurelia: Aurelia) {
 	aurelia.use.globalResources("shared/au-markdown");
 	aurelia.use.globalResources("shared/logger");
 	aurelia.use.globalResources("shared/au-code");
+	aurelia.use.globalResources("lookup/lookup");
 
 	await aurelia.start();
 	// if (document.readyState !== "complete") {
