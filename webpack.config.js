@@ -70,7 +70,6 @@ module.exports = (env, argv) => {
         devtool: isDevBuild ? "source-map" : false,
         plugins: [
             new webpack.DefinePlugin({ IS_DEV_BUILD: JSON.stringify(isDevBuild) }),
-            // new webpack.ProvidePlugin({ $: "jquery", jQuery: "jquery", "window.jQuery": "jquery" }),
 			new AureliaPlugin({ aureliaApp: "main" }),
 			new GlobDependenciesPlugin({ "app": ["src/**/*.{ts,html,raw}"] }),
 			new HtmlWebpackPlugin({ template: 'index.ejs', filename: "../index.html", metadata: {}, alwaysWriteToDisk: true }),

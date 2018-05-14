@@ -1,51 +1,24 @@
 import { observable } from "aurelia-binding";
-import { Lookup } from "../../../lookup/lookup";
+import {MdLookup, DiscardablePromise, discard } from "aurelia-materialize-bridge";
 
-class DiscardablePromise<T> implements PromiseLike<T> {
-	constructor(private promise: Promise<T>) { }
-
-	isDiscarded: boolean;
-
-	then<TResult1 = T, TResult2 = never>(onfulfilled?: (value: T) => TResult1 | PromiseLike<TResult1>, onrejected?: (reason: any) => TResult2 | PromiseLike<TResult2>): PromiseLike<TResult1 | TResult2> {
-		return this.promise
-			.then(x => {
-				if (!this.isDiscarded) {
-					if (onfulfilled) {
-						return onfulfilled(x);
-					}
-				}
-			})
-			.catch(x => {
-				console.log("catch", x);
-				if (!this.isDiscarded) {
-					if (onrejected) {
-						return onrejected(x);
-					}
-				}
-			});
-	}
-
-	discard() {
-		this.isDiscarded = true;
-	}
-}
-
-// tslint:disable-next-line:max-classes-per-file
 export class App {
 	@observable
 	filter1: string = "o";
 	search1Promise: DiscardablePromise<any[]>;
 	async filter1Changed() {
-		this.options1 = [Lookup.searching];
-		if (this.search1Promise) {
-			this.search1Promise.discard();
-		}
+		this.options1 = [MdLookup.searching];
+		discard(this.search1Promise);
 		try {
+			console.log("starting search", this.filter1);
 			this.search1Promise = new DiscardablePromise(this.searchCompanies(this.filter1));
 			this.options1 = await this.search1Promise;
+			console.log(this.options1);
 		}
 		catch (e) {
-			this.options1 = [Lookup.error, e];
+			if (e !== DiscardablePromise.discarded) {
+				console.log("catch", e);
+				this.options1 = [MdLookup.error, e];
+			}
 		}
 	}
 
@@ -53,7 +26,7 @@ export class App {
 	filter2: string = "o";
 	search2Promise: DiscardablePromise<any[]>;
 	async filter2Changed() {
-		this.options2 = [Lookup.searching];
+		this.options2 = [MdLookup.searching];
 		if (this.search2Promise) {
 			this.search2Promise.discard();
 		}
@@ -62,7 +35,7 @@ export class App {
 			this.options2 = await this.search2Promise;
 		}
 		catch (e) {
-			this.options2 = [Lookup.error, e];
+			this.options2 = [MdLookup.error, e];
 		}
 	}
 

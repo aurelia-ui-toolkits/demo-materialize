@@ -10,7 +10,8 @@ export async function configure(aurelia: Aurelia) {
 		.standardConfiguration()
 		.plugin(PLATFORM.moduleName("aurelia-materialize-bridge"), plugin => {
 			plugin.useAutoComplete().useBadge().useBreadcrumbs().useBox().useButton().useCard().useCarousel().useCharacterCounter().useCheckbox()
-				.useChip().useCollapsible().useCollection().useColors().useDatePicker().useDropdown().useFab().useFile().useFooter().useInput().useModal().useNavbar()
+				.useChip().useCollapsible().useCollection().useColors().useDatePicker().useDropdown().useFab().useFile().useFooter().useInput()
+				.useLookup().useModal().useNavbar()
 				.usePagination().useParallax().useProgress().usePushpin().useRadio().useRange().useScrollSpy().useSelect().useSidenav().useSlider()
 				.useSwitch().useTabs().useTapTarget().useTimePicker().useTooltip().useWaves().useWell();
 		})
@@ -24,7 +25,6 @@ export async function configure(aurelia: Aurelia) {
 	aurelia.use.globalResources("shared/au-markdown");
 	aurelia.use.globalResources("shared/logger");
 	aurelia.use.globalResources("shared/au-code");
-	aurelia.use.globalResources("lookup/lookup");
 
 	await aurelia.start();
 	// if (document.readyState !== "complete") {
