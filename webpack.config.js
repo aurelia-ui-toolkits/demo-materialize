@@ -51,7 +51,6 @@ module.exports = (env, argv) => {
                 { test: /\.json$/i, use: "json-loader" },
                 { test: /\.md$/i, use: "null-loader" },
 				{ test: /\.raw$/i, use: "raw-loader" },
-				// { test: /\.css$/i, use: cssLoader },
 				{ test: /\.css$/i, issuer: /\.html|empty-entry\.js$/i, use: cssLoader },
 				{ test: /\.css$/i, issuer: [{ not: [{ test: /\.html$/i }] }], use: ["style-loader", cssLoader] }
             ]
