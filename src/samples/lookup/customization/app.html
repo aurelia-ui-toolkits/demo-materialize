@@ -1,0 +1,17 @@
+<template>
+	<div>
+		<md-lookup value.bind="value" options.bind="options" display-field-name.bind="getDisplayName" label="pick an option" filter-changed.delegate="filterChangedHandler.filterChanged($event.detail)" selected.delegate="onSelected($event.detail)">
+			<template replace-part="option-template">
+				<span style="color: blue">${option.id}</span> -
+				<span>${option.name}</span>
+			</template>
+			<template replace-part="searching-template">
+				Wait for 1 sec...
+			</template>
+			<template replace-part="no-matches-template">
+				Didn't find anything
+			</template>
+		</md-lookup>
+		You picked: ${value | stringify}
+	</div>
+</template>

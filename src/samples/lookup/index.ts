@@ -19,7 +19,9 @@ export class Index extends SampleIndexBase {
 	configureRouter(config: RouterConfiguration, router: Router) {
 		const routes: RouteConfig[] = [
 			{ route: "", redirect: "basic-use" },
-			super.getRouteConfig("basic-use")
+			super.getRouteConfig("basic-use"),
+			super.getRouteConfig("binding-to-objects"),
+			super.getRouteConfig("customization")
 		];
 		config.map(routes);
 		this.router = router;
