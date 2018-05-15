@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<md-lookup value.bind="value" options.bind="options" display-field-name.bind="getDisplayName" label="pick an option" filter-changed.delegate="filterChangedHandler.filterChanged($event.detail)" selected.delegate="onSelected($event.detail)">
+		<md-lookup value.bind="value" options-function.bind="optionsFunction" display-field-name.bind="getDisplayName" label="pick an option">
 			<template replace-part="option-template">
 				<span style="color: blue">${option.id}</span> -
 				<span>${option.name}</span>

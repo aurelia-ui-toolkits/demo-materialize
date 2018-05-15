@@ -21,7 +21,8 @@ export class Index extends SampleIndexBase {
 			{ route: "", redirect: "basic-use" },
 			super.getRouteConfig("basic-use"),
 			super.getRouteConfig("binding-to-objects"),
-			super.getRouteConfig("customization")
+			super.getRouteConfig("customization"),
+			super.getRouteConfig("validation")
 		];
 		config.map(routes);
 		this.router = router;

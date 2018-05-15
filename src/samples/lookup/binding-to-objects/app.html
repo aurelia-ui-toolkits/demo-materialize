@@ -1,11 +1,23 @@
 <template>
 	<div>
-		<md-lookup value.bind="value" options.bind="options" display-field-name="name" label="pick an option" filter-changed.delegate="filterChangedHandler.filterChanged($event.detail)" selected.delegate="onSelected($event.detail)">
-			<template replace-part="option-template">
-				<span style="color: blue">${option.id}</span> -
-				<span>${option.name}</span>
-			</template>
-		</md-lookup>
-		You picked: ${value | stringify}
+		<md-card title="Object Value">
+			<md-lookup value.bind="value" options-function.bind="optionsFunction" display-field-name="name" label="pick an option">
+				<template replace-part="option-template">
+					<span style="color: blue">${option.id}</span> -
+					<span>${option.name}</span>
+				</template>
+			</md-lookup>
+			You picked: ${value | stringify}
+		</md-card>
+
+		<md-card title="Primitive Value">
+				<md-lookup value.bind="valueId" options-function.bind="options2Function" display-field-name="name" value-field-name="id" label="pick an option">
+					<template replace-part="option-template">
+						<span style="color: blue">${option.id}</span> -
+						<span>${option.name}</span>
+					</template>
+				</md-lookup>
+				You picked: ${valueId}
+			</md-card>
 	</div>
 </template>

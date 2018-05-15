@@ -1,5 +1,5 @@
 import { observable } from "aurelia-binding";
-import { MdLookup, DiscardablePromise, discard, FilterChangedHandler } from "aurelia-materialize-bridge";
+import { ILookupOptionsFunctionParameter } from "aurelia-materialize-bridge";
 
 interface ICompany {
 	id: number;
@@ -12,14 +12,14 @@ export class App {
 
 	value: ICompany = this.companies[0];
 
-	options: Array<ICompany | symbol> = [this.value];
-
-	onSelected(value: ICompany) {
-		console.log("onValueChanged", value);
-		this.options = this.companies.filter(x => x === value);
+	optionsFunction(p: ILookupOptionsFunctionParameter<ICompany>): Promise<ICompany[]> {
+		if (p.value) {
+			return Promise.resolve([p.value]);
+		}
+		else {
+			return this.searchCompanies(p.filter);
+		}
 	}
-
-	filterChangedHandler = new FilterChangedHandler<ICompany>(x => this.options = x, filter => this.searchCompanies(filter));
 
 	searchCompanies(filter: string): Promise<any[]> {
 		return new Promise<any[]>((resolve, reject) => {
