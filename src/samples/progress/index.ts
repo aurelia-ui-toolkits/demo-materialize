@@ -21,6 +21,7 @@ export class Index extends SampleIndexBase {
 			{ route: "", redirect: "basic-use" },
 			super.getRouteConfig("basic-use"),
 			super.getRouteConfig("circular"),
+			super.getRouteConfig("wait-cursor"),
 		];
 		config.map(routes);
 		this.router = router;

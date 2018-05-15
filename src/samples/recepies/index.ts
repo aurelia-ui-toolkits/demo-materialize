@@ -20,7 +20,6 @@ export class Index extends SampleIndexBase {
 		const routes: RouteConfig[] = [
 			{ route: "", redirect: "autofocus" },
 			super.getRouteConfig("autofocus"),
-			super.getRouteConfig("wait-cursor"),
 			super.getRouteConfig("datepicker-label"),
 			super.getRouteConfig("prevent-collapsible-event"),
 		];
