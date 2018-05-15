@@ -6,7 +6,7 @@ export class App {
 
 	value: string;
 
-	optionsFunction = (p: ILookupOptionsFunctionParameter<string>): Promise<string[]> => {
+	optionsFunction(p: ILookupOptionsFunctionParameter<string>): Promise<string[]> {
 		if (p.value) {
 			return Promise.resolve([p.value]);
 		}
