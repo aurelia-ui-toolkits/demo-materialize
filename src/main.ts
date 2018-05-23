@@ -15,7 +15,8 @@ export async function configure(aurelia: Aurelia) {
 				.usePagination().useParallax().useProgress().usePushpin().useRadio().useRange().useScrollSpy().useSelect().useSidenav().useSlider()
 				.useSwitch().useTabs().useTapTarget().useTimePicker().useTooltip().useWaitCursor().useWaves().useWell();
 		})
-		.plugin(PLATFORM.moduleName("aurelia-validation"));
+		.plugin(PLATFORM.moduleName("aurelia-validation"))
+		.plugin(PLATFORM.moduleName("aurelia-dialog"));
 
 	if (IS_DEV_BUILD) {
 		aurelia.use.developmentLogging();

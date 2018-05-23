@@ -23,6 +23,7 @@ export class Index extends SampleIndexBase {
 			super.getRouteConfig("options"),
 			super.getRouteConfig("validation"),
 			super.getRouteConfig("in-modal"),
+			super.getRouteConfig("in-aurelia-dialog"),
 		];
 		config.map(routes);
 		this.router = router;
