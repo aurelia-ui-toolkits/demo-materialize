@@ -148,6 +148,7 @@ SystemJS.config({
 				"npm:aurelia-materialize-bridge@next/common/events.js",
 				"npm:aurelia-materialize-bridge@next/common/constants.js",
 				"npm:aurelia-materialize-bridge@next/waves/waves.js",
+				"npm:aurelia-materialize-bridge@next/wait-cursor/wait-cursor.js",
 				"npm:aurelia-materialize-bridge@next/tooltip/tooltip.js",
 				"npm:aurelia-materialize-bridge@next/toast/toastService.js",
 				"npm:aurelia-materialize-bridge@next/timepicker/timepicker.js",
