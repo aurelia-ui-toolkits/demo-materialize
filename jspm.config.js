@@ -34,8 +34,6 @@ SystemJS.config({
 				"github:systemjs/plugin-text@0.0.4.json",
 				"npm:materialize-css@next/dist/js/materialize.js",
 				"npm:materialize-css@next.json",
-				"npm:materialize-css@next/dist/css/materialize.css!github:systemjs/plugin-css@0.1.36/css.js",
-				"github:systemjs/plugin-css@0.1.36.json",
 				"npm:aurelia-templating-router@1.3.1/aurelia-templating-router.js",
 				"npm:aurelia-templating-router@1.3.1.json",
 				"npm:aurelia-templating-router@1.3.1/route-href.js",
@@ -231,6 +229,8 @@ SystemJS.config({
 				"npm:aurelia-loader-default@1.0.3.json",
 				"npm:aurelia-history-browser@1.1.0/aurelia-history-browser.js",
 				"npm:aurelia-history-browser@1.1.0.json",
+				"npm:aurelia-fetch-client@1.3.1/aurelia-fetch-client.js",
+				"npm:aurelia-fetch-client@1.3.1.json",
 				"npm:aurelia-dialog@1.0.0-rc.2.0.0/aurelia-dialog.js",
 				"npm:aurelia-dialog@1.0.0-rc.2.0.0.json",
 				"npm:aurelia-dialog@1.0.0-rc.2.0.0/dialog-controller.js",
@@ -843,6 +843,7 @@ SystemJS.config({
 		"npm:*.json"
 	],
 	map: {
+		"aurelia-fetch-client": "npm:aurelia-fetch-client@1.3.1",
 		"aurelia-dialog": "npm:aurelia-dialog@1.0.0-rc.2.0.0",
 		"aurelia-typed-observable-plugin": "npm:aurelia-typed-observable-plugin@0.3.5",
 		"aurelia-binding": "npm:aurelia-binding@1.7.1",
