@@ -34,6 +34,8 @@ SystemJS.config({
 				"github:systemjs/plugin-text@0.0.4.json",
 				"npm:materialize-css@next/dist/js/materialize.js",
 				"npm:materialize-css@next.json",
+				"npm:materialize-css@next/dist/css/materialize.css!github:systemjs/plugin-css@0.1.36/css.js",
+				"github:systemjs/plugin-css@0.1.36.json",
 				"npm:aurelia-templating-router@1.3.1/aurelia-templating-router.js",
 				"npm:aurelia-templating-router@1.3.1.json",
 				"npm:aurelia-templating-router@1.3.1/route-href.js",
