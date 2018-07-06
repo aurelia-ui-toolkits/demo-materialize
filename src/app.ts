@@ -21,9 +21,8 @@ export class App {
 		config.title = "Aurelia Materialize Components";
 		config.map([
 			{ name: "about", route: ["", "about"], moduleId: "about/about", title: "About" },
-			{ name: "project-status", route: "project-status", title: "Components", redirect: "samples/catalog" },
 			{ name: "support", route: "help/support", moduleId: "help/support", title: "Support" },
-			{ name: "samples", route: "samples", moduleId: "samples/index", title: "Samples" },
+			{ name: "samples", route: "samples", moduleId: "samples/index", title: "Components" },
 			{ name: "run-gist", route: "run-gist", moduleId: "run-gist/run-gist", title: "Run Gist" }
 		]);
 

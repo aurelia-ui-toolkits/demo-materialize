@@ -13,6 +13,7 @@ export class Index {
 		const contrib = "Contributions";
 
 		const routes: RouteConfig[] = [
+			{ route: "", redirect: "catalog" },
 			{ route: "catalog", name: "catalog", moduleId: "./catalog/catalog", title: "Catalog" },
 			this.getRouteConfig("color", css),
 			this.getRouteConfig("badge", components),
@@ -21,8 +22,7 @@ export class Index {
 			this.getRouteConfig("card", components),
 			this.getRouteConfig("chip", components),
 			this.getRouteConfig("collections", components),
-			this.getRouteConfig("footer", components),
-			this.getRouteConfig("navbar", components),
+			this.getRouteConfig("footer", components), this.getRouteConfig("navbar", components),
 			this.getRouteConfig("pagination", components),
 			this.getRouteConfig("progress", components),
 			this.getRouteConfig("collapsible", js),
