@@ -66,8 +66,6 @@
 			"aurelia-dialog": "npm:aurelia-dialog@^1.0.0-rc.2.0.0",
 			"aurelia-fetch-client": "npm:aurelia-fetch-client@^1.4.0",
 			"aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@next",
-			"aurelia-typed-observable-plugin": "npm:aurelia-typed-observable-plugin@^0.4.0",
-			"aurelia-validation": "npm:aurelia-validation@^1.2.2",
 			"css": "github:systemjs/plugin-css@^0.1.37",
 			"materialize-css": "npm:materialize-css@next",
 			"plugin-typescript": "github:frankwallis/plugin-typescript@^9.0.0",
@@ -98,6 +96,8 @@
 			"aurelia-templating-binding": "npm:aurelia-templating-binding@^1.0.0",
 			"aurelia-templating-resources": "npm:aurelia-templating-resources@^1.7.0",
 			"aurelia-templating-router": "npm:aurelia-templating-router@^1.0.0",
+			"aurelia-typed-observable-plugin": "npm:aurelia-typed-observable-plugin@^0.4.2",
+			"aurelia-validation": "npm:aurelia-validation@^1.2.2",
 			"buffer": "npm:jspm-nodelibs-buffer@^0.2.0",
 			"constants": "npm:jspm-nodelibs-constants@^0.2.0",
 			"crypto": "npm:jspm-nodelibs-crypto@^0.2.0",
@@ -110,6 +110,7 @@
 			"process": "npm:jspm-nodelibs-process@^0.2.0",
 			"stream": "npm:jspm-nodelibs-stream@^0.2.0",
 			"string_decoder": "npm:jspm-nodelibs-string_decoder@^0.2.0",
+			"tslib": "npm:tslib@^1.9.3",
 			"typescript": "npm:typescript@2.8.1",
 			"util": "npm:jspm-nodelibs-util@^0.2.0",
 			"vm": "npm:jspm-nodelibs-vm@^0.2.0"
@@ -150,4 +151,4 @@
 			}
 		}
 	}
-}
+}

@@ -23,10 +23,10 @@ SystemJS.config({
 				"npm:aurelia-loader@1.0.0.json",
 				"npm:aurelia-metadata@1.0.4/aurelia-metadata.js",
 				"npm:aurelia-metadata@1.0.4.json",
-				"npm:aurelia-templating@1.8.1/aurelia-templating.js",
-				"npm:aurelia-templating@1.8.1.json",
-				"npm:aurelia-binding@2.1.1/aurelia-binding.js",
-				"npm:aurelia-binding@2.1.1.json",
+				"npm:aurelia-templating@1.8.2/aurelia-templating.js",
+				"npm:aurelia-templating@1.8.2.json",
+				"npm:aurelia-binding@2.1.2/aurelia-binding.js",
+				"npm:aurelia-binding@2.1.2.json",
 				"npm:aurelia-dependency-injection@1.4.1/aurelia-dependency-injection.js",
 				"npm:aurelia-dependency-injection@1.4.1.json",
 				"github:frankwallis/plugin-typescript@9.0.0.json",
@@ -39,8 +39,8 @@ SystemJS.config({
 				"npm:aurelia-templating-router@1.3.2/aurelia-templating-router.js",
 				"npm:aurelia-templating-router@1.3.2.json",
 				"npm:aurelia-templating-router@1.3.2/route-href.js",
-				"npm:aurelia-router@1.6.1/aurelia-router.js",
-				"npm:aurelia-router@1.6.1.json",
+				"npm:aurelia-router@1.6.2/aurelia-router.js",
+				"npm:aurelia-router@1.6.2.json",
 				"npm:aurelia-event-aggregator@1.0.1/aurelia-event-aggregator.js",
 				"npm:aurelia-event-aggregator@1.0.1.json",
 				"npm:aurelia-history@1.1.0/aurelia-history.js",
@@ -118,8 +118,8 @@ SystemJS.config({
 				"npm:aurelia-materialize-bridge@next/common/shade-blend-convert.js",
 				"npm:aurelia-materialize-bridge@next/common/attribute-manager.js",
 				"npm:aurelia-materialize-bridge@next/common/util.js",
-				"npm:aurelia-typed-observable-plugin@0.4.0/index.js",
-				"npm:aurelia-typed-observable-plugin@0.4.0.json",
+				"npm:aurelia-typed-observable-plugin@0.4.2/index.js",
+				"npm:aurelia-typed-observable-plugin@0.4.2.json",
 				"npm:aurelia-materialize-bridge@next/validation/validationRenderer.js",
 				"npm:tslib@1.9.3/tslib.js",
 				"npm:tslib@1.9.3.json",
@@ -421,19 +421,19 @@ SystemJS.config({
 				"npm:elliptic@6.4.0/lib/elliptic/eddsa/index.js",
 				"npm:elliptic@6.4.0/lib/elliptic/eddsa/signature.js",
 				"npm:elliptic@6.4.0/lib/elliptic/eddsa/key.js",
-				"npm:hash.js@1.1.4/lib/hash.js",
-				"npm:hash.js@1.1.4.json",
-				"npm:hash.js@1.1.4/lib/hash/hmac.js",
-				"npm:hash.js@1.1.4/lib/hash/utils.js",
-				"npm:hash.js@1.1.4/lib/hash/ripemd.js",
-				"npm:hash.js@1.1.4/lib/hash/common.js",
-				"npm:hash.js@1.1.4/lib/hash/sha.js",
-				"npm:hash.js@1.1.4/lib/hash/sha/512.js",
-				"npm:hash.js@1.1.4/lib/hash/sha/384.js",
-				"npm:hash.js@1.1.4/lib/hash/sha/256.js",
-				"npm:hash.js@1.1.4/lib/hash/sha/common.js",
-				"npm:hash.js@1.1.4/lib/hash/sha/224.js",
-				"npm:hash.js@1.1.4/lib/hash/sha/1.js",
+				"npm:hash.js@1.1.5/lib/hash.js",
+				"npm:hash.js@1.1.5.json",
+				"npm:hash.js@1.1.5/lib/hash/hmac.js",
+				"npm:hash.js@1.1.5/lib/hash/utils.js",
+				"npm:hash.js@1.1.5/lib/hash/ripemd.js",
+				"npm:hash.js@1.1.5/lib/hash/common.js",
+				"npm:hash.js@1.1.5/lib/hash/sha.js",
+				"npm:hash.js@1.1.5/lib/hash/sha/512.js",
+				"npm:hash.js@1.1.5/lib/hash/sha/384.js",
+				"npm:hash.js@1.1.5/lib/hash/sha/256.js",
+				"npm:hash.js@1.1.5/lib/hash/sha/common.js",
+				"npm:hash.js@1.1.5/lib/hash/sha/224.js",
+				"npm:hash.js@1.1.5/lib/hash/sha/1.js",
 				"npm:elliptic@6.4.0/lib/elliptic/ec/index.js",
 				"npm:elliptic@6.4.0/lib/elliptic/ec/signature.js",
 				"npm:elliptic@6.4.0/lib/elliptic/ec/key.js",
@@ -470,9 +470,9 @@ SystemJS.config({
 				"npm:diffie-hellman@5.0.3/lib/primes.json",
 				"npm:browserify-cipher@1.0.1/browser.js",
 				"npm:browserify-cipher@1.0.1.json",
-				"npm:browserify-des@1.0.1/modes.js",
-				"npm:browserify-des@1.0.1.json",
-				"npm:browserify-des@1.0.1/index.js",
+				"npm:browserify-des@1.0.2/modes.js",
+				"npm:browserify-des@1.0.2.json",
+				"npm:browserify-des@1.0.2/index.js",
 				"npm:des.js@1.0.0/lib/des.js",
 				"npm:des.js@1.0.0.json",
 				"npm:des.js@1.0.0/lib/des/ede.js",
@@ -513,13 +513,13 @@ SystemJS.config({
 
 SystemJS.config({
 	packageConfigPaths: [
-		"github:*/*.json",
 		"npm:@*/*.json",
-		"npm:*.json"
+		"npm:*.json",
+		"github:*/*.json"
 	],
 	map: {
 		"assert": "npm:jspm-nodelibs-assert@0.2.1",
-		"aurelia-binding": "npm:aurelia-binding@2.1.1",
+		"aurelia-binding": "npm:aurelia-binding@2.1.2",
 		"aurelia-bootstrapper": "npm:aurelia-bootstrapper@2.3.0",
 		"aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.4.1",
 		"aurelia-dialog": "npm:aurelia-dialog@1.0.0-rc.2.0.0",
@@ -539,13 +539,13 @@ SystemJS.config({
 		"aurelia-path": "npm:aurelia-path@1.1.1",
 		"aurelia-polyfills": "npm:aurelia-polyfills@1.3.0",
 		"aurelia-route-recognizer": "npm:aurelia-route-recognizer@1.2.0",
-		"aurelia-router": "npm:aurelia-router@1.6.1",
+		"aurelia-router": "npm:aurelia-router@1.6.2",
 		"aurelia-task-queue": "npm:aurelia-task-queue@1.3.1",
-		"aurelia-templating": "npm:aurelia-templating@1.8.1",
+		"aurelia-templating": "npm:aurelia-templating@1.8.2",
 		"aurelia-templating-binding": "npm:aurelia-templating-binding@1.4.3",
 		"aurelia-templating-resources": "npm:aurelia-templating-resources@1.7.1",
 		"aurelia-templating-router": "npm:aurelia-templating-router@1.3.2",
-		"aurelia-typed-observable-plugin": "npm:aurelia-typed-observable-plugin@0.4.0",
+		"aurelia-typed-observable-plugin": "npm:aurelia-typed-observable-plugin@0.4.2",
 		"aurelia-validation": "npm:aurelia-validation@1.2.2",
 		"buffer": "npm:jspm-nodelibs-buffer@0.2.3",
 		"constants": "npm:jspm-nodelibs-constants@0.2.1",
@@ -563,20 +563,23 @@ SystemJS.config({
 		"stream": "npm:jspm-nodelibs-stream@0.2.1",
 		"string_decoder": "npm:jspm-nodelibs-string_decoder@0.2.2",
 		"text": "github:systemjs/plugin-text@0.0.4",
+		"tslib": "npm:tslib@1.9.3",
 		"typescript": "npm:typescript@2.8.1",
 		"util": "npm:jspm-nodelibs-util@0.2.2",
 		"vm": "npm:jspm-nodelibs-vm@0.2.1"
 	},
 	packages: {
-		"npm:aurelia-materialize-bridge@next": {
+		"npm:typescript@2.8.1": {
 			"map": {
-				"aurelia-fetch-client": "npm:aurelia-fetch-client@1.4.0",
-				"aurelia-typed-observable-plugin": "npm:aurelia-typed-observable-plugin@0.4.0",
-				"aurelia-validation": "npm:aurelia-validation@1.2.2",
-				"aurelia-templating": "npm:aurelia-templating@1.8.1",
-				"aurelia-framework": "npm:aurelia-framework@1.3.0",
-				"aurelia-router": "npm:aurelia-router@1.6.1",
-				"tslib": "npm:tslib@1.9.3"
+				"source-map-support": "npm:source-map-support@0.5.6"
+			}
+		},
+		"npm:aurelia-binding@2.1.2": {
+			"map": {
+				"aurelia-logging": "npm:aurelia-logging@1.5.0",
+				"aurelia-metadata": "npm:aurelia-metadata@1.0.4",
+				"aurelia-pal": "npm:aurelia-pal@1.8.0",
+				"aurelia-task-queue": "npm:aurelia-task-queue@1.3.1"
 			}
 		},
 		"npm:aurelia-fetch-client@1.4.0": {
@@ -584,12 +587,29 @@ SystemJS.config({
 				"aurelia-pal": "npm:aurelia-pal@1.8.0"
 			}
 		},
-		"npm:aurelia-binding@2.1.1": {
+		"npm:jspm-nodelibs-os@0.2.2": {
 			"map": {
-				"aurelia-logging": "npm:aurelia-logging@1.5.0",
-				"aurelia-metadata": "npm:aurelia-metadata@1.0.4",
-				"aurelia-pal": "npm:aurelia-pal@1.8.0",
-				"aurelia-task-queue": "npm:aurelia-task-queue@1.3.1"
+				"os-browserify": "npm:os-browserify@0.3.0"
+			}
+		},
+		"npm:jspm-nodelibs-buffer@0.2.3": {
+			"map": {
+				"buffer": "npm:buffer@5.1.0"
+			}
+		},
+		"npm:jspm-nodelibs-string_decoder@0.2.2": {
+			"map": {
+				"string_decoder": "npm:string_decoder@0.10.31"
+			}
+		},
+		"npm:jspm-nodelibs-stream@0.2.1": {
+			"map": {
+				"stream-browserify": "npm:stream-browserify@2.0.1"
+			}
+		},
+		"npm:jspm-nodelibs-crypto@0.2.1": {
+			"map": {
+				"crypto-browserify": "npm:crypto-browserify@3.12.0"
 			}
 		},
 		"npm:source-map-support@0.5.6": {
@@ -598,70 +618,53 @@ SystemJS.config({
 				"source-map": "npm:source-map@0.6.1"
 			}
 		},
-		"npm:jspm-nodelibs-buffer@0.2.3": {
-			"map": {
-				"buffer": "npm:buffer@5.1.0"
-			}
-		},
 		"npm:buffer@5.1.0": {
 			"map": {
-				"ieee754": "npm:ieee754@1.1.12",
-				"base64-js": "npm:base64-js@1.3.0"
+				"base64-js": "npm:base64-js@1.3.0",
+				"ieee754": "npm:ieee754@1.1.12"
 			}
 		},
-		"npm:jspm-nodelibs-os@0.2.2": {
+		"npm:stream-browserify@2.0.1": {
 			"map": {
-				"os-browserify": "npm:os-browserify@0.3.0"
-			}
-		},
-		"npm:jspm-nodelibs-crypto@0.2.1": {
-			"map": {
-				"crypto-browserify": "npm:crypto-browserify@3.12.0"
+				"readable-stream": "npm:readable-stream@2.3.6",
+				"inherits": "npm:inherits@2.0.3"
 			}
 		},
 		"npm:crypto-browserify@3.12.0": {
 			"map": {
-				"create-hmac": "npm:create-hmac@1.1.7",
-				"browserify-sign": "npm:browserify-sign@4.0.4",
-				"browserify-cipher": "npm:browserify-cipher@1.0.1",
-				"public-encrypt": "npm:public-encrypt@4.0.2",
-				"create-ecdh": "npm:create-ecdh@4.0.3",
 				"inherits": "npm:inherits@2.0.3",
+				"browserify-cipher": "npm:browserify-cipher@1.0.1",
+				"create-ecdh": "npm:create-ecdh@4.0.3",
+				"browserify-sign": "npm:browserify-sign@4.0.4",
 				"diffie-hellman": "npm:diffie-hellman@5.0.3",
-				"create-hash": "npm:create-hash@1.2.0",
+				"public-encrypt": "npm:public-encrypt@4.0.2",
+				"create-hmac": "npm:create-hmac@1.1.7",
+				"randomfill": "npm:randomfill@1.0.4",
 				"randombytes": "npm:randombytes@2.0.6",
-				"pbkdf2": "npm:pbkdf2@3.0.16",
-				"randomfill": "npm:randomfill@1.0.4"
+				"create-hash": "npm:create-hash@1.2.0",
+				"pbkdf2": "npm:pbkdf2@3.0.16"
+			}
+		},
+		"npm:readable-stream@2.3.6": {
+			"map": {
+				"string_decoder": "npm:string_decoder@1.1.1",
+				"inherits": "npm:inherits@2.0.3",
+				"util-deprecate": "npm:util-deprecate@1.0.2",
+				"process-nextick-args": "npm:process-nextick-args@2.0.0",
+				"isarray": "npm:isarray@1.0.0",
+				"safe-buffer": "npm:safe-buffer@5.1.2",
+				"core-util-is": "npm:core-util-is@1.0.2"
 			}
 		},
 		"npm:browserify-sign@4.0.4": {
 			"map": {
+				"create-hash": "npm:create-hash@1.2.0",
 				"create-hmac": "npm:create-hmac@1.1.7",
 				"inherits": "npm:inherits@2.0.3",
-				"create-hash": "npm:create-hash@1.2.0",
-				"browserify-rsa": "npm:browserify-rsa@4.0.1",
-				"bn.js": "npm:bn.js@4.11.8",
+				"elliptic": "npm:elliptic@6.4.0",
 				"parse-asn1": "npm:parse-asn1@5.1.1",
-				"elliptic": "npm:elliptic@6.4.0"
-			}
-		},
-		"npm:create-hmac@1.1.7": {
-			"map": {
-				"inherits": "npm:inherits@2.0.3",
-				"create-hash": "npm:create-hash@1.2.0",
-				"ripemd160": "npm:ripemd160@2.0.2",
-				"safe-buffer": "npm:safe-buffer@5.1.2",
-				"cipher-base": "npm:cipher-base@1.0.4",
-				"sha.js": "npm:sha.js@2.4.11"
-			}
-		},
-		"npm:public-encrypt@4.0.2": {
-			"map": {
-				"create-hash": "npm:create-hash@1.2.0",
-				"randombytes": "npm:randombytes@2.0.6",
-				"browserify-rsa": "npm:browserify-rsa@4.0.1",
 				"bn.js": "npm:bn.js@4.11.8",
-				"parse-asn1": "npm:parse-asn1@5.1.1"
+				"browserify-rsa": "npm:browserify-rsa@4.0.1"
 			}
 		},
 		"npm:diffie-hellman@5.0.3": {
@@ -671,22 +674,23 @@ SystemJS.config({
 				"miller-rabin": "npm:miller-rabin@4.0.1"
 			}
 		},
-		"npm:create-hash@1.2.0": {
-			"map": {
-				"inherits": "npm:inherits@2.0.3",
-				"ripemd160": "npm:ripemd160@2.0.2",
-				"cipher-base": "npm:cipher-base@1.0.4",
-				"sha.js": "npm:sha.js@2.4.11",
-				"md5.js": "npm:md5.js@1.3.4"
-			}
-		},
-		"npm:pbkdf2@3.0.16": {
+		"npm:public-encrypt@4.0.2": {
 			"map": {
 				"create-hash": "npm:create-hash@1.2.0",
-				"create-hmac": "npm:create-hmac@1.1.7",
-				"ripemd160": "npm:ripemd160@2.0.2",
+				"randombytes": "npm:randombytes@2.0.6",
+				"parse-asn1": "npm:parse-asn1@5.1.1",
+				"bn.js": "npm:bn.js@4.11.8",
+				"browserify-rsa": "npm:browserify-rsa@4.0.1"
+			}
+		},
+		"npm:create-hmac@1.1.7": {
+			"map": {
+				"create-hash": "npm:create-hash@1.2.0",
+				"inherits": "npm:inherits@2.0.3",
 				"safe-buffer": "npm:safe-buffer@5.1.2",
-				"sha.js": "npm:sha.js@2.4.11"
+				"cipher-base": "npm:cipher-base@1.0.4",
+				"sha.js": "npm:sha.js@2.4.11",
+				"ripemd160": "npm:ripemd160@2.0.2"
 			}
 		},
 		"npm:randomfill@1.0.4": {
@@ -695,10 +699,28 @@ SystemJS.config({
 				"safe-buffer": "npm:safe-buffer@5.1.2"
 			}
 		},
-		"npm:ripemd160@2.0.2": {
+		"npm:create-hash@1.2.0": {
 			"map": {
 				"inherits": "npm:inherits@2.0.3",
-				"hash-base": "npm:hash-base@3.0.4"
+				"cipher-base": "npm:cipher-base@1.0.4",
+				"md5.js": "npm:md5.js@1.3.4",
+				"sha.js": "npm:sha.js@2.4.11",
+				"ripemd160": "npm:ripemd160@2.0.2"
+			}
+		},
+		"npm:pbkdf2@3.0.16": {
+			"map": {
+				"create-hash": "npm:create-hash@1.2.0",
+				"create-hmac": "npm:create-hmac@1.1.7",
+				"safe-buffer": "npm:safe-buffer@5.1.2",
+				"sha.js": "npm:sha.js@2.4.11",
+				"ripemd160": "npm:ripemd160@2.0.2"
+			}
+		},
+		"npm:create-ecdh@4.0.3": {
+			"map": {
+				"elliptic": "npm:elliptic@6.4.0",
+				"bn.js": "npm:bn.js@4.11.8"
 			}
 		},
 		"npm:randombytes@2.0.6": {
@@ -706,42 +728,41 @@ SystemJS.config({
 				"safe-buffer": "npm:safe-buffer@5.1.2"
 			}
 		},
-		"npm:cipher-base@1.0.4": {
+		"npm:string_decoder@1.1.1": {
 			"map": {
-				"inherits": "npm:inherits@2.0.3",
-				"safe-buffer": "npm:safe-buffer@5.1.2"
-			}
-		},
-		"npm:sha.js@2.4.11": {
-			"map": {
-				"inherits": "npm:inherits@2.0.3",
 				"safe-buffer": "npm:safe-buffer@5.1.2"
 			}
 		},
 		"npm:browserify-cipher@1.0.1": {
 			"map": {
-				"browserify-des": "npm:browserify-des@1.0.1",
+				"browserify-des": "npm:browserify-des@1.0.2",
 				"evp_bytestokey": "npm:evp_bytestokey@1.0.3",
 				"browserify-aes": "npm:browserify-aes@1.2.0"
 			}
 		},
-		"npm:browserify-rsa@4.0.1": {
-			"map": {
-				"randombytes": "npm:randombytes@2.0.6",
-				"bn.js": "npm:bn.js@4.11.8"
-			}
-		},
-		"npm:create-ecdh@4.0.3": {
-			"map": {
-				"bn.js": "npm:bn.js@4.11.8",
-				"elliptic": "npm:elliptic@6.4.0"
-			}
-		},
-		"npm:browserify-des@1.0.1": {
+		"npm:browserify-des@1.0.2": {
 			"map": {
 				"cipher-base": "npm:cipher-base@1.0.4",
 				"inherits": "npm:inherits@2.0.3",
+				"safe-buffer": "npm:safe-buffer@5.1.2",
 				"des.js": "npm:des.js@1.0.0"
+			}
+		},
+		"npm:elliptic@6.4.0": {
+			"map": {
+				"bn.js": "npm:bn.js@4.11.8",
+				"inherits": "npm:inherits@2.0.3",
+				"brorand": "npm:brorand@1.1.0",
+				"minimalistic-assert": "npm:minimalistic-assert@1.0.1",
+				"minimalistic-crypto-utils": "npm:minimalistic-crypto-utils@1.0.1",
+				"hash.js": "npm:hash.js@1.1.5",
+				"hmac-drbg": "npm:hmac-drbg@1.0.1"
+			}
+		},
+		"npm:evp_bytestokey@1.0.3": {
+			"map": {
+				"md5.js": "npm:md5.js@1.3.4",
+				"safe-buffer": "npm:safe-buffer@5.1.2"
 			}
 		},
 		"npm:parse-asn1@5.1.1": {
@@ -756,34 +777,23 @@ SystemJS.config({
 		"npm:browserify-aes@1.2.0": {
 			"map": {
 				"cipher-base": "npm:cipher-base@1.0.4",
-				"inherits": "npm:inherits@2.0.3",
 				"create-hash": "npm:create-hash@1.2.0",
 				"evp_bytestokey": "npm:evp_bytestokey@1.0.3",
+				"inherits": "npm:inherits@2.0.3",
 				"safe-buffer": "npm:safe-buffer@5.1.2",
 				"buffer-xor": "npm:buffer-xor@1.0.3"
 			}
 		},
-		"npm:elliptic@6.4.0": {
+		"npm:browserify-rsa@4.0.1": {
+			"map": {
+				"bn.js": "npm:bn.js@4.11.8",
+				"randombytes": "npm:randombytes@2.0.6"
+			}
+		},
+		"npm:cipher-base@1.0.4": {
 			"map": {
 				"inherits": "npm:inherits@2.0.3",
-				"bn.js": "npm:bn.js@4.11.8",
-				"hash.js": "npm:hash.js@1.1.4",
-				"hmac-drbg": "npm:hmac-drbg@1.0.1",
-				"brorand": "npm:brorand@1.1.0",
-				"minimalistic-assert": "npm:minimalistic-assert@1.0.1",
-				"minimalistic-crypto-utils": "npm:minimalistic-crypto-utils@1.0.1"
-			}
-		},
-		"npm:evp_bytestokey@1.0.3": {
-			"map": {
-				"safe-buffer": "npm:safe-buffer@5.1.2",
-				"md5.js": "npm:md5.js@1.3.4"
-			}
-		},
-		"npm:miller-rabin@4.0.1": {
-			"map": {
-				"bn.js": "npm:bn.js@4.11.8",
-				"brorand": "npm:brorand@1.1.0"
+				"safe-buffer": "npm:safe-buffer@5.1.2"
 			}
 		},
 		"npm:md5.js@1.3.4": {
@@ -792,27 +802,40 @@ SystemJS.config({
 				"hash-base": "npm:hash-base@3.0.4"
 			}
 		},
-		"npm:hash-base@3.0.4": {
+		"npm:sha.js@2.4.11": {
 			"map": {
 				"inherits": "npm:inherits@2.0.3",
 				"safe-buffer": "npm:safe-buffer@5.1.2"
 			}
 		},
-		"npm:jspm-nodelibs-stream@0.2.1": {
+		"npm:miller-rabin@4.0.1": {
 			"map": {
-				"stream-browserify": "npm:stream-browserify@2.0.1"
+				"bn.js": "npm:bn.js@4.11.8",
+				"brorand": "npm:brorand@1.1.0"
 			}
 		},
-		"npm:stream-browserify@2.0.1": {
+		"npm:ripemd160@2.0.2": {
 			"map": {
 				"inherits": "npm:inherits@2.0.3",
-				"readable-stream": "npm:readable-stream@2.3.6"
+				"hash-base": "npm:hash-base@3.0.4"
 			}
 		},
 		"npm:des.js@1.0.0": {
 			"map": {
 				"inherits": "npm:inherits@2.0.3",
 				"minimalistic-assert": "npm:minimalistic-assert@1.0.1"
+			}
+		},
+		"npm:hash.js@1.1.5": {
+			"map": {
+				"inherits": "npm:inherits@2.0.3",
+				"minimalistic-assert": "npm:minimalistic-assert@1.0.1"
+			}
+		},
+		"npm:hash-base@3.0.4": {
+			"map": {
+				"inherits": "npm:inherits@2.0.3",
+				"safe-buffer": "npm:safe-buffer@5.1.2"
 			}
 		},
 		"npm:asn1.js@4.10.1": {
@@ -822,43 +845,11 @@ SystemJS.config({
 				"minimalistic-assert": "npm:minimalistic-assert@1.0.1"
 			}
 		},
-		"npm:hash.js@1.1.4": {
-			"map": {
-				"inherits": "npm:inherits@2.0.3",
-				"minimalistic-assert": "npm:minimalistic-assert@1.0.1"
-			}
-		},
 		"npm:hmac-drbg@1.0.1": {
 			"map": {
-				"hash.js": "npm:hash.js@1.1.4",
-				"minimalistic-assert": "npm:minimalistic-assert@1.0.1",
-				"minimalistic-crypto-utils": "npm:minimalistic-crypto-utils@1.0.1"
-			}
-		},
-		"npm:jspm-nodelibs-string_decoder@0.2.2": {
-			"map": {
-				"string_decoder": "npm:string_decoder@0.10.31"
-			}
-		},
-		"npm:readable-stream@2.3.6": {
-			"map": {
-				"string_decoder": "npm:string_decoder@1.1.1",
-				"inherits": "npm:inherits@2.0.3",
-				"safe-buffer": "npm:safe-buffer@5.1.2",
-				"core-util-is": "npm:core-util-is@1.0.2",
-				"util-deprecate": "npm:util-deprecate@1.0.2",
-				"isarray": "npm:isarray@1.0.0",
-				"process-nextick-args": "npm:process-nextick-args@2.0.0"
-			}
-		},
-		"npm:string_decoder@1.1.1": {
-			"map": {
-				"safe-buffer": "npm:safe-buffer@5.1.2"
-			}
-		},
-		"npm:typescript@2.8.1": {
-			"map": {
-				"source-map-support": "npm:source-map-support@0.5.6"
+				"minimalistic-crypto-utils": "npm:minimalistic-crypto-utils@1.0.1",
+				"hash.js": "npm:hash.js@1.1.5",
+				"minimalistic-assert": "npm:minimalistic-assert@1.0.1"
 			}
 		}
 	}
