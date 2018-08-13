@@ -199,6 +199,8 @@ SystemJS.config({
 				"npm:aurelia-materialize-bridge@next/box/box.js",
 				"npm:aurelia-materialize-bridge@next/badge/badge.js",
 				"npm:aurelia-materialize-bridge@next/autocomplete/autocomplete.js",
+				"npm:aurelia-materialize-bridge@next/polyfills/remove.js",
+				"npm:aurelia-materialize-bridge@next/polyfills/append.js",
 				"npm:aurelia-materialize-bridge@next/augmentation/aurelia-typed-observable.js",
 				"npm:aurelia-materialize-bridge@next/augmentation/materialize.js",
 				"npm:aurelia-materialize-bridge@next/augmentation/element.js",
