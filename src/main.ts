@@ -13,7 +13,7 @@ export async function configure(aurelia: Aurelia) {
 				.useChip().useCollapsible().useCollection().useColors().useDatePicker().useDropdown().useFab().useFile().useFooter().useInput()
 				.useLookup().useModal().useNavbar()
 				.usePagination().useParallax().useProgress().usePushpin().useRadio().useRange().useScrollSpy().useSelect().useSidenav().useSlider()
-				.useSwitch().useTabs().useTapTarget().useTimePicker().useTooltip().useWaitCursor().useWaves().useWell();
+				.useSwitch().useTabs().useTapTarget().useTimePicker().useTooltip().useWaitCursor().useWaves().useWell().useAutoButtonWaves(true);
 		})
 		.plugin(PLATFORM.moduleName("aurelia-validation"))
 		.plugin(PLATFORM.moduleName("aurelia-dialog"));
