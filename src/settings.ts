@@ -1,6 +1,6 @@
 export class Settings {
-	primaryColor = "#e57373";
-	accentColor = "#26a69a";
+	primaryColor = "#ee6e73";
+	secondaryColor = "#26a69a";
 	errorColor = "#f44336";
 	successColor = "#4caf50";
 	gistProxy = "https://gist-serve.jeroenvinke.nl/";

@@ -3,14 +3,34 @@
 	<!--
     use this to initialize colors in your app
   
-    <md-colors primary-color="#ee6e73" accent-color="#009688"></colors>
+    <md-colors primary-color="#ee6e73" secondary-color="#009688"></colors>
   -->
+
+	<style>
+		.primary {
+			background: ${cs.primaryColor};
+		}
+
+		.secondary {
+			background: ${cs.secondaryColor};
+		}
+
+		.primary-text {
+			color: ${cs.primaryColor};
+		}
+
+		.secondary-text {
+			color: ${cs.secondaryColor};
+		}
+	</style>
 
 	<!-- css classes -->
 	<div class="color-box">
 		<div class="primary">primary</div>
-		<div class="accent">accent</div>
+		<div class="secondary">secondary</div>
 		<div class="primary-text">primary-text</div>
-		<div class="accent-text">accent-text</div>
+		<div class="secondary-text">secondary-text</div>
 	</div>
+
+	<button md-button click.delegate="changePrimaryColor()">Change Primary Through Service</button>
 </template>

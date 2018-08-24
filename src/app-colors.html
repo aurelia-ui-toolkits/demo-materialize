@@ -1,14 +1,14 @@
-<template bindable="primaryColor, accentColor">
+<template bindable="primaryColor, secondaryColor">
   <style>
     #nprogress .bar {
-      background: ${accentColor};
+      background: ${secondaryColor};
     }
     #nprogress .peg {
-      box-shadow: 0 0 10px ${accentColor}, 0 0 5px ${accentColor};
+      box-shadow: 0 0 10px ${secondaryColor}, 0 0 5px ${secondaryColor};
     }
     #nprogress .spinner-icon {
-      border-top-color: ${accentColor};
-      border-left-color: ${accentColor};
+      border-top-color: ${secondaryColor};
+      border-left-color: ${secondaryColor};
     }
   </style>
 </template>

@@ -1,18 +1,19 @@
 import { autoinject } from "aurelia-dependency-injection";
 import { Router, RouterConfiguration } from "aurelia-router";
 import { Settings } from "./settings";
+import { MdColorsService } from "aurelia-materialize-bridge";
 
 @autoinject
 export class App {
-	constructor(settings: Settings) {
+	constructor(settings: Settings, colorsService: MdColorsService) {
 		this.primaryColor = settings.primaryColor;
-		this.accentColor = settings.accentColor;
+		this.secondaryColor = settings.secondaryColor;
 		this.errorColor = settings.errorColor;
 		this.successColor = settings.successColor;
 	}
 
 	primaryColor: string;
-	accentColor: string;
+	secondaryColor: string;
 	successColor: string;
 	errorColor: string;
 	router: Router;

@@ -1,12 +1,12 @@
 <template>
-	<require from="materialize-css/dist/css/materialize.css"></require>
+	<!-- <require from="materialize-css/dist/css/materialize.css"></require> -->
 	<require from="prismjs/themes/prism.css"></require>
   <require from="./loading-indicator"></require>
   <require from='./nav-bar'></require>
   <require from="./color-switcher.html"></require>
   <require from="./app-colors.html"></require>
-  <md-colors primary-color.bind="primaryColor" accent-color.bind="accentColor" success-color.bind="successColor" error-color.bind="errorColor"></md-colors>
-  <app-colors primary-color.bind="primaryColor" accent-color.bind="accentColor"></app-colors>
+  <md-colors primary-color.bind="primaryColor" secondary-color.bind="secondary1Color" success-color.bind="successColor" error-color.bind="errorColor"></md-colors>
+  <app-colors primary-color.bind="primaryColor" accent-color.bind="secondaryColor"></app-colors>
   <loading-indicator></loading-indicator>
   <header>
     <nav-bar router.bind="router"></nav-bar>
@@ -15,7 +15,7 @@
 
       <div class="row">
         <div class="col s12 m3">
-          <color-switcher primary-color.two-way="primaryColor" accent-color.two-way="accentColor" error-color.two-way="errorColor"></color-switcher>
+          <color-switcher primary-color.two-way="primaryColor" secondary-color.two-way="secondaryColor" error-color.two-way="errorColor"></color-switcher>
         </div>
       </div>
 

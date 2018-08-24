@@ -1,4 +1,4 @@
-<template bindable="primaryColor, accentColor, errorColor">
+<template bindable="primaryColor, secondaryColor, errorColor">
   <ul md-collapsible>
     <li>
       <div class="collapsible-header">
@@ -15,8 +15,8 @@
           <option value="#ff9800">orange</option>
         </select>
 
-        accent color:
-        <select md-select value.two-way="accentColor">
+        secondary color:
+        <select md-select value.two-way="secondaryColor">
           <option value="#26a69a">[Materialize] secondary</option>
           <option value="#e91e63">[Paper] pink</option>
           <option value="#ff4081">[Material-UI] pink</option>
