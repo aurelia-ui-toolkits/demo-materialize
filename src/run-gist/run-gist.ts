@@ -10,7 +10,7 @@ export class RunGist {
 	constructor(private http: HttpClient, private settings: Settings, private loader: Loader, private gistService: GistService) { }
 
 	async activate(params: { component: string, code: string }) {
-		let azureUrl = `https://ambdemo.azurewebsites.net/api/GetAccessToken?code=l6Gs2UXVlXSVyIqmtwIzrilaA37VgRaxSTr0ofMdH20eebN7dD1tJQ==&access_code=${params.code}&state=${this.settings.githubState}`;
+		let azureUrl = `https://ambdemonew.azurewebsites.net/api/GetAccessToken?code=CfDJ8AAAAAAAAAAAAAAAAAAAAAAq3eRaXNRXX9czkWSb6jkM4TUCDT5pBApm_s56iiphtufPg0mqhLf21ZqpA8wsd_ibheTFuH25KV18WZpn0boTmUUWjpbedXri2XW3z96FREInDwwxQBQpPokIdFz277rQacMz8gECAl1zQIJznUTjh8LRmwyxkWnHyEj9RkWi9g&access_code=${params.code}&state=${this.settings.githubState}`;
 		let response = await this.http.fetch(azureUrl, { method: "get", headers: { "Content-Type": "application/json", "Accept": "application/json" } });
 		if (!response.ok) {
 			return;
