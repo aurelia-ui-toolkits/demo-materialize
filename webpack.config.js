@@ -56,6 +56,7 @@ module.exports = (env, argv) => {
             ]
         },
         optimization: {
+	    concatenateModules: false,
             splitChunks: {
                 cacheGroups: {
                     commons: {
