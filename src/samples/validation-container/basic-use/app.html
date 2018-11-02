@@ -1,0 +1,28 @@
+<template>
+	<md-colors primary-color="#e57373" accent-color="#26a69a" success-color="#4caf50"></md-colors>
+	<div>
+		<validation-container dummy.bind="tick & validate">
+			<md-checkbox checked.bind="tick & validate">Tick this!</md-checkbox>
+		</validation-container>
+
+		<validation-container dummy.bind="option & validate">
+			<md-radio model.bind="1" checked.bind="option"> option1</md-radio>
+			<md-radio model.bind="2" checked.bind="option"> option2</md-radio>
+			<md-radio model.bind="3" checked.bind="option"> option3</md-radio>
+		</validation-container>
+	</div>
+
+	<div style="margin-top: 15px;">
+		<button md-button click.delegate="validateModel()">validate</button>
+	</div>
+
+	<h5>${message}</h5>
+
+	<ul style="margin-top: 15px;" show.bind="controller.errors.length">
+		<li repeat.for="error of controller.errors">
+			<a href="#" click.delegate="error.target.focus()">
+				${error.message}
+			</a>
+		</li>
+	</ul>
+</template>
