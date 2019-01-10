@@ -8,6 +8,7 @@ declare const IS_DEV_BUILD: boolean; // The value is supplied by Webpack during 
 export async function configure(aurelia: Aurelia) {
 	aurelia.use
 		.standardConfiguration()
+		.plugin(PLATFORM.moduleName("aurelia-inputmask"))
 		.plugin(PLATFORM.moduleName("aurelia-materialize-bridge"), plugin => {
 			plugin.useAutoComplete().useBadge().useBreadcrumbs().useBox().useButton().useCard().useCarousel().useCharacterCounter().useCheckbox()
 				.useChip().useCollapsible().useCollection().useColors().useDatePicker().useDropdown().useFab().useFile().useFooter().useInput()

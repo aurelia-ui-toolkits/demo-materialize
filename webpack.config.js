@@ -28,7 +28,7 @@ copyToRawRecursive("src/samples");
 module.exports = (env, argv) => {
     const isDevBuild = argv.mode !== "production";
     console.log(isDevBuild);
-	const cssLoader = { loader: isDevBuild ? "css-loader" : "css-loader?minimize" };
+	const cssLoader = { loader: "css-loader" };
     return [{
         entry: { "app": ["es6-promise/auto", "aurelia-bootstrapper"] },
         resolve: {
