@@ -2,7 +2,7 @@ import "isomorphic-fetch";
 import "materialize-css";
 import "aurelia-bootstrapper";
 import { PLATFORM, Aurelia } from "aurelia-framework";
-import "materialize-css/dist/css/materialize.css";
+// import "materialize-css/dist/css/materialize.css";
 
 declare const IS_DEV_BUILD: boolean; // The value is supplied by Webpack during the build
 
@@ -12,7 +12,7 @@ export async function configure(aurelia: Aurelia) {
 		.plugin(PLATFORM.moduleName("aurelia-inputmask"))
 		.plugin(PLATFORM.moduleName("aurelia-materialize-bridge"), plugin => {
 			plugin.useAutoComplete().useBadge().useBreadcrumbs().useBox().useButton().useCard().useCarousel().useCharacterCounter().useCheckbox()
-				.useChip().useCollapsible().useCollection().useLegacyColors().useDatePicker().useDropdown().useFab().useFile().useFooter().useInput()
+				.useChip().useCollapsible().useCollection().useColors().useDatePicker().useDropdown().useFab().useFile().useFooter().useInput()
 				.useLookup().useModal().useNavbar()
 				.usePagination().useParallax().useProgress().usePushpin().useRadio().useRange().useScrollSpy().useSelect().useSidenav().useSlider()
 				.useSwitch().useTabs().useTapTarget().useTimePicker().useTooltip().useWaitCursor().useWaves().useWell().useAutoButtonWaves(true)
