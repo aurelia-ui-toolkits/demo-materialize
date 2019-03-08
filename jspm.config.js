@@ -539,7 +539,7 @@ SystemJS.config({
 		"aurelia-loader-default": "npm:aurelia-loader-default@1.0.4",
 		"aurelia-logging": "npm:aurelia-logging@1.5.0",
 		"aurelia-logging-console": "npm:aurelia-logging-console@1.0.0",
-		"aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@1.2.5",
+		"aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@1.2.8",
 		"aurelia-metadata": "npm:aurelia-metadata@1.0.4",
 		"aurelia-pal": "npm:aurelia-pal@1.8.0",
 		"aurelia-pal-browser": "npm:aurelia-pal-browser@1.8.0",
