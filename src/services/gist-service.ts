@@ -37,7 +37,7 @@ export class GistService {
 					break;
 			}
 			fileName = fileName === "index.html" ? fileName : `src\\${fileName}`;
-			files.push({ fileName, language, content: await this.loader.loadText(m) });
+			files.push({ fileName, language, content: (await this.loader.loadModule(m)).default });
 		}
 		return files;
 	}
