@@ -63,7 +63,7 @@ export class AuCode {
 		pre = document.createElement("pre");
 		this.element.appendChild(pre);
 		this.html = prism.plugins.NormalizeWhitespace.normalize(this.html);
-		pre.innerHTML = prism.highlight(this.html, prism.languages[this.language]);
+		pre.innerHTML = prism.highlight(this.html, prism.languages[this.language], this.language);
 	}
 }
 

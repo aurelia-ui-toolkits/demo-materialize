@@ -43,7 +43,7 @@ module.exports = (env, argv) => {
         },
         module: {
             rules: [{ test: /\.(png|woff|woff2|eot|ttf|svg|jpg)(\?|$)/, loader: "url-loader?limit=1" },
-                { test: /\.ts$/i, include: [/src/], use: "awesome-typescript-loader" },
+                { test: /\.ts$/i, include: [/src/], use: "ts-loader" },
                 {
                     test: /\.html$/i,
                     use: { loader: "html-loader", options: { attrs: [ /* do not process images */ ] } }
