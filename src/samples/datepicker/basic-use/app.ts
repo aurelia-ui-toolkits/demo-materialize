@@ -5,6 +5,10 @@ export class App {
 		let date = new Date();
 		this.selectedDate = date;
 	}
+
+	log(e) {
+		console.log(e);
+	}
 }
 
 // tslint:disable-next-line:max-classes-per-file
