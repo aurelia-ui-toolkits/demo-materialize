@@ -4,7 +4,7 @@
 		<logger class="z-depth-1" view-model.ref="logger"></logger>
 	</div>
 
-	<md-sidenav md-on-sidenav-show.delegate="onShow($event)" md-on-sidenav-hide.delegate="onHide($event)" view-model.ref="sideNav">
+	<md-sidenav md-on-open-start.delegate="onShow($event)" md-on-close-start.delegate="onHide($event)" view-model.ref="sideNav">
 		<ul>
 			<li md-waves><a href="#">About</a></li>
 			<li md-waves><a href="#">Installation</a></li>
